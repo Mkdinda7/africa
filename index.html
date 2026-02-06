@@ -11,6 +11,8 @@
     <!-- ===== CDN COUNTER ===== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/counterup2/2.0.2/index.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <!-- link custom css -->
     <link rel="stylesheet" href="./css/style.css">
@@ -420,6 +422,171 @@
             </div>
         </section>
 
+        <!-- ===============our success story ============== -->
+
+        <section class="investor-voices-section">
+            <div class="container">
+
+                <!-- HEADER -->
+                <div class="investor-voices-header">
+                    <div>
+                        <h2>Today's Success Stories</h2>
+                        <p>Real investors, real returns. See how our community is building wealth across Africa.</p>
+                    </div>
+
+                    <div class="investor-voices-nav">
+                        <button class="voices-prev">
+                            < </button>
+                                <button class="voices-next">></button>
+                    </div>
+                </div>
+
+                <!-- SWIPER -->
+                <div class="swiper investorVoicesSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- SLIDE 1 -->
+                        <div class="swiper-slide">
+                            <div class="investor-voices-card">
+
+                                <div class="voices-quote">❝❞</div>
+
+                                <p class="voices-text">
+                                    The sector analysis tools helped me identify undervalued agricultural land in
+                                    Senegal.
+                                    My portfolio has outperformed market averages by 45% this year.
+                                </p>
+
+                                <div class="voices-tags">
+                                    <span class="voices-green">+87% Returns</span>
+                                    <span>Agricultural Land</span>
+                                    <span>Senegal</span>
+                                </div>
+
+                                <hr>
+
+                                <div class="voices-profile">
+                                    <div class="voices-left">
+                                        <img src="https://i.pravatar.cc/60?img=32" />
+                                        <div>
+                                            <h4>Aminata Diallo</h4>
+                                            <small>Agribusiness Portfolio Manager</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="voices-stars">★★★★★</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2 -->
+                        <div class="swiper-slide">
+                            <div class="investor-voices-card">
+
+                                <div class="voices-quote">❝❞</div>
+
+                                <p class="voices-text">
+                                    The cross-border investment intelligence has been invaluable.
+                                    We've successfully deployed $50M across 4 West African countries.
+                                </p>
+
+                                <div class="voices-tags">
+                                    <span class="voices-green">+156% Returns</span>
+                                    <span>Multi-sector PE</span>
+                                    <span>Ghana</span>
+                                </div>
+
+                                <hr>
+
+                                <div class="voices-profile">
+                                    <div class="voices-left">
+                                        <img src="https://i.pravatar.cc/60?img=12" />
+                                        <div>
+                                            <h4>Michael Okonkwo</h4>
+                                            <small>Private Equity Partner</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="voices-stars">★★★★★</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 3 -->
+                        <div class="swiper-slide">
+                            <div class="investor-voices-card">
+
+                                <div class="voices-quote">❝❞</div>
+
+                                <p class="voices-text">
+                                    Found amazing renewable energy projects in Mali through the platform.
+                                    Not only great returns, but also contributing to sustainable development.
+                                </p>
+
+                                <div class="voices-tags">
+                                    <span class="voices-green">+94% Returns</span>
+                                    <span>Solar Energy</span>
+                                    <span>Mali</span>
+                                </div>
+
+                                <hr>
+
+                                <div class="voices-profile">
+                                    <div class="voices-left">
+                                        <img src="https://i.pravatar.cc/60?img=45" />
+                                        <div>
+                                            <h4>Fatou Sow</h4>
+                                            <small>Impact Investor</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="voices-stars">★★★★★</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 4 -->
+                        <div class="swiper-slide">
+                            <div class="investor-voices-card">
+
+                                <div class="voices-quote">❝❞</div>
+
+                                <p class="voices-text">
+                                    Found amazing renewable energy projects in Mali through the platform.
+                                    Not only great returns, but also contributing to sustainable development.
+                                </p>
+
+                                <div class="voices-tags">
+                                    <span class="voices-green">+94% Returns</span>
+                                    <span>Solar Energy</span>
+                                    <span>Mali</span>
+                                </div>
+
+                                <hr>
+
+                                <div class="voices-profile">
+                                    <div class="voices-left">
+                                        <img src="https://i.pravatar.cc/60?img=45" />
+                                        <div>
+                                            <h4>Fatou Sow</h4>
+                                            <small>Impact Investor</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="voices-stars">★★★★★</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
 
 
@@ -582,6 +749,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <script>
         $(document).ready(function () {
@@ -590,6 +759,44 @@
                 time: 1500
             });
         });
+
+    </script>
+
+    <script>
+        const investorSwiper = new Swiper(".investorVoicesSwiper", {
+
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+
+            speed: 4000,      // SLOW SMOOTH
+            freeMode: true,
+
+            navigation: {
+                nextEl: ".voices-next",
+                prevEl: ".voices-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+
+        });
+
     </script>
 
 
