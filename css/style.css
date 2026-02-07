@@ -140,6 +140,16 @@ body {
     color: #ff9800 !important;
 }
 
+
+.navbar-toggler {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
 /* ======= MOBILE ======= */
 @media(max-width:991px) {
     .nav-link {
