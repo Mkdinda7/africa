@@ -309,14 +309,14 @@ body {
 
 /* ===============breaking news section ============ */
 .news-board {
-    background: #1a5c2e;
+    background: #080b27;
     border-radius: 16px;
     overflow: hidden;
     color: #fff;
 }
 
 .news-header {
-    background: #0f4a24;
+    background: #0f1d4a;
     padding: 12px;
 }
 
