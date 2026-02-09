@@ -309,7 +309,7 @@
 
 /* TAG */
 .tag {
-    color: #ff9f1a;
+    color: black;
     font-size: 13px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -350,9 +350,9 @@
 .value-card:hover {
     transform: translateY(-6px);
 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(213, 247, 255, 0.35) 0px 5px 15px;
 
-    border-top: 5px solid #00cee9;
+    border-top: 5px solid #e99f00;
 }
 
 
