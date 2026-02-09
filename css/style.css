@@ -623,6 +623,8 @@ body {
     border: 1px solid #e6ecea;
     border-top: 4px solid #0f1ea9;
     height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 
 /* PRICE BADGE */
