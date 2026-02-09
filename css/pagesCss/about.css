@@ -165,15 +165,15 @@
     width: 60px;
     height: 2px;
     background: #ff9f1a;
-    margin-top: 26px; 
+    margin-top: 26px;
 }
 
-.mission-logo{
+.mission-logo {
     width: 350px;
     height: 350px;
 
 
-    img{
+    img {
         width: 100%;
         width: 100%;
     }
@@ -191,6 +191,104 @@
 
     .mission-quote {
         font-size: 24px;
+    }
+
+}
+
+
+
+/* ==================HOW WE WORK CSS ================== */
+
+/* ===== SECTION ===== */
+.approach-section {
+    padding: 90px 0;
+    background: #fbfcfd;
+}
+
+/* TAG */
+.tag {
+    color: #ff9f1a;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* TITLE */
+.title {
+    font-family: Georgia, serif;
+    color: #0a2540;
+    font-size: 38px;
+}
+
+/* SUBTITLE */
+.subtitle {
+    max-width: 700px;
+    margin: 10px auto 0;
+    color: #5a6f7f;
+}
+
+/* ===== CARD ===== */
+.work-card {
+    background: #fff;
+    border: 1px solid #00335f;
+    border-radius: 16px;
+    padding: 24px;
+    height: 100%;
+    position: relative;
+    transition: .3s;
+}
+
+/* HOVER */
+.work-card:hover {
+    box-shadow: 0 18px 40px rgba(0, 17, 255, 0.192);
+    transform: translateY(-4px);
+    cursor: pointer;
+
+    .number {
+        color: #ffc266;
+    }
+}
+
+/* NUMBER */
+.number {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+
+    font-size: 52px;
+    font-weight: 800;
+
+    color: #ffeed5;
+}
+
+
+
+/* TITLE */
+.work-card h5 {
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* TEXT */
+.work-card p {
+    color: #5a6f7f;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:992px) {
+
+    .approach-section {
+        padding: 60px 0;
+    }
+
+    .title {
+        font-size: 28px;
     }
 
 }
