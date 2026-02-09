@@ -171,840 +171,913 @@
             </div>
         </section>
 
+        <!-- ===================Breaking News section =========== -->
 
-        <!-- ================== about us section =============== -->
+        <div class="container">
 
-        <section class="about-v2">
-            <div class="container">
-                <div class="row align-items-center">
+            <div class="news-board">
 
+                <!-- HEADER -->
+                <div class="news-header d-flex justify-content-between align-items-center">
 
-                    <!-- ===== LEFT FEATURE CARD ===== -->
-                    <div class="col-lg-6">
-
-                        <div class="main-card">
-
-                            <span class="top-line">ABOUT SINADAI</span>
-
-                            <h2>
-                                Strategy Meets
-                                Market Intelligence
-                            </h2>
-
-                            <p>
-                                We combine on-ground expertise with digital intelligence to unlock
-                                value across Africa’s resource economy. Our structured approach
-                                helps investors move with clarity and confidence.
-                            </p>
-
-                            <ul class="check-list">
-                                <li>Verified market intelligence</li>
-                                <li>Cross-border risk mapping</li>
-                                <li>Deal structuring support</li>
-                                <li>Local execution network</li>
-                            </ul>
-
-                            <a href="#" class="btn-outline">
-                                Learn More →
-                            </a>
-
-                        </div>
-
+                    <div class="live-tag">
+                        ⚡ LIVE BREAKING NEWS
                     </div>
 
+                    <div class="d-flex gap-2 align-items-center">
 
-
-                    <!-- ===== RIGHT METRICS ===== -->
-                    <div class="col-lg-6 mt-4 mt-lg-0">
-
-                        <div class="metric-wrap">
-
-                            <div class="metric">
-                                <div>
-                                    <h3>15+</h3>
-                                    <span>African Markets</span>
-                                </div>
-                            </div>
-
-                            <div class="metric">
-                                <div>
-                                    <h3>50+</h3>
-                                    <span>Strategic Reports</span>
-                                </div>
-                            </div>
-
-                            <div class="metric">
-                                <div>
-                                    <h3>4</h3>
-                                    <span>Core Sectors</span>
-                                </div>
-                            </div>
-
-                            <div class="metric">
-                                <div>
-                                    <h3>100%</h3>
-                                    <span>Data Driven</span>
-                                </div>
-                            </div>
-
+                        <div class="time">
+                            Auto-refresh: <span id="sec">30</span>s
                         </div>
 
+                        <button class="btn btn-sm btn-light" id="playBtn" onclick="togglePlay()">
+                            ⏸
+                        </button>
+
+                        <button class="btn btn-sm btn-success" onclick="refreshNews()">
+                            ↻
+                        </button>
+
+                    </div>
+                </div>
+
+
+
+                <!-- LIST -->
+                <div class="news-list" id="newsBox"></div>
+
+
+
+                <!-- FOOTER -->
+                <div class="news-footer d-flex justify-content-between">
+
+                    <div>
+                        🟢 Monitoring 12 global news sources
                     </div>
 
+                    <div id="updateTime">
+                        Last updated: --
+                    </div>
 
                 </div>
+
+
             </div>
-        </section>
 
 
-        <!-- ===============our service =============== -->
+            <!-- ================== about us section =============== -->
 
-        <section class="service-pro">
-            <div class="container">
+            <section class="about-v2">
+                <div class="container">
+                    <div class="row align-items-center">
 
-                <!-- ===== MAIN FLOAT CARD ===== -->
-                <div class="wrap-card">
 
-                    <div class="text-center mb-4">
-                        <span class="tag">OUR SERVICES</span>
+                        <!-- ===== LEFT FEATURE CARD ===== -->
+                        <div class="col-lg-6">
+
+                            <div class="main-card">
+
+                                <span class="top-line">ABOUT SINADAI</span>
+
+                                <h2>
+                                    Strategy Meets
+                                    Market Intelligence
+                                </h2>
+
+                                <p>
+                                    We combine on-ground expertise with digital intelligence to unlock
+                                    value across Africa’s resource economy. Our structured approach
+                                    helps investors move with clarity and confidence.
+                                </p>
+
+                                <ul class="check-list">
+                                    <li>Verified market intelligence</li>
+                                    <li>Cross-border risk mapping</li>
+                                    <li>Deal structuring support</li>
+                                    <li>Local execution network</li>
+                                </ul>
+
+                                <a href="#" class="btn-outline">
+                                    Learn More →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ===== RIGHT METRICS ===== -->
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+
+                            <div class="metric-wrap">
+
+                                <div class="metric">
+                                    <div>
+                                        <h3>15+</h3>
+                                        <span>African Markets</span>
+                                    </div>
+                                </div>
+
+                                <div class="metric">
+                                    <div>
+                                        <h3>50+</h3>
+                                        <span>Strategic Reports</span>
+                                    </div>
+                                </div>
+
+                                <div class="metric">
+                                    <div>
+                                        <h3>4</h3>
+                                        <span>Core Sectors</span>
+                                    </div>
+                                </div>
+
+                                <div class="metric">
+                                    <div>
+                                        <h3>100%</h3>
+                                        <span>Data Driven</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===============our service =============== -->
+
+            <section class="service-pro">
+                <div class="container">
+
+                    <!-- ===== MAIN FLOAT CARD ===== -->
+                    <div class="wrap-card">
+
+                        <div class="text-center mb-4">
+                            <span class="tag">OUR SERVICES</span>
+
+                            <h2 class="title">
+                                Comprehensive Strategic
+                                Advisory
+                            </h2>
+
+                            <p class="sub">
+                                Structured intelligence enabling stakeholders
+                                to navigate Africa's resource landscape.
+                            </p>
+                        </div>
+
+
+
+                        <div class="row g-3">
+
+                            <!-- 1 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="p-card">
+                                    <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+
+                                    <h5>Market Research</h5>
+
+                                    <p>
+                                        Structured analysis of resource markets
+                                        and investment landscapes.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <!-- 2 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="p-card focus">
+                                    <div class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+
+                                    <h5>Risk Mapping</h5>
+
+                                    <p>
+                                        Jurisdictional analysis for
+                                        cross-border decisions.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <!-- 3 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="p-card">
+                                    <div class="icon"><i class="fa-solid fa-laptop"></i></div>
+
+                                    <h5>Digital Intelligence</h5>
+
+                                    <p>
+                                        Data-driven insights &
+                                        digital integration.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <!-- 4 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="p-card">
+                                    <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+
+                                    <h5>Strategic Coordination</h5>
+
+                                    <p>
+                                        Connecting stakeholders
+                                        across sectors.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="text-center mt-4">
+                            <a class="link">View All Services →</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ==============industry focus section ============== -->
+
+            <section class="sector-pro">
+                <div class="container">
+
+                    <!-- ===== TITLE ===== -->
+                    <div class="text-center mb-5">
+                        <span class="mini">INDUSTRY FOCUS</span>
 
                         <h2 class="title">
-                            Comprehensive Strategic
-                            Advisory
+                            Sectors We Serve
                         </h2>
 
                         <p class="sub">
-                            Structured intelligence enabling stakeholders
-                            to navigate Africa's resource landscape.
+                            Deep domain expertise across Africa's most
+                            consequential resource sectors.
                         </p>
                     </div>
 
 
 
-                    <div class="row g-3">
+                    <!-- ===== CARDS ===== -->
+                    <div class="row g-4">
+
 
                         <!-- 1 -->
                         <div class="col-lg-3 col-md-6">
-                            <div class="p-card">
-                                <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <div class="sector-card">
 
-                                <h5>Market Research</h5>
+                                <div class="icon">🌾</div>
+
+                                <h4>Agriculture</h4>
 
                                 <p>
-                                    Structured analysis of resource markets
-                                    and investment landscapes.
+                                    Growth systems & agri-value
+                                    chains
                                 </p>
+
                             </div>
                         </div>
 
 
                         <!-- 2 -->
                         <div class="col-lg-3 col-md-6">
-                            <div class="p-card focus">
-                                <div class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <div class="sector-card active">
 
-                                <h5>Risk Mapping</h5>
+                                <div class="icon">⛏</div>
+
+                                <h4>Mining</h4>
 
                                 <p>
-                                    Jurisdictional analysis for
-                                    cross-border decisions.
+                                    Mineral development & critical
+                                    resources
                                 </p>
+
                             </div>
                         </div>
 
 
                         <!-- 3 -->
                         <div class="col-lg-3 col-md-6">
-                            <div class="p-card">
-                                <div class="icon"><i class="fa-solid fa-laptop"></i></div>
+                            <div class="sector-card">
 
-                                <h5>Digital Intelligence</h5>
+                                <div class="icon">🔥</div>
+
+                                <h4>Oil & Gas</h4>
 
                                 <p>
-                                    Data-driven insights &
-                                    digital integration.
+                                    Energy value chain
+                                    optimization
                                 </p>
+
                             </div>
                         </div>
 
 
                         <!-- 4 -->
                         <div class="col-lg-3 col-md-6">
-                            <div class="p-card">
-                                <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+                            <div class="sector-card">
 
-                                <h5>Strategic Coordination</h5>
+                                <div class="icon">🏗</div>
+
+                                <h4>Infrastructure</h4>
 
                                 <p>
-                                    Connecting stakeholders
-                                    across sectors.
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="text-center mt-4">
-                        <a class="link">View All Services →</a>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ==============industry focus section ============== -->
-
-        <section class="sector-pro">
-            <div class="container">
-
-                <!-- ===== TITLE ===== -->
-                <div class="text-center mb-5">
-                    <span class="mini">INDUSTRY FOCUS</span>
-
-                    <h2 class="title">
-                        Sectors We Serve
-                    </h2>
-
-                    <p class="sub">
-                        Deep domain expertise across Africa's most
-                        consequential resource sectors.
-                    </p>
-                </div>
-
-
-
-                <!-- ===== CARDS ===== -->
-                <div class="row g-4">
-
-
-                    <!-- 1 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="sector-card">
-
-                            <div class="icon">🌾</div>
-
-                            <h4>Agriculture</h4>
-
-                            <p>
-                                Growth systems & agri-value
-                                chains
-                            </p>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 2 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="sector-card active">
-
-                            <div class="icon">⛏</div>
-
-                            <h4>Mining</h4>
-
-                            <p>
-                                Mineral development & critical
-                                resources
-                            </p>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 3 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="sector-card">
-
-                            <div class="icon">🔥</div>
-
-                            <h4>Oil & Gas</h4>
-
-                            <p>
-                                Energy value chain
-                                optimization
-                            </p>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 4 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="sector-card">
-
-                            <div class="icon">🏗</div>
-
-                            <h4>Infrastructure</h4>
-
-                            <p>
-                                Logistics & development
-                                frameworks
-                            </p>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-                <div class="text-center mt-5">
-                    <a class="view">
-                        Explore All Sectors →
-                    </a>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- ===================OUR INVESTMENT SECTION ========== -->
-
-        <section class="invest-section py-5">
-            <div class="container">
-
-                <!-- HEADER -->
-                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-
-                    <h4 class="fw-bold"><i class="fa-solid fa-building-circle-arrow-right"></i> How to Invest in West
-                        Africa</h4>
-
-                    <!-- SELECT FILTER -->
-                    <select id="countryFilter" class="form-select w-auto">
-                        <option value="senegal">Senegal</option>
-                        <option value="nigeria">Nigeria</option>
-                        <option value="ghana">Ghana</option>
-                    </select>
-
-                </div>
-
-
-                <!-- ========== SENEGAL ========== -->
-                <div class="country-box" id="senegal">
-
-                    <h5 class="fw-bold mb-3">🇸🇳 Senegal Opportunities</h5>
-
-                    <div class="row g-4">
-
-                        <!-- 6 CARDS -->
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Agribusiness</h6>
-                                <div class="step">Farming</div>
-                                <div class="return">CFA37M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci perspiciatis laborum ea. Maiores, distinctio.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Logistics</h6>
-                                <div class="return">CFA18M</div>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laborum est sint cupiditate praesentium iste?</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Real Estate</h6>
-                                <div class="return">CFA42M</div>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia libero at voluptate hic dolorum quibusdam?</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Solar</h6>
-                                <div class="return">CFA55M</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis culpa amet laboriosam maiores atque nesciunt?</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Education</h6>
-                                <div class="return">CFA23M</div>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi provident, dolorum consectetur rerum reiciendis quam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Tourism</h6>
-                                <div class="return">CFA31M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <!-- ========== NIGERIA ========== -->
-                <div class="country-box d-none" id="nigeria">
-
-                    <h5 class="fw-bold mb-3">🇳🇬 Nigeria Opportunities</h5>
-
-                    <div class="row g-4">
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Tech Startup</h6>
-                                <div class="return">₦42M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Oil Services</h6>
-                                <div class="return">₦120M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Agro Trading</h6>
-                                <div class="return">₦18M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Fintech</h6>
-                                <div class="return">₦75M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Real Estate</h6>
-                                <div class="return">₦200M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Health</h6>
-                                <div class="return">₦33M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <!-- ========== GHANA ========== -->
-                <div class="country-box d-none" id="ghana">
-
-                    <h5 class="fw-bold mb-3">🇬🇭 Ghana Opportunities</h5>
-
-                    <div class="row g-4">
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Agric Export</h6>
-                                <div class="return">₵90M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Cocoa</h6>
-                                <div class="return">₵44M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Gold</h6>
-                                <div class="return">₵130M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Tourism</h6>
-                                <div class="return">₵21M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Startup</h6>
-                                <div class="return">₵66M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="invest-card p-3">
-                                <h6>Transport</h6>
-                                <div class="return">₵19M</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto consequatur veniam laudantium aliquam.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-        </section>
-
-        <!-- ===== INVEST POPUP ===== -->
-        <div class="modal fade" id="investModal">
-            <div class="modal-dialog">
-                <div class="modal-content p-3">
-
-                    <h5 id="modalTitle">Invest Now</h5>
-
-                    <p class="small text-muted" id="modalCountry"></p>
-
-                    <input class="form-control mb-2" placeholder="Your Name">
-                    <input class="form-control mb-2" placeholder="Email">
-                    <input class="form-control mb-2" placeholder="Investment Amount">
-
-                    <button class="btn btn-success w-100">
-                        Proceed to Invest
-                    </button>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- ===============our success story ============== -->
-
-        <section class="investor-voices-section">
-            <div class="container">
-
-                <!-- HEADER -->
-                <div class="investor-voices-header">
-                    <div>
-                        <h2>Today's Success Stories</h2>
-                        <p>Real investors, real returns. See how our community is building wealth across Africa.</p>
-                    </div>
-
-                    <div class="investor-voices-nav">
-                        <button class="voices-prev">
-                            < </button>
-                                <button class="voices-next">></button>
-                    </div>
-                </div>
-
-                <!-- SWIPER -->
-                <div class="swiper investorVoicesSwiper">
-                    <div class="swiper-wrapper">
-
-                        <!-- SLIDE 1 -->
-                        <div class="swiper-slide">
-                            <div class="investor-voices-card">
-
-                                <div class="voices-quote">❝❞</div>
-
-                                <p class="voices-text">
-                                    The sector analysis tools helped me identify undervalued agricultural land in
-                                    Senegal.
-                                    My portfolio has outperformed market averages by 45% this year.
+                                    Logistics & development
+                                    frameworks
                                 </p>
 
-                                <div class="voices-tags">
-                                    <span class="voices-green">+87% Returns</span>
-                                    <span>Agricultural Land</span>
-                                    <span>Senegal</span>
-                                </div>
-
-                                <hr>
-
-                                <div class="voices-profile">
-                                    <div class="voices-left">
-                                        <img src="https://i.pravatar.cc/60?img=32" />
-                                        <div>
-                                            <h4>Aminata Diallo</h4>
-                                            <small>Agribusiness Portfolio Manager</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="voices-stars">★★★★★</div>
-                                </div>
-
                             </div>
                         </div>
 
-                        <!-- SLIDE 2 -->
-                        <div class="swiper-slide">
-                            <div class="investor-voices-card">
-
-                                <div class="voices-quote">❝❞</div>
-
-                                <p class="voices-text">
-                                    The cross-border investment intelligence has been invaluable.
-                                    We've successfully deployed $50M across 4 West African countries.
-                                </p>
-
-                                <div class="voices-tags">
-                                    <span class="voices-green">+156% Returns</span>
-                                    <span>Multi-sector PE</span>
-                                    <span>Ghana</span>
-                                </div>
-
-                                <hr>
-
-                                <div class="voices-profile">
-                                    <div class="voices-left">
-                                        <img src="https://i.pravatar.cc/60?img=12" />
-                                        <div>
-                                            <h4>Michael Okonkwo</h4>
-                                            <small>Private Equity Partner</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="voices-stars">★★★★★</div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- SLIDE 3 -->
-                        <div class="swiper-slide">
-                            <div class="investor-voices-card">
-
-                                <div class="voices-quote">❝❞</div>
-
-                                <p class="voices-text">
-                                    Found amazing renewable energy projects in Mali through the platform.
-                                    Not only great returns, but also contributing to sustainable development.
-                                </p>
-
-                                <div class="voices-tags">
-                                    <span class="voices-green">+94% Returns</span>
-                                    <span>Solar Energy</span>
-                                    <span>Mali</span>
-                                </div>
-
-                                <hr>
-
-                                <div class="voices-profile">
-                                    <div class="voices-left">
-                                        <img src="https://i.pravatar.cc/60?img=45" />
-                                        <div>
-                                            <h4>Fatou Sow</h4>
-                                            <small>Impact Investor</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="voices-stars">★★★★★</div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- SLIDE 4 -->
-                        <div class="swiper-slide">
-                            <div class="investor-voices-card">
-
-                                <div class="voices-quote">❝❞</div>
-
-                                <p class="voices-text">
-                                    Found amazing renewable energy projects in Mali through the platform.
-                                    Not only great returns, but also contributing to sustainable development.
-                                </p>
-
-                                <div class="voices-tags">
-                                    <span class="voices-green">+94% Returns</span>
-                                    <span>Solar Energy</span>
-                                    <span>Mali</span>
-                                </div>
-
-                                <hr>
-
-                                <div class="voices-profile">
-                                    <div class="voices-left">
-                                        <img src="https://i.pravatar.cc/60?img=45" />
-                                        <div>
-                                            <h4>Fatou Sow</h4>
-                                            <small>Impact Investor</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="voices-stars">★★★★★</div>
-                                </div>
-
-                            </div>
-                        </div>
 
                     </div>
+
+
+
+                    <div class="text-center mt-5">
+                        <a class="view">
+                            Explore All Sectors →
+                        </a>
+                    </div>
+
+
                 </div>
+            </section>
 
-            </div>
-        </section>
+            <!-- ===================OUR INVESTMENT SECTION ========== -->
+
+            <section class="invest-section py-5">
+                <div class="container">
+
+                    <!-- HEADER -->
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+
+                        <h4 class="fw-bold"><i class="fa-solid fa-building-circle-arrow-right"></i> How to Invest in
+                            West
+                            Africa</h4>
+
+                        <!-- SELECT FILTER -->
+                        <select id="countryFilter" class="form-select w-auto">
+                            <option value="senegal">Senegal</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="ghana">Ghana</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- ========== SENEGAL ========== -->
+                    <div class="country-box" id="senegal">
+
+                        <h5 class="fw-bold mb-3">🇸🇳 Senegal Opportunities</h5>
+
+                        <div class="row g-4">
+
+                            <!-- 6 CARDS -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Agribusiness</h6>
+                                    <div class="step">Farming</div>
+                                    <div class="return">CFA37M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci
+                                        perspiciatis laborum ea. Maiores, distinctio.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Logistics</h6>
+                                    <div class="return">CFA18M</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laborum est sint
+                                        cupiditate praesentium iste?</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Real Estate</h6>
+                                    <div class="return">CFA42M</div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia libero at
+                                        voluptate hic dolorum quibusdam?</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Solar</h6>
+                                    <div class="return">CFA55M</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis culpa amet
+                                        laboriosam maiores atque nesciunt?</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Education</h6>
+                                    <div class="return">CFA23M</div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi provident, dolorum
+                                        consectetur rerum reiciendis quam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Tourism</h6>
+                                    <div class="return">CFA31M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
 
 
-        <!--============= CALL TO ACTION =============== -->
+                    <!-- ========== NIGERIA ========== -->
+                    <div class="country-box d-none" id="nigeria">
 
-        <section class="cta-pro">
-            <div class="container">
+                        <h5 class="fw-bold mb-3">🇳🇬 Nigeria Opportunities</h5>
 
-                <div class="cta-box">
+                        <div class="row g-4">
 
-                    <h2>Get Daily Investment Intelligence</h2>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Tech Startup</h6>
+                                    <div class="return">₦42M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
 
-                    <p>
-                        Join 50,000+ investors who receive our curated daily newsletter
-                        with exclusive opportunities, market analysis, and success stories
-                        from across West Africa.
-                    </p>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Oil Services</h6>
+                                    <div class="return">₦120M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Agro Trading</h6>
+                                    <div class="return">₦18M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Fintech</h6>
+                                    <div class="return">₦75M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Real Estate</h6>
+                                    <div class="return">₦200M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Health</h6>
+                                    <div class="return">₦33M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
 
-                    <!-- ===== INPUT ===== -->
-                    <div class="mail-wrap">
 
-                        <input type="email" placeholder="Enter your email address">
+                    <!-- ========== GHANA ========== -->
+                    <div class="country-box d-none" id="ghana">
 
-                        <button>
-                            Subscribe Now →
+                        <h5 class="fw-bold mb-3">🇬🇭 Ghana Opportunities</h5>
+
+                        <div class="row g-4">
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Agric Export</h6>
+                                    <div class="return">₵90M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Cocoa</h6>
+                                    <div class="return">₵44M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Gold</h6>
+                                    <div class="return">₵130M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Tourism</h6>
+                                    <div class="return">₵21M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Startup</h6>
+                                    <div class="return">₵66M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="invest-card p-3">
+                                    <h6>Transport</h6>
+                                    <div class="return">₵19M</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique, architecto
+                                        consequatur veniam laudantium aliquam.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+            <!-- ===== INVEST POPUP ===== -->
+            <div class="modal fade" id="investModal">
+                <div class="modal-dialog">
+                    <div class="modal-content p-3">
+
+                        <h5 id="modalTitle">Invest Now</h5>
+
+                        <p class="small text-muted" id="modalCountry"></p>
+
+                        <input class="form-control mb-2" placeholder="Your Name">
+                        <input class="form-control mb-2" placeholder="Email">
+                        <input class="form-control mb-2" placeholder="Investment Amount">
+
+                        <button class="btn btn-success w-100">
+                            Proceed to Invest
                         </button>
 
                     </div>
+                </div>
+            </div>
 
 
-                    <small>No spam. Unsubscribe anytime.</small>
+            <!-- ===============our success story ============== -->
 
+            <section class="investor-voices-section">
+                <div class="container">
+
+                    <!-- HEADER -->
+                    <div class="investor-voices-header">
+                        <div>
+                            <h2>Today's Success Stories</h2>
+                            <p>Real investors, real returns. See how our community is building wealth across Africa.</p>
+                        </div>
+
+                        <div class="investor-voices-nav">
+                            <button class="voices-prev">
+                                < </button>
+                                    <button class="voices-next">></button>
+                        </div>
+                    </div>
+
+                    <!-- SWIPER -->
+                    <div class="swiper investorVoicesSwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- SLIDE 1 -->
+                            <div class="swiper-slide">
+                                <div class="investor-voices-card">
+
+                                    <div class="voices-quote">❝❞</div>
+
+                                    <p class="voices-text">
+                                        The sector analysis tools helped me identify undervalued agricultural land in
+                                        Senegal.
+                                        My portfolio has outperformed market averages by 45% this year.
+                                    </p>
+
+                                    <div class="voices-tags">
+                                        <span class="voices-green">+87% Returns</span>
+                                        <span>Agricultural Land</span>
+                                        <span>Senegal</span>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="voices-profile">
+                                        <div class="voices-left">
+                                            <img src="https://i.pravatar.cc/60?img=32" />
+                                            <div>
+                                                <h4>Aminata Diallo</h4>
+                                                <small>Agribusiness Portfolio Manager</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="voices-stars">★★★★★</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="swiper-slide">
+                                <div class="investor-voices-card">
+
+                                    <div class="voices-quote">❝❞</div>
+
+                                    <p class="voices-text">
+                                        The cross-border investment intelligence has been invaluable.
+                                        We've successfully deployed $50M across 4 West African countries.
+                                    </p>
+
+                                    <div class="voices-tags">
+                                        <span class="voices-green">+156% Returns</span>
+                                        <span>Multi-sector PE</span>
+                                        <span>Ghana</span>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="voices-profile">
+                                        <div class="voices-left">
+                                            <img src="https://i.pravatar.cc/60?img=12" />
+                                            <div>
+                                                <h4>Michael Okonkwo</h4>
+                                                <small>Private Equity Partner</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="voices-stars">★★★★★</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 -->
+                            <div class="swiper-slide">
+                                <div class="investor-voices-card">
+
+                                    <div class="voices-quote">❝❞</div>
+
+                                    <p class="voices-text">
+                                        Found amazing renewable energy projects in Mali through the platform.
+                                        Not only great returns, but also contributing to sustainable development.
+                                    </p>
+
+                                    <div class="voices-tags">
+                                        <span class="voices-green">+94% Returns</span>
+                                        <span>Solar Energy</span>
+                                        <span>Mali</span>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="voices-profile">
+                                        <div class="voices-left">
+                                            <img src="https://i.pravatar.cc/60?img=45" />
+                                            <div>
+                                                <h4>Fatou Sow</h4>
+                                                <small>Impact Investor</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="voices-stars">★★★★★</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 4 -->
+                            <div class="swiper-slide">
+                                <div class="investor-voices-card">
+
+                                    <div class="voices-quote">❝❞</div>
+
+                                    <p class="voices-text">
+                                        Found amazing renewable energy projects in Mali through the platform.
+                                        Not only great returns, but also contributing to sustainable development.
+                                    </p>
+
+                                    <div class="voices-tags">
+                                        <span class="voices-green">+94% Returns</span>
+                                        <span>Solar Energy</span>
+                                        <span>Mali</span>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="voices-profile">
+                                        <div class="voices-left">
+                                            <img src="https://i.pravatar.cc/60?img=45" />
+                                            <div>
+                                                <h4>Fatou Sow</h4>
+                                                <small>Impact Investor</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="voices-stars">★★★★★</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
-
-            </div>
-        </section>
+            </section>
 
 
-        <!-- =================== FOOTER SECTION =================== -->
 
-        <footer class="footer-pro">
-            <div class="container">
+            <!--============= CALL TO ACTION =============== -->
 
-                <div class="row g-4">
+            <section class="cta-pro">
+                <div class="container">
+
+                    <div class="cta-box">
+
+                        <h2>Get Daily Investment Intelligence</h2>
+
+                        <p>
+                            Join 50,000+ investors who receive our curated daily newsletter
+                            with exclusive opportunities, market analysis, and success stories
+                            from across West Africa.
+                        </p>
 
 
-                    <!-- ===== BRAND ===== -->
-                    <div class="col-lg-4">
+                        <!-- ===== INPUT ===== -->
+                        <div class="mail-wrap">
 
-                        <div class="brand-box">
+                            <input type="email" placeholder="Enter your email address">
 
-                            <img src="./assets/images/logo.png" alt="footer-logo">
+                            <button>
+                                Subscribe Now →
+                            </button>
 
-                            <p>
-                                West Africa’s premier investment intelligence platform
-                                connecting investors with vetted opportunities across
-                                15+ countries.
-                            </p>
+                        </div>
 
-                            <div class="social">
-                                <a>𝕏</a>
-                                <a>in</a>
-                                <a>f</a>
-                                <a>ig</a>
+
+                        <small>No spam. Unsubscribe anytime.</small>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- =================== FOOTER SECTION =================== -->
+
+            <footer class="footer-pro">
+                <div class="container">
+
+                    <div class="row g-4">
+
+
+                        <!-- ===== BRAND ===== -->
+                        <div class="col-lg-4">
+
+                            <div class="brand-box">
+
+                                <img src="./assets/images/logo.png" alt="footer-logo">
+
+                                <p>
+                                    West Africa’s premier investment intelligence platform
+                                    connecting investors with vetted opportunities across
+                                    15+ countries.
+                                </p>
+
+                                <div class="social">
+                                    <a>𝕏</a>
+                                    <a>in</a>
+                                    <a>f</a>
+                                    <a>ig</a>
+                                </div>
+
                             </div>
 
                         </div>
 
+
+
+                        <!-- ===== LINKS ===== -->
+                        <div class="col-lg-2 col-md-4">
+
+                            <h5>Explore</h5>
+
+                            <ul class="f-links">
+                                <li>Home</li>
+                                <li>Agriculture</li>
+                                <li>Mining</li>
+                                <li>Oil & Gas</li>
+                                <li>Success Stories</li>
+                            </ul>
+
+                        </div>
+
+
+
+                        <!-- ===== TOOLS ===== -->
+                        <div class="col-lg-3 col-md-4">
+
+                            <h5>Tools</h5>
+
+                            <ul class="f-links">
+                                <li>ROI Calculator</li>
+                                <li>Market Analysis</li>
+                                <li>Investment Tracker</li>
+                                <li>Due Diligence</li>
+                                <li>Export Docs</li>
+                            </ul>
+
+                        </div>
+
+
+
+                        <!-- ===== CONTACT CARD ===== -->
+                        <div class="col-lg-3 col-md-4">
+
+                            <div class="contact-card">
+
+                                <h5>Contact</h5>
+
+                                <p><i class="fa-solid fa-location-dot"></i> Accra • Lagos • Dakar</p>
+
+                                <p><a href="tel:+233241234567"><i class="fa-solid fa-phone"></i> +233 24 123 4567</a>
+                                </p>
+
+                                <p><a href="mailto:invest@makeafrica.com"><i class="fa-solid fa-envelope"></i>
+                                        invest@makeafrica.com</a></p>
+
+                                <p><i class="fa-solid fa-clock"></i> 24/7 Support</p>
+
+                            </div>
+
+                        </div>
+
+
                     </div>
 
 
 
-                    <!-- ===== LINKS ===== -->
-                    <div class="col-lg-2 col-md-4">
+                    <!-- ===== BOTTOM ===== -->
+                    <div class="bottom mt-4">
 
-                        <h5>Explore</h5>
+                        <div>
+                            © 2024 Make Wealth Africa. All rights reserved.
+                        </div>
 
-                        <ul class="f-links">
-                            <li>Home</li>
-                            <li>Agriculture</li>
-                            <li>Mining</li>
-                            <li>Oil & Gas</li>
-                            <li>Success Stories</li>
-                        </ul>
-
-                    </div>
-
-
-
-                    <!-- ===== TOOLS ===== -->
-                    <div class="col-lg-3 col-md-4">
-
-                        <h5>Tools</h5>
-
-                        <ul class="f-links">
-                            <li>ROI Calculator</li>
-                            <li>Market Analysis</li>
-                            <li>Investment Tracker</li>
-                            <li>Due Diligence</li>
-                            <li>Export Docs</li>
-                        </ul>
-
-                    </div>
-
-
-
-                    <!-- ===== CONTACT CARD ===== -->
-                    <div class="col-lg-3 col-md-4">
-
-                        <div class="contact-card">
-
-                            <h5>Contact</h5>
-
-                            <p><i class="fa-solid fa-location-dot"></i> Accra • Lagos • Dakar</p>
-
-                            <p><a href="tel:+233241234567"><i class="fa-solid fa-phone"></i> +233 24 123 4567</a></p>
-
-                            <p><a href="mailto:invest@makeafrica.com"><i class="fa-solid fa-envelope"></i>
-                                    invest@makeafrica.com</a></p>
-
-                            <p><i class="fa-solid fa-clock"></i> 24/7 Support</p>
-
+                        <div class="mini">
+                            Pan-West Africa coverage • Professional platform
                         </div>
 
                     </div>
 
 
                 </div>
-
-
-
-                <!-- ===== BOTTOM ===== -->
-                <div class="bottom mt-4">
-
-                    <div>
-                        © 2024 Make Wealth Africa. All rights reserved.
-                    </div>
-
-                    <div class="mini">
-                        Pan-West Africa coverage • Professional platform
-                    </div>
-
-                </div>
-
-
-            </div>
-        </footer>
+            </footer>
 
 
     </main>
@@ -1126,6 +1199,163 @@
                 })
 
             })
+
+    </script>
+
+    <script>
+
+        /* ===== DATABASE ===== */
+
+        const NEWS = [
+
+            {
+                cat: "AGRICULTURE",
+                title: "Record Cocoa Harvest in Mali Boosts Global Supply",
+                desc: "Major development in Mali's agricultural sector expected to impact regional markets.",
+                source: "Business Day Africa"
+            },
+
+            {
+                cat: "INVESTMENT",
+                title: "Venture Capital Floods into Ghana Tech Sector",
+                desc: "Key financial development in Ghana with implications for investors.",
+                source: "Reuters Africa"
+            },
+
+            {
+                cat: "INVESTMENT",
+                title: "Major Infrastructure Investment in Nigeria",
+                desc: "New rail and port investments approved by government.",
+                source: "Ghana Web"
+            },
+
+            {
+                cat: "AGRICULTURE",
+                title: "AgriTech Startup Raises $9.6M Funding",
+                desc: "Investment to expand digital farming across West Africa.",
+                source: "BBC Africa"
+            }
+
+        ]
+
+
+        let timer = 30
+        let playing = true
+
+
+
+        /* ===== RENDER NEWS ===== */
+
+        function render() {
+
+            let box = document.getElementById("newsBox")
+            box.innerHTML = ""
+
+            NEWS.sort(() => Math.random() - 0.5)
+                .forEach(i => {
+
+                    box.innerHTML += `
+
+<div class="news-item">
+
+<div class="d-flex justify-content-between">
+
+<div class="d-flex gap-2 align-items-center">
+
+<div class="time">
+${Math.floor(Math.random() * 120)}m ago
+</div>
+
+<div class="${i.cat == 'AGRICULTURE'
+                            ? 'badge-agri' : 'badge-invest'
+                        }">
+${i.cat}
+</div>
+
+</div>
+
+<small>📰 ${i.source}</small>
+
+</div>
+
+
+<div class="mt-2 fw-bold">
+${i.title}
+</div>
+
+<div class="small text-light opacity-75">
+${i.desc}
+</div>
+
+</div>
+
+`
+
+                })
+
+            document.getElementById("updateTime")
+                .innerText = "Last updated: " + new Date().toLocaleTimeString()
+
+        }
+
+
+
+        /* ===== LOADING 3s THEN NEWS ===== */
+
+        function refreshNews() {
+
+            let box = document.getElementById("newsBox")
+
+            // SHOW LOADING
+            box.innerHTML = `
+<div class="loading">
+⏳ Loading new breaking news...
+</div>
+`
+
+            // AFTER 3s LOAD NEWS
+            setTimeout(() => {
+                timer = 30
+                render()
+            }, 3000)
+
+        }
+
+
+
+        /* ===== TIMER ===== */
+
+        setInterval(() => {
+
+            if (!playing) return
+
+            timer--
+
+            document.getElementById("sec").innerText = timer
+
+            if (timer == 0) {
+                refreshNews()
+            }
+
+        }, 1000)
+
+
+
+        /* ===== PLAY / PAUSE ===== */
+
+        function togglePlay() {
+
+            playing = !playing
+
+            document.getElementById("playBtn")
+                .innerText = playing ? "⏸" : "▶"
+
+        }
+
+
+
+        /* INIT */
+        render()
 
     </script>
 </body>

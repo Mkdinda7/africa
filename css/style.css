@@ -307,9 +307,72 @@ body {
     }
 }
 
+/* ===============breaking news section ============ */
+.news-board {
+    background: #1a5c2e;
+    border-radius: 16px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.news-header {
+    background: #0f4a24;
+    padding: 12px;
+}
+
+.live-tag {
+    color: #ffb100;
+    font-weight: 600;
+}
+
+.news-list {
+    background: #242a38;
+    max-height: 420px;
+    overflow: auto;
+}
+
+.news-item {
+    padding: 12px;
+    border-bottom: 1px solid #2f3645;
+}
+
+.time {
+    background: #2f3645;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.badge-agri {
+    background: #0fa958;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.badge-invest {
+    background: #ff8c00;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.news-footer {
+    background: #1d2230;
+    padding: 8px;
+    font-size: 12px;
+}
+
+/* LOADING STYLE */
+.loading {
+    padding: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #0fa958;
+}
+
 
 /* =====================about us ==================== */
-/* ===== SECTION ===== */
 .about-v2 {
     background: #fafcff;
     padding: 110px 0;
