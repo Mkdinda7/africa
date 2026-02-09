@@ -169,7 +169,7 @@ body {
 
 .hero {
     background:
-        linear-gradient(135deg, rgba(59, 122, 0, 0.39), rgba(162, 199, 0, 0.425)),
+        linear-gradient(135deg, rgba(122, 69, 0, 0.39), rgba(199, 186, 0, 0.425)),
         url('./../assets/images/home-banner.avif');
 
     background-size: cover;
