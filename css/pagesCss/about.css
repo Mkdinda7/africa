@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ================breadcrum section css ================= */
+
+
+.about-section {
+    background: linear-gradient(135deg, #0f3b44, #1a4f5a) !important;
+    margin-top: 100px;
+}
+
+/* Premium Typography */
+.about-section h1 {
+    font-family: Georgia, serif;
+    line-height: 1.18;
+}
+
+/* Responsive Fix */
+@media(max-width:992px) {
+    .about-section h1 {
+        font-size: 34px;
+    }
+}
+
+
+
+
+/* =====================WHO ARE YOU CSS ================= */
+
+/* ===== SECTION BASE ===== */
+.identity-section {
+    background: #f7fafc;
+    padding: 90px 0;
+}
+
+/* TITLE */
+.identity-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: 18px;
+    font-family: Georgia, serif;
+}
+
+/* TEXT */
+.identity-text {
+    color: #4f6b7d;
+    line-height: 1.75;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+/* ===== CARD ===== */
+.bridge-card {
+    background: #0d2a48;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+}
+
+/* CARD TITLE */
+.bridge-title {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: Georgia, serif;
+}
+
+/* LIST */
+.bridge-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bridge-list li {
+    color: #c7d5e0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ORANGE DOT */
+.bridge-list li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #ff9f1a;
+    border-radius: 50%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:992px) {
+
+    .identity-section {
+        padding: 60px 0;
+    }
+
+    .identity-title {
+        font-size: 28px;
+    }
+
+    .bridge-card {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* ===================OUR MISSION CSS ================ */
+
+.mission-parallax {
+    position: relative;
+
+    /* CHANGE THIS IMAGE AS YOU WANT */
+    background: url('./../../assets/images/mission-img.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 120px 0;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+.mission-parallax .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.158);
+}
+
+/* TAG */
+.mission-tag {
+    color: #ff9f1a;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 16px;
+}
+
+/* QUOTE TEXT */
+.mission-quote {
+    font-family: Georgia, serif;
+    font-style: italic;
+
+    color: #0a2540;
+    font-size: 34px;
+    line-height: 1.42;
+
+    max-width: 960px;
+    margin: auto;
+}
+
+/* ORANGE LINE */
+.mission-line {
+    width: 60px;
+    height: 2px;
+    background: #ff9f1a;
+    margin-top: 26px; 
+}
+
+.mission-logo{
+    width: 350px;
+    height: 350px;
+
+
+    img{
+        width: 100%;
+        width: 100%;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:992px) {
+
+    .mission-parallax {
+        padding: 80px 0;
+        background-attachment: scroll;
+        /* mobile performance */
+    }
+
+    .mission-quote {
+        font-size: 24px;
+    }
+
+}
