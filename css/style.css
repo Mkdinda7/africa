@@ -390,7 +390,7 @@ body {
 .service-pro {
     padding: 110px 0;
     background-attachment: fixed !important;
-    background: url(./../assets/images/agricultureImage.png);
+    background: linear-gradient(#0000008f, #00000080), url(./../assets/images/agricultureImage.png);
 }
 
 /* ===== FLOAT WRAP CARD ===== */
@@ -448,7 +448,7 @@ body {
 /* hover */
 .p-card:hover {
     transform: translateY(-6px);
-
+    cursor: pointer;
     box-shadow:
         0 20px 40px rgba(255, 255, 255, 0.473);
 }
