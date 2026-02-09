@@ -617,35 +617,69 @@ body {
 
 
 /* ===================OUR INVESTMENT SECTION ==========  */
-.invest-section {
-    background: #f7f9fa;
-}
-
 .invest-card {
     background: #fff;
     border-radius: 16px;
-    border: 1px solid #e8efec;
-    transition: .3s;
+    border: 1px solid #e6ecea;
+    border-top: 4px solid #0f1ea9;
+    height: 100%;
 }
 
-.invest-card:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .06);
-}
-
-.step::before {
-    content: "✔";
+/* PRICE BADGE */
+.price {
+    background: #f1faf5;
     color: #0fa958;
-    margin-right: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.return {
+/* STEP BLOCK */
+.step-block {
+    margin-top: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #e5e9e7;
+}
+
+.step-title {
     color: #0fa958;
     font-weight: 600;
 }
 
-/* HIDE/SHOW */
-.country-box {
-    transition: .3s;
+.step-block p {
+    font-size: 14px;
+    color: #4a5c59;
+}
+
+/* REVIEW BOX */
+.review-box {
+    background: #f1faf5;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.name {
+    color: #0fa958;
+}
+
+/* PROFIT */
+.profit {
+    color: #0fa958;
+    font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+    font-size: 12px;
+    color: #999;
 }
 
 

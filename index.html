@@ -46,12 +46,18 @@
                 <ul class="navbar-nav mx-auto">
                     <li><a class="nav-link active" href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li><a class="nav-link" href="./about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
-                    <li><a class="nav-link" href="./agriculture.html"><i class="fa-solid fa-tree"></i> Agriculture</a></li>
-                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Petrolium & Gas</a></li>
-                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Mining</a></li>
-                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Investment</a></li>
-                    <li><a class="nav-link" href="./sectors.html"><i class="fa-solid fa-industry"></i> Technology</a></li>
-                    <li><a class="nav-link" href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                    <li><a class="nav-link" href="./agriculture.html"><i class="fa-solid fa-tree"></i> Agriculture</a>
+                    </li>
+                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Petrolium &
+                            Gas</a></li>
+                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Mining</a>
+                    </li>
+                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i>
+                            Investment</a></li>
+                    <li><a class="nav-link" href="./sectors.html"><i class="fa-solid fa-industry"></i> Technology</a>
+                    </li>
+                    <li><a class="nav-link" href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+                    </li>
                 </ul>
 
                 <!-- right button -->
@@ -465,7 +471,8 @@
                 <!-- HEADER -->
                 <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
 
-                    <h4 class="fw-bold"><i class="fa-solid fa-building-circle-arrow-right"></i> How to Invest in West Africa</h4>
+                    <h4 class="fw-bold"><i class="fa-solid fa-building-circle-arrow-right"></i> How to Invest in West
+                        Africa</h4>
 
                     <!-- SELECT FILTER -->
                     <select id="countryFilter" class="form-select w-auto">
@@ -644,6 +651,26 @@
             </div>
         </section>
 
+        <!-- ===== INVEST POPUP ===== -->
+        <div class="modal fade" id="investModal">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <h5 id="modalTitle">Invest Now</h5>
+
+                    <p class="small text-muted" id="modalCountry"></p>
+
+                    <input class="form-control mb-2" placeholder="Your Name">
+                    <input class="form-control mb-2" placeholder="Email">
+                    <input class="form-control mb-2" placeholder="Investment Amount">
+
+                    <button class="btn btn-success w-100">
+                        Proceed to Invest
+                    </button>
+
+                </div>
+            </div>
+        </div>
 
 
         <!-- ===============our success story ============== -->
@@ -1054,6 +1081,31 @@
 
                 document.getElementById(value)
                     .classList.remove("d-none")
+
+            })
+
+    </script>
+
+
+    <script>
+        // ===== CARD CLICK POPUP =====
+        document.querySelectorAll('.invest-card')
+            .forEach(card => {
+
+                card.addEventListener('click', function () {
+
+                    let title = this.querySelector('h6').innerText
+
+                    document.getElementById("modalTitle").innerText = title
+
+                    document.getElementById("modalCountry").innerText =
+                        document.getElementById("countryFilter").value
+
+                    new bootstrap.Modal(
+                        document.getElementById("investModal")
+                    ).show()
+
+                })
 
             })
 
