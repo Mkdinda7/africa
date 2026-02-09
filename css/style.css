@@ -98,7 +98,7 @@ body {
     color: #ffffff !important;
     margin: 0 6px;
     font-weight: 500;
-    font-size: 20px !important;
+    font-size: 12px !important;
     padding: 8px 14px;
     border-radius: 8px;
     transition: .3s;
@@ -271,13 +271,14 @@ body {
 
 .card-stat::after {
     content: "";
-    position: absolute;
+    position: absolute !important;
 
     width: 100%;
     height: 2px;
     background: white;
     bottom: 0;
     left: 0;
+    border: 1px solid white;
 }
 
 
@@ -613,6 +614,41 @@ body {
         padding: 80px 0;
     }
 }
+
+
+/* ===================OUR INVESTMENT SECTION ==========  */
+.invest-section {
+    background: #f7f9fa;
+}
+
+.invest-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e8efec;
+    transition: .3s;
+}
+
+.invest-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .06);
+}
+
+.step::before {
+    content: "✔";
+    color: #0fa958;
+    margin-right: 6px;
+}
+
+.return {
+    color: #0fa958;
+    font-weight: 600;
+}
+
+/* HIDE/SHOW */
+.country-box {
+    transition: .3s;
+}
+
+
 
 
 

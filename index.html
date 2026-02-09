@@ -32,7 +32,7 @@
 
             <!-- ===== LOGO ===== -->
             <a class="navbar-brand logo-area" href="#">
-                <img src="./assets/images/logo.png" alt="logo-img">
+                <img src="./assets/images/logo.png" class="img-fluid" alt="logo-img">
             </a>
 
             <!-- toggler -->
@@ -44,12 +44,14 @@
             <div class="collapse navbar-collapse" id="menu">
 
                 <ul class="navbar-nav mx-auto">
-                    <li><a class="nav-link active" href="./index.html">Home</a></li>
-                    <li><a class="nav-link" href="./about.html">About</a></li>
-                    <li><a class="nav-link" href="./services.html">Services</a></li>
-                    <li><a class="nav-link" href="./sectors.html">Sectors</a></li>
-                    <li><a class="nav-link" href="./insights.html">Insights</a></li>
-                    <li><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li><a class="nav-link active" href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a class="nav-link" href="./about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li><a class="nav-link" href="./agriculture.html"><i class="fa-solid fa-tree"></i> Agriculture</a></li>
+                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Petrolium & Gas</a></li>
+                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Mining</a></li>
+                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Investment</a></li>
+                    <li><a class="nav-link" href="./sectors.html"><i class="fa-solid fa-industry"></i> Technology</a></li>
+                    <li><a class="nav-link" href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
                 </ul>
 
                 <!-- right button -->
@@ -455,6 +457,195 @@
             </div>
         </section>
 
+        <!-- ===================OUR INVESTMENT SECTION ========== -->
+
+        <section class="invest-section py-5">
+            <div class="container">
+
+                <!-- HEADER -->
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+
+                    <h4 class="fw-bold"><i class="fa-solid fa-building-circle-arrow-right"></i> How to Invest in West Africa</h4>
+
+                    <!-- SELECT FILTER -->
+                    <select id="countryFilter" class="form-select w-auto">
+                        <option value="senegal">Senegal</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                    </select>
+
+                </div>
+
+
+                <!-- ========== SENEGAL ========== -->
+                <div class="country-box" id="senegal">
+
+                    <h5 class="fw-bold mb-3">🇸🇳 Senegal Opportunities</h5>
+
+                    <div class="row g-4">
+
+                        <!-- 6 CARDS -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Agribusiness</h6>
+                                <div class="step">Farming</div>
+                                <div class="return">CFA37M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Logistics</h6>
+                                <div class="return">CFA18M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Real Estate</h6>
+                                <div class="return">CFA42M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Solar</h6>
+                                <div class="return">CFA55M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Education</h6>
+                                <div class="return">CFA23M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Tourism</h6>
+                                <div class="return">CFA31M</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- ========== NIGERIA ========== -->
+                <div class="country-box d-none" id="nigeria">
+
+                    <h5 class="fw-bold mb-3">🇳🇬 Nigeria Opportunities</h5>
+
+                    <div class="row g-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Tech Startup</h6>
+                                <div class="return">₦42M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Oil Services</h6>
+                                <div class="return">₦120M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Agro Trading</h6>
+                                <div class="return">₦18M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Fintech</h6>
+                                <div class="return">₦75M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Real Estate</h6>
+                                <div class="return">₦200M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Health</h6>
+                                <div class="return">₦33M</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- ========== GHANA ========== -->
+                <div class="country-box d-none" id="ghana">
+
+                    <h5 class="fw-bold mb-3">🇬🇭 Ghana Opportunities</h5>
+
+                    <div class="row g-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Agric Export</h6>
+                                <div class="return">₵90M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Cocoa</h6>
+                                <div class="return">₵44M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Gold</h6>
+                                <div class="return">₵130M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Tourism</h6>
+                                <div class="return">₵21M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Startup</h6>
+                                <div class="return">₵66M</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="invest-card p-3">
+                                <h6>Transport</h6>
+                                <div class="return">₵19M</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
         <!-- ===============our success story ============== -->
 
         <section class="investor-voices-section">
@@ -739,7 +930,8 @@
 
                             <p><a href="tel:+233241234567"><i class="fa-solid fa-phone"></i> +233 24 123 4567</a></p>
 
-                            <p><a href="mailto:invest@makeafrica.com"><i class="fa-solid fa-envelope"></i> invest@makeafrica.com</a></p>
+                            <p><a href="mailto:invest@makeafrica.com"><i class="fa-solid fa-envelope"></i>
+                                    invest@makeafrica.com</a></p>
 
                             <p><i class="fa-solid fa-clock"></i> 24/7 Support</p>
 
@@ -851,7 +1043,21 @@
 
     </script>
 
+    <script>
+        document.getElementById("countryFilter")
+            .addEventListener("change", function () {
 
+                let value = this.value
+
+                document.querySelectorAll(".country-box")
+                    .forEach(box => box.classList.add("d-none"))
+
+                document.getElementById(value)
+                    .classList.remove("d-none")
+
+            })
+
+    </script>
 </body>
 
 </html>
