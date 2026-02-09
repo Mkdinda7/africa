@@ -365,7 +365,7 @@
 /* HOVER */
 .value-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .06);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .value-card:hover::before {
