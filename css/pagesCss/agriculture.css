@@ -624,94 +624,152 @@
 
 /* ==================Agri tech section ================ */
 
-.agritech-section {
-    padding: 90px 0;
-    background: linear-gradient(180deg, #ffffff, #f6f9ff);
+.agritech-section{
+  padding:100px 0;
+  background:linear-gradient(180deg,#f8fbff,#ffffff);
 }
 
-/* Card */
-.tech-card {
-    background: linear-gradient(145deg, #ffffff, #fbfcff);
-    padding: 24px;
-    border-radius: 18px;
+/* ===== CARD ===== */
+.tech-card{
+  background:
+    linear-gradient(145deg,#ffffff,#fbfcff);
 
-    height: 100%;
+  padding:26px;
+  border-radius:20px;
 
-    border: 1px solid rgba(11, 37, 64, .12);
-    transition: .35s;
+  height:100%;
 
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, .04),
-        inset 0 0 0 1px rgba(255, 255, 255, .7);
+  border:1px solid rgba(11,37,64,.10);
+
+  position:relative;
+  overflow:hidden;
+
+  transition:all .35s ease;
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.04),
+    inset 0 0 0 1px rgba(255,255,255,.8);
 }
 
-.tech-card:hover {
-    transform: translateY(-8px);
+/* Top accent line */
+.tech-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
 
-    box-shadow:
-        0 22px 40px rgba(0, 0, 0, .08),
-        0 0 0 1px rgba(243, 146, 0, .25);
+  width:100%;
+  height:4px;
+
+  background:
+    linear-gradient(90deg,#f39200,#ffb84d,#f39200);
 }
 
-/* Icon */
-.tech-card .icon {
-    width: 60px;
-    height: 60px;
+/* Hover */
+.tech-card:hover{
+  transform:translateY(-10px) scale(1.01);
 
-    background: linear-gradient(135deg, #fff4e3, #ffe8c6);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-    font-size: 26px;
-
-    margin-bottom: 12px;
-
-    box-shadow: 0 6px 14px rgba(243, 146, 0, .12);
+  box-shadow:
+    0 25px 50px rgba(0,0,0,.08),
+    0 0 0 1px rgba(243,146,0,.25);
 }
 
-/* List */
-.tech-card ul {
-    padding-left: 18px;
+/* ===== ICON ===== */
+.tech-icon{
+  width:66px;
+  height:66px;
+
+  background:
+    linear-gradient(135deg,#fff5e6,#ffe8c6);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:16px;
+  font-size:28px;
+
+  margin-bottom:14px;
+
+  box-shadow:
+    0 8px 18px rgba(243,146,0,.15);
+
+  transition:.3s;
 }
 
-.tech-card li {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #4a5a70;
+.tech-card:hover .tech-icon{
+  transform:rotate(-4deg) scale(1.06);
+
+  background:
+    linear-gradient(135deg,#ffe8c6,#fff5e6);
 }
 
-/* Button */
-.tech-btn {
-    background: linear-gradient(135deg, #0b2540, #123a64);
-    color: #fff;
-
-    padding: 13px 28px;
-    border-radius: 12px;
-
-    text-decoration: none;
-
-    box-shadow: 0 8px 18px rgba(11, 37, 64, .18);
+/* ===== TEXT ===== */
+.tech-card h5{
+  font-weight:700;
+  margin-bottom:8px;
+  color:#0b2540;
 }
 
-.tech-btn:hover {
-    background: #123a64;
-    color: #fff;
+.tech-card p{
+  font-size:14px;
+  color:#4a5a70;
+  line-height:1.6;
 }
 
-/* Common */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2.5px;
-    font-size: 13px;
-    font-weight: 600;
+/* ===== TAGS ===== */
+.tech-tags{
+  margin-top:12px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
 }
 
-/* Responsive */
-@media(max-width:768px) {
-    .agritech-section {
-        padding: 60px 10px;
-    }
+.tech-tags span{
+  background:#f1f5ff;
+  color:#0b2540;
+
+  padding:5px 10px;
+  border-radius:8px;
+
+  font-size:12px;
+}
+
+/* ===== BUTTON ===== */
+.tech-btn{
+  background:
+    linear-gradient(135deg,#0b2540,#123a64);
+
+  color:#fff;
+
+  padding:14px 30px;
+  border-radius:12px;
+
+  text-decoration:none;
+
+  box-shadow:
+    0 10px 22px rgba(11,37,64,.18);
+
+  transition:.3s;
+}
+
+.tech-btn:hover{
+  background:#123a64;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+/* ===== COMMON ===== */
+.mini-tag{
+  color:#f39200;
+  letter-spacing:2.5px;
+  font-size:13px;
+  font-weight:600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .agritech-section{
+    padding:60px 10px;
+  }
 }
