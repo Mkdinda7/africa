@@ -597,7 +597,7 @@
 
                 <!-- CTA -->
                 <div class="text-center mt-5">
-                    <a href="#" class="intel-btn">
+                    <a href="#" class="intel-btn" data-bs-toggle="modal" data-bs-target="#reportModal">
                         Request Intelligence Report →
                     </a>
                 </div>
@@ -605,6 +605,93 @@
 
             </div>
         </section>
+
+        <!-- ===== Intelligence Report Modal ===== -->
+        <div class="modal fade" id="reportModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Request Market Intelligence Report</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="modal-body">
+
+                        <form>
+
+                            <div class="row">
+
+                                <!-- Name -->
+                                <div class="col-md-6 mb-3">
+                                    <label>Full Name *</label>
+                                    <input type="text" class="form-control" placeholder="Your name" required>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-md-6 mb-3">
+                                    <label>Email *</label>
+                                    <input type="email" class="form-control" placeholder="email@example.com" required>
+                                </div>
+
+                                <!-- Organization -->
+                                <div class="col-md-6 mb-3">
+                                    <label>Organization</label>
+                                    <input type="text" class="form-control" placeholder="Company name">
+                                </div>
+
+                                <!-- Country -->
+                                <div class="col-md-6 mb-3">
+                                    <label>Country</label>
+                                    <input type="text" class="form-control" placeholder="Your country">
+                                </div>
+
+                                <!-- Report Type -->
+                                <div class="col-12 mb-3">
+                                    <label>Type of Report *</label>
+
+                                    <select class="form-select" required>
+                                        <option value="">Select report type</option>
+                                        <option>Price & Demand Trends</option>
+                                        <option>Climate & Satellite Analytics</option>
+                                        <option>Trade Flow Mapping</option>
+                                        <option>Policy & Regulation</option>
+                                        <option>Soil & Input Analysis</option>
+                                        <option>Risk Intelligence</option>
+                                        <option>Custom Research</option>
+                                    </select>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="col-12 mb-3">
+                                    <label>Your Requirements</label>
+
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="Tell us what kind of intelligence you need..."></textarea>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="modal-footer">
+                        <button class="btn cancel-btn" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+
+                        <button class="btn submit-btn">
+                            Submit Request
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
 

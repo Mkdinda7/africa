@@ -476,3 +476,49 @@
         padding: 60px 10px;
     }
 }
+
+
+
+/* ===============modal Request Intelligence Report → ================*/
+
+/* Modal Style */
+.modal-content {
+    border-radius: 16px;
+    border: none;
+}
+
+.modal-header {
+    background: #0b2540;
+    color: #fff;
+    border-radius: 16px 16px 0 0;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e6ecf5;
+}
+
+/* Buttons */
+.submit-btn {
+    background: linear-gradient(135deg, #0b2540, #123a64);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    background: #123a64;
+    color: #fff;
+}
+
+.cancel-btn {
+    background: #f1f4f9;
+    padding: 10px 22px;
+    border-radius: 10px;
+}
