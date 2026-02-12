@@ -502,6 +502,40 @@
         });
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.opp-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // 1. Remove 'active' class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // 2. Add 'active' class to the clicked button
+                    btn.classList.add('active');
+
+                    // 3. Get the filter value (e.g., "precious" or "all")
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    // 4. Show/Hide Cards
+                    cards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+
+                        if (filterValue === 'all' || filterValue === category) {
+                            card.style.display = 'block'; // Show
+                            // Optional: Add a fade-in animation
+                            card.style.animation = 'fadeIn 0.5s ease';
+                        } else {
+                            card.style.display = 'none'; // Hide
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
