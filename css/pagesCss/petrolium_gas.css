@@ -200,3 +200,143 @@
     font-size: 14px;
     opacity: 0.9;
 }
+
+
+/* ===================Investment Opportunities================= */
+
+.invest-section {
+    padding: 90px 0;
+    background: #f4f7fb;
+}
+
+.invest-tag {
+    color: #ff9800;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.invest-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.invest-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+    height: 100%;
+}
+
+.invest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.invest-icon {
+    font-size: 35px;
+    color: #0d2b5c;
+    margin-bottom: 20px;
+}
+
+.invest-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.invest-desc {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.invest-btn {
+    background: #0d2b5c;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 50px;
+}
+
+.invest-btn:hover {
+    background: #ff9800;
+}
+
+
+
+/* ===============risk mapping============= */
+
+
+.risk-section {
+    background: linear-gradient(135deg, #081c3a, #0d2b5c);
+    padding: 90px 0;
+    color: white;
+}
+
+.risk-tag {
+    color: #ff9800;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.risk-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.risk-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: .3s;
+    height: 100%;
+}
+
+.risk-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.risk-icon {
+    font-size: 35px;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.risk-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.risk-desc {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+.risk-level {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.low {
+    color: #4caf50;
+}
+
+.medium {
+    color: #ffc107;
+}
+
+.high {
+    color: #ff5252;
+}
