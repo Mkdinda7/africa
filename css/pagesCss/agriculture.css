@@ -1,6 +1,5 @@
 .agri-breadcrumb {
-    background: linear-gradient(rgba(11, 37, 64, 0.90), rgba(11, 37, 64, 0.90)),
-        url('images/agriculture-bg.jpg');
+    background-color: #164751;
     background-size: cover;
     background-position: center;
     padding: 80px 0;
@@ -1133,4 +1132,4 @@
     .resource-section {
         padding: 60px 10px;
     }
-}   
+}

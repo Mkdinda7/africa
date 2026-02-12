@@ -1,0 +1,201 @@
+/* ===========breadcrum section petrolium and gas  ============*/
+
+.breadcrumb-section {
+    background-color: #164751;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+    margin-top: 100px;
+}
+
+.breadcrumb-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.custom-breadcrumb {
+    background: transparent;
+    margin-top: 10px;
+}
+
+.custom-breadcrumb .breadcrumb-item a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.custom-breadcrumb .breadcrumb-item.active {
+    color: #ffffff;
+}
+
+.custom-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #ffffff;
+}
+
+
+
+/* ====================petrolium and gas hero section ================ */
+
+.petro-hero {
+    background: linear-gradient(rgba(5, 25, 55, 0.85), rgba(5, 25, 55, 0.85)),
+        url('https://images.unsplash.com/photo-1581091870627-3e7a7ef88d14');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.petro-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.petro-subtitle {
+    font-size: 18px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.petro-btn-primary {
+    background: #ff9800;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.petro-btn-primary:hover {
+    background: #ffb74d;
+}
+
+.petro-btn-outline {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: black;
+}
+
+.petro-btn-outline:hover {
+    background: white;
+    color: #051937;
+}
+
+.hero-image {
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media(max-width: 768px) {
+    .petro-title {
+        font-size: 32px;
+    }
+}
+
+
+
+/* =================== industry overview section =============== */
+
+.industry-section {
+    padding: 80px 0;
+    background: #f4f7fb;
+}
+
+.section-tag {
+    color: #ff9800;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.section-desc {
+    color: #6c757d;
+    margin-bottom: 50px;
+}
+
+.industry-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+}
+
+.industry-card:hover {
+    transform: translateY(-8px);
+}
+
+.industry-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0d2b5c;
+}
+
+.industry-text {
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+
+/* ===================Value Chain ================ */
+
+.value-chain-section {
+    background: #0d2b5c;
+    padding: 90px 0;
+    color: white;
+}
+
+.value-tag {
+    color: #ff9800;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.value-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 35px;
+    transition: .3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.value-icon {
+    font-size: 40px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.value-heading {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.value-list {
+    margin-top: 15px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.value-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
