@@ -370,122 +370,100 @@
 
         <!-- ==================investment section ============== -->
 
-        <section class="investment-section section-padding">
+        <section class="investment-section section-padding" id="opportunities">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-subtitle">Active Portfolios</span>
-                    <h2 class="section-title">Current Investment Opportunities</h2>
-                    <p class="section-desc">Curated, high-potential assets undergoing strategic development across key
-                        African jurisdictions.</p>
+                    <h2 class="section-title">Investment Opportunities</h2>
                 </div>
 
                 <div class="filter-container">
-                    <button class="filter-btn active">All Assets</button>
-                    <button class="filter-btn">Precious Metals</button>
-                    <button class="filter-btn">Battery Minerals</button>
-                    <button class="filter-btn">Energy</button>
+                    <button class="filter-btn active" data-filter="all">All Assets</button>
+                    <button class="filter-btn" data-filter="precious">Precious Metals</button>
+                    <button class="filter-btn" data-filter="battery">Battery Minerals</button>
+                    <button class="filter-btn" data-filter="energy">Energy</button>
                 </div>
 
                 <div class="opportunities-grid">
 
-                    <div class="opp-card">
+                    <div class="opp-card" data-category="precious">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1618423771880-2d64593170e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                alt="Gold Mine Project">
-                            <span class="status-badge open">Open for Funding</span>
+                            <img src="https://images.unsplash.com/photo-1618423771880-2d64593170e5?auto=format&fit=crop&w=800&q=80"
+                                alt="Gold Mine">
+                            <span class="status-badge open">Open</span>
                         </div>
                         <div class="card-body">
                             <div class="card-meta">
-                                <span class="location"><i class="fas fa-map-marker-alt"></i> Mali, West Africa</span>
-                                <span class="commodity">Gold (Au)</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Mali</span>
+                                <span>Gold (Au)</span>
                             </div>
                             <h3>Kenesso Gold Project</h3>
-                            <p>Brownfield exploration project with confirmed high-grade deposits adjacent to operational
-                                mines.</p>
-
+                            <p>High-grade deposit exploration.</p>
                             <div class="card-stats">
                                 <div class="stat-item">
-                                    <span class="stat-label">Proj. IRR</span>
+                                    <span class="stat-label">IRR</span>
                                     <span class="stat-value text-gold">24.5%</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-label">Stage</span>
-                                    <span class="stat-value">Feasibility</span>
-                                </div>
-                                <div class="stat-item">
                                     <span class="stat-label">Term</span>
-                                    <span class="stat-value">5-7 Yrs</span>
+                                    <span class="stat-value">5 Yrs</span>
                                 </div>
                             </div>
-
-                            <a href="#" class="btn-card">Request Prospectus <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-card">Invest Now <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
-                    <div class="opp-card">
+                    <div class="opp-card" data-category="battery">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1599839519213-33e36e765f02?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                alt="Lithium Project">
-                            <span class="status-badge open">Open for Funding</span>
+                            <img src="https://images.unsplash.com/photo-1599839519213-33e36e765f02?auto=format&fit=crop&w=800&q=80"
+                                alt="Lithium">
+                            <span class="status-badge open">Open</span>
                         </div>
                         <div class="card-body">
                             <div class="card-meta">
-                                <span class="location"><i class="fas fa-map-marker-alt"></i> Zimbabwe</span>
-                                <span class="commodity">Lithium (Li)</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Zimbabwe</span>
+                                <span>Lithium (Li)</span>
                             </div>
                             <h3>Manhize Battery Metals</h3>
-                            <p>Strategic hard-rock lithium asset targeting the EV supply chain with off-take agreements
-                                in place.</p>
-
+                            <p>Strategic hard-rock lithium asset.</p>
                             <div class="card-stats">
                                 <div class="stat-item">
-                                    <span class="stat-label">Proj. IRR</span>
+                                    <span class="stat-label">IRR</span>
                                     <span class="stat-value text-gold">31.2%</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-label">Stage</span>
-                                    <span class="stat-value">Development</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-label">CapEx</span>
-                                    <span class="stat-value">$45M</span>
+                                    <span class="stat-label">Term</span>
+                                    <span class="stat-value">7 Yrs</span>
                                 </div>
                             </div>
-
-                            <a href="#" class="btn-card">Request Prospectus <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-card">Invest Now <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
-                    <div class="opp-card">
+                    <div class="opp-card" data-category="energy">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1518655061710-5ccf392c275a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                alt="Copper Project">
-                            <span class="status-badge closed">Fully Subscribed</span>
+                            <img src="https://images.unsplash.com/photo-1518655061710-5ccf392c275a?auto=format&fit=crop&w=800&q=80"
+                                alt="Gas">
+                            <span class="status-badge open">Open</span>
                         </div>
                         <div class="card-body">
                             <div class="card-meta">
-                                <span class="location"><i class="fas fa-map-marker-alt"></i> Zambia</span>
-                                <span class="commodity">Copper (Cu)</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Nigeria</span>
+                                <span>Natural Gas</span>
                             </div>
-                            <h3>Copperbelt Expansion</h3>
-                            <p>Refurbishment of existing copper assets with modernized processing infrastructure.</p>
-
+                            <h3>Delta LNG Terminal</h3>
+                            <p>Midstream infrastructure expansion.</p>
                             <div class="card-stats">
                                 <div class="stat-item">
-                                    <span class="stat-label">Proj. IRR</span>
-                                    <span class="stat-value text-gold">18.0%</span>
+                                    <span class="stat-label">IRR</span>
+                                    <span class="stat-value text-gold">18.5%</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-label">Stage</span>
-                                    <span class="stat-value">Production</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-label">Yield</span>
-                                    <span class="stat-value">Quarterly</span>
+                                    <span class="stat-label">Term</span>
+                                    <span class="stat-value">10 Yrs</span>
                                 </div>
                             </div>
-
-                            <a href="#" class="btn-card disabled">View Performance <i class="fas fa-lock"></i></a>
+                            <a href="#" class="btn-card">Invest Now <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
