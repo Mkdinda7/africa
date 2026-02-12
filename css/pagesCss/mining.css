@@ -330,6 +330,10 @@
     transition: all 0.3s ease;
 }
 
+.step-icon:hover{
+    border: 1px solid orange;
+}
+
 /* Step Number Bubble */
 .step-number {
     position: absolute;
