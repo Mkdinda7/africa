@@ -678,6 +678,55 @@ body {
     }
 }
 
+/* ==================OUR LIVE MARKETS SECTION ============== */
+
+.market-section {
+    background: linear-gradient(135deg, #2b6cff, #5c8fff);
+    padding: 40px 20px;
+    border-radius: 16px;
+    color: white;
+}
+
+.market-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.market-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.market-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.asset-name {
+    font-size: 14px;
+    opacity: .9;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.change {
+    font-size: 13px;
+}
+
+.up {
+    color: #a8ffb0;
+}
+
+.down {
+    color: #ffb0b0;
+}
+
 
 /* ===================OUR INVESTMENT SECTION ==========  */
 .invest-card {

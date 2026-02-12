@@ -46,11 +46,13 @@
                 <ul class="navbar-nav mx-auto">
                     <li><a class="nav-link active" href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li><a class="nav-link" href="./about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
-                    <li><a class="nav-link" href="./agriculture.html"><i class="fa-solid fa-seedling"></i> Agriculture</a>
+                    <li><a class="nav-link" href="./agriculture.html"><i class="fa-solid fa-seedling"></i>
+                            Agriculture</a>
                     </li>
                     <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i> Petrolium &
                             Gas</a></li>
-                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-person-digging"></i> Mining</a>
+                    <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-person-digging"></i>
+                            Mining</a>
                     </li>
                     <li><a class="nav-link" href="./petroliumGas.html"><i class="fa-solid fa-hand-holding-dollar"></i>
                             Investment</a></li>
@@ -514,6 +516,61 @@
                 </div>
 
 
+            </div>
+        </section>
+
+        <!-- =================== LIVE MARKETING PLUS ============ -->
+
+        <section>
+            <div class="container my-5">
+
+                <div class="market-section">
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="market-title">Live Market Pulse</div>
+                        <div class="update-text">● AI UPDATING IN REAL-TIME</div>
+                    </div>
+
+                    <div class="row g-3">
+
+                        <!-- Copper -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="market-card">
+                                <div class="asset-name">COPPER</div>
+                                <div class="price" data-target="8452.20">$0</div>
+                                <div class="change up">▲ 0.65% today</div>
+                            </div>
+                        </div>
+
+                        <!-- Crude Oil -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="market-card">
+                                <div class="asset-name">CRUDE OIL (WTI)</div>
+                                <div class="price" data-target="76.32">$0</div>
+                                <div class="change down">▼ 0.21% today</div>
+                            </div>
+                        </div>
+
+                        <!-- Silver -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="market-card">
+                                <div class="asset-name">SILVER</div>
+                                <div class="price" data-target="29.18">$0</div>
+                                <div class="change up">▲ 0.44% today</div>
+                            </div>
+                        </div>
+
+                        <!-- Natural Gas -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="market-card">
+                                <div class="asset-name">NATURAL GAS</div>
+                                <div class="price" data-target="2.11">$0</div>
+                                <div class="change down">▼ 0.12% today</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1358,6 +1415,36 @@ ${i.desc}
         /* INIT */
         render()
 
+    </script>
+
+
+    <!-- LIVES MARKETING LOGIC -->
+    <script>
+        // ===== COUNTING ANIMATION =====
+        const counters = document.querySelectorAll('.price');
+
+        counters.forEach(counter => {
+
+            const updateCount = () => {
+
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText.replace('$', '');
+
+                const speed = 200;
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = '$' + (count + inc).toFixed(2);
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = '$' + target;
+                }
+
+            };
+
+            updateCount();
+
+        });
     </script>
 </body>
 
