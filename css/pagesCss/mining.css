@@ -54,3 +54,368 @@
         font-size: 28px;
     }
 }
+
+
+
+/* ========================MINING HERO SECTION ============== */
+
+
+.mining-hero {
+    background: linear-gradient(rgba(6, 18, 38, 0.88), rgba(6, 18, 38, 0.88)),
+        url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: white;
+}
+
+.mining-hero-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.mining-hero-subtitle {
+    font-size: 18px;
+    margin-top: 15px;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.mining-btn-primary {
+    background: #ff9800;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.mining-btn-primary:hover {
+    background: #ffb74d;
+}
+
+.mining-btn-outline {
+    border: 1px solid white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    background: transparent;
+    transition: .3s;
+}
+
+.mining-btn-outline:hover {
+    background: white;
+    color: #061226;
+}
+
+.hero-image-box {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 768px) {
+    .mining-hero-title {
+        font-size: 30px;
+    }
+}
+
+
+/* ================MINING OVERVIEW SECTION================ */
+
+.mining-overview {
+    padding: 90px 0;
+    background: #f5f7fa;
+}
+
+.mining-overview-tag {
+    color: #ff9800;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mining-overview-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mining-overview-desc {
+    color: #6c757d;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.mining-stat-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+    height: 100%;
+}
+
+.mining-stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.mining-stat-number {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0d2b5c;
+}
+
+.mining-stat-text {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+@media(max-width:768px) {
+    .mining-overview-title {
+        font-size: 28px;
+    }
+}
+
+
+
+/* ================== MINING KEY SECTION ================= */
+
+.key-minerals {
+    padding: 90px 0;
+    background: #0d2b5c;
+    color: white;
+}
+
+.key-tag {
+    color: #ff9800;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.key-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.mineral-card {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: .3s;
+    height: 100%;
+}
+
+.mineral-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mineral-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #ff9800;
+}
+
+.mineral-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mineral-desc {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+@media(max-width:768px) {
+    .key-title {
+        font-size: 28px;
+    }
+}
+
+
+/* ====================MINING VALUE CHAING SECTION ================== */
+
+
+/* --- Mining Value Chain Styles --- */
+.value-chain-section {
+    padding: 100px 0;
+    background-color: #F9FAFB;
+    /* Clean Light Background */
+    position: relative;
+    overflow: hidden;
+}
+
+.section-desc {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    color: var(--text-dark);
+    opacity: 0.8;
+}
+
+.chain-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* The Connecting Gold Line */
+.chain-line {
+    position: absolute;
+    top: 50px;
+    /* Aligns with the center of the icons */
+    left: 50px;
+    right: 50px;
+    height: 4px;
+    background: #E5E7EB;
+    /* Light Grey base line */
+    z-index: 1;
+}
+
+/* Optional: Animated Gradient Line */
+.chain-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: var(--accent-gold);
+    transition: width 1.5s ease-in-out;
+}
+
+.value-chain-section:hover .chain-line::after {
+    width: 100%;
+    /* Animates line on hover */
+}
+
+/* Individual Step Styling */
+.chain-step {
+    position: relative;
+    z-index: 2;
+    /* Sits on top of the line */
+    width: 18%;
+    /* Fits 5 items */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.chain-step:hover {
+    transform: translateY(-10px);
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: orange;
+    border: 3px solid var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Step Number Bubble */
+.step-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary-blue);
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--white);
+}
+
+.chain-step:hover .step-icon {
+    background: var(--accent-gold);
+    color: var(--white);
+    border-color: var(--primary-blue);
+}
+
+.step-content h3 {
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.highlight-text {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.step-content p:last-child {
+    font-size: 0.9rem;
+    color: #4B5563;
+    line-height: 1.5;
+}
+
+/* --- Responsive Adjustments (Mobile) --- */
+@media (max-width: 992px) {
+    .chain-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .chain-step {
+        width: 100%;
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .chain-line {
+        /* Change line to vertical on mobile */
+        width: 4px;
+        height: calc(100% - 100px);
+        left: 40px;
+        /* Aligns with icon center */
+        top: 0;
+        bottom: 0;
+        right: auto;
+    }
+
+    .chain-line::after {
+        width: 100%;
+        height: 0%;
+        transition: height 1.5s ease;
+    }
+
+    .value-chain-section:hover .chain-line::after {
+        height: 100%;
+    }
+
+    .step-icon {
+        margin: 0;
+        /* Reset auto margin */
+        flex-shrink: 0;
+        /* Prevents shrinking */
+    }
+}
