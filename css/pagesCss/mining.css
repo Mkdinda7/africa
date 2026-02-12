@@ -330,7 +330,7 @@
     transition: all 0.3s ease;
 }
 
-.step-icon:hover{
+.step-icon:hover {
     border: 1px solid orange;
 }
 
@@ -422,4 +422,194 @@
         flex-shrink: 0;
         /* Prevents shrinking */
     }
+}
+
+
+
+
+
+/* --- Investment Opportunities Section --- */
+.investment-section {
+    background-color: #ffffff;
+}
+
+/* Filter Buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    border: 1px solid #E5E7EB;
+    background: transparent;
+    border-radius: 30px;
+    font-weight: 600;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+}
+
+/* Grid Layout */
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Card Styling */
+.opp-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #F3F4F6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-gold);
+    /* Subtle gold border on hover */
+}
+
+/* Card Image Area */
+.card-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.opp-card:hover .card-image img {
+    transform: scale(1.05);
+    /* Zoom effect */
+}
+
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.status-badge.open {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+}
+
+.status-badge.closed {
+    background: #4B5563;
+    color: #fff;
+}
+
+/* Card Content */
+.card-body {
+    padding: 25px;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #6B7280;
+    margin-bottom: 12px;
+}
+
+.card-meta i {
+    margin-right: 5px;
+    color: var(--accent-gold);
+}
+
+.card-body h3 {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #4B5563;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Key Stats Grid inside Card */
+.card-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #F9FAFB;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #9CA3AF;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--primary-blue);
+}
+
+.text-gold {
+    color: var(--accent-gold) !important;
+}
+
+/* Action Button */
+.btn-card {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid var(--primary-blue);
+    border-radius: 6px;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-card:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+.btn-card.disabled {
+    border-color: #E5E7EB;
+    color: #9CA3AF;
+    pointer-events: none;
 }
