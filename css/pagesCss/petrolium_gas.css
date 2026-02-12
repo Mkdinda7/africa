@@ -340,3 +340,62 @@
 .high {
     color: #ff5252;
 }
+
+
+
+/* ================= Live Market Data ============== */
+
+.live-market-section {
+    background: #081c3a;
+    padding: 25px 0;
+    overflow: hidden;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.live-title {
+    font-weight: 600;
+    color: #ff9800;
+    margin-right: 40px;
+    white-space: nowrap;
+}
+
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    animation: scroll-left 25s linear infinite;
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+.market-item {
+    margin-right: 60px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.up {
+    color: #4caf50;
+}
+
+.down {
+    color: #ff5252;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
