@@ -18,7 +18,7 @@
     padding: 120px 0 100px;
     overflow: hidden;
     border-bottom: 4px solid #f8f9fa;
-   
+
 }
 
 
@@ -89,442 +89,60 @@
 }
 
 
+/* =====================MISSION STATEMENT CSS =============== */
 
-/* =====================WHO ARE YOU CSS ================= */
-
-/* ===== SECTION BASE ===== */
-.identity-section {
-    background: #f7fafc;
-    padding: 90px 0;
-}
-
-/* TITLE */
-.identity-title {
-    font-size: 38px;
-    font-weight: 700;
-    color: #0a2540;
-    margin-bottom: 18px;
-    font-family: Georgia, serif;
-}
-
-/* TEXT */
-.identity-text {
-    color: #4f6b7d;
-    line-height: 1.75;
-    margin-bottom: 14px;
-    font-size: 16px;
-}
-
-/* ===== CARD ===== */
-.bridge-card {
-    background: #0d2a48;
-    padding: 28px;
-    border-radius: 18px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
-}
-
-/* CARD TITLE */
-.bridge-title {
-    color: #ffffff;
-    font-weight: 700;
-    margin-bottom: 16px;
-    font-family: Georgia, serif;
-}
-
-/* LIST */
-.bridge-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.bridge-list li {
-    color: #c7d5e0;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* ORANGE DOT */
-.bridge-list li::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background: #ff9f1a;
-    border-radius: 50%;
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:992px) {
-
-    .identity-section {
-        padding: 60px 0;
-    }
-
-    .identity-title {
-        font-size: 28px;
-    }
-
-    .bridge-card {
-        margin-top: 10px;
-    }
-}
-
-
-
-
-/* ===================OUR MISSION CSS ================ */
-
-.mission-parallax {
-    position: relative;
-
-    /* CHANGE THIS IMAGE AS YOU WANT */
-    background: url('./../../assets/images/mission-img.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.mission-section {
+    background-color: #ffffff;
     padding: 120px 0;
 }
 
-/* DARK OVERLAY FOR READABILITY */
-.mission-parallax .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.158);
+.mission-text-block {
+    border-left: 5px solid #0a192f;
+    padding-left: 40px;
+    margin-bottom: 60px;
 }
 
-/* TAG */
-.mission-tag {
-    color: #ff9f1a;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    display: block;
-    margin-bottom: 16px;
-}
-
-/* QUOTE TEXT */
-.mission-quote {
-    font-family: Georgia, serif;
-    font-style: italic;
-
-    color: #0a2540;
-    font-size: 34px;
-    line-height: 1.42;
-
-    max-width: 960px;
-    margin: auto;
-}
-
-/* ORANGE LINE */
-.mission-line {
-    width: 60px;
-    height: 2px;
-    background: #ff9f1a;
-    margin-top: 26px;
-}
-
-.mission-logo {
-    width: 350px;
-    height: 350px;
-
-
-    img {
-        width: 100%;
-        width: 100%;
-    }
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media(max-width:992px) {
-
-    .mission-parallax {
-        padding: 80px 0;
-        background-attachment: scroll;
-        /* mobile performance */
-    }
-
-    .mission-quote {
-        font-size: 24px;
-    }
-
-}
-
-
-
-/* ==================HOW WE WORK CSS ================== */
-
-/* ===== SECTION ===== */
-.approach-section {
-    padding: 90px 0;
-    background: #fbfcfd;
-}
-
-/* TAG */
-.tag {
-    color: #ff9f1a;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-
-/* TITLE */
-.title {
-    font-family: Georgia, serif;
-    color: #0a2540;
-    font-size: 38px;
-}
-
-/* SUBTITLE */
-.subtitle {
-    max-width: 700px;
-    margin: 10px auto 0;
-    color: #5a6f7f;
-}
-
-/* ===== CARD ===== */
-.work-card {
-    background: #fff;
-    border: 1px solid #00335f;
-    border-radius: 16px;
-    padding: 24px;
-    height: 100%;
-    position: relative;
-    transition: .3s;
-}
-
-/* HOVER */
-.work-card:hover {
-    box-shadow: 0 18px 40px rgba(0, 17, 255, 0.192);
-    transform: translateY(-4px);
-    cursor: pointer;
-
-    .number {
-        color: #ffc266;
-    }
-}
-
-/* NUMBER */
-.number {
-    position: absolute;
-    right: 16px;
-    top: 10px;
-
-    font-size: 52px;
+.mission-heading {
+    font-size: 0.8rem;
     font-weight: 800;
-
-    color: #ffeed5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #8892b0;
+    margin-bottom: 15px;
+    display: block;
 }
 
-
-
-/* TITLE */
-.work-card h5 {
-    font-family: Georgia, serif;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 1;
-}
-
-/* TEXT */
-.work-card p {
-    color: #5a6f7f;
-    line-height: 1.7;
-    position: relative;
-    z-index: 1;
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media(max-width:992px) {
-
-    .approach-section {
-        padding: 60px 0;
-    }
-
-    .title {
-        font-size: 28px;
-    }
-
-}
-
-
-
-/* =================WHAT DEFINES US =============== */
-
-/* ===== SECTION ===== */
-.values-section {
-    padding: 90px 0;
-
-    background:
-        linear-gradient(120deg,
-            #0D2A48 40%,
-            #0d3f48 100%);
-}
-
-/* TAG */
-.tag {
-    color: black;
-    font-size: 13px;
-    letter-spacing: 2px;
+.mission-quote {
+    font-size: 2.2rem;
     font-weight: 700;
+    color: #0a192f;
+    line-height: 1.3;
 }
 
-/* TITLE */
-.title {
-    font-family: Georgia, serif;
-    color: #ffffff;
-    font-size: 38px;
-}
-
-/* SUBTITLE */
-.subtitle {
-    max-width: 720px;
-    margin: 10px auto 0;
-    color: #5a6f7f;
-}
-
-/* ===== CARD ===== */
-.value-card {
-    background: rgba(255, 255, 255, .7);
-    backdrop-filter: blur(10px);
-
-    border: 1px solid #e6edf3;
-    border-radius: 16px;
-
-    padding: 22px;
+.vision-card {
+    background: #f8f9fa;
+    padding: 50px;
+    border-radius: 0;
     height: 100%;
-    transition: all 0.3s ease !important;
-    transition: .35s;
-    position: relative;
+    transition: all 0.4s ease;
 }
 
-
-
-/* HOVER */
-.value-card:hover {
-    transform: translateY(-6px);
-    box-shadow: rgba(213, 247, 255, 0.35) 0px 5px 15px;
-    border-top: 5px solid #e99f00;
-}
-
-
-.value-card:hover::before {
-    opacity: 1;
-}
-
-/* ICON */
-.icon {
-    font-size: 24px;
-    color: #ff9f1a;
-    margin-bottom: 10px;
-}
-
-/* TITLE */
-.value-card h5 {
-    font-family: Georgia, serif;
-    margin-bottom: 8px;
-}
-
-/* TEXT */
-.value-card p {
-    color: #5a6f7f;
-    line-height: 1.7;
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media(max-width:992px) {
-
-    .values-section {
-        padding: 60px 0;
-    }
-
-    .title {
-        font-size: 28px;
-    }
-
-}
-
-
-/* =================ENGAGING SECTION ================= */
-
-.engage-section {
-    background-color: #0A2540;
-    padding: 100px 0;
-    min-height: 450px;
-}
-
-/* ===== Title ===== */
-.engage-title {
+.vision-card:hover {
+    background: #0a192f;
     color: #ffffff;
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 20px;
 }
 
-/* ===== Text ===== */
-.engage-text {
-    color: #b0c4de;
-    font-size: 18px;
-    margin-bottom: 35px;
+.vision-card:hover .text-muted {
+    color: #8892b0 !important;
 }
 
-/* ===== Button ===== */
-.engage-btn {
-    background-color: #F39200;
+.vision-card:hover .vision-icon {
     color: #ffffff;
-    padding: 14px 30px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
 }
 
-.engage-btn span {
-    margin-left: 6px;
-    transition: 0.3s;
-}
-
-.engage-btn:hover {
-    background-color: #ff9f1a;
-    transform: translateY(-3px);
-}
-
-.engage-btn:hover span {
-    margin-left: 12px;
-}
-
-/* ===== Responsive ===== */
-
-@media (max-width: 992px) {
-    .engage-title {
-        font-size: 36px;
-    }
-
-    .engage-text {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 576px) {
-    .engage-section {
-        padding: 70px 15px;
-    }
-
-    .engage-title {
-        font-size: 28px;
-    }
-
-    .engage-text {
-        font-size: 15px;
-    }
-
-    .engage-btn {
-        padding: 12px 22px;
-    }
+.vision-icon {
+    font-size: 2.5rem;
+    color: #0a192f;
+    margin-bottom: 25px;
+    display: block;
 }
