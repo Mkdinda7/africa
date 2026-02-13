@@ -1,35 +1,64 @@
 /* ===========breadcrum section petrolium and gas  ============*/
 
-.breadcrumb-section {
-    background-color: #164751;
+.petrol-header {
+    background: linear-gradient(to right, rgba(5, 12, 26, 0.92), rgba(5, 12, 26, 0.75)),
+        url('https://images.unsplash.com/photo-1544257740-413c9e9921e4?auto=format&fit=crop&q=80&w=1600');
     background-size: cover;
     background-position: center;
-    padding: 80px 0;
-    color: white;
+    padding: 90px 0;
+    margin-top: 70px;
+    position: relative;
+    border-bottom: 2px solid #ffc107;
     margin-top: 100px;
+    
 }
 
-.breadcrumb-title {
-    font-size: 36px;
-    font-weight: 700;
+.gas-nav-container {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    display: inline-flex;
+    padding: 12px 30px;
+    border-radius: 4px;
+    
 }
 
-.custom-breadcrumb {
-    background: transparent;
-    margin-top: 10px;
-}
-
-.custom-breadcrumb .breadcrumb-item a {
+.breadcrumb-item+.breadcrumb-item::before {
     color: #ffc107;
+    content: "\f282";
+    font-family: "bootstrap-icons";
+    font-size: 10px;
+    padding: 0 12px;
+}
+
+.breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
 }
 
-.custom-breadcrumb .breadcrumb-item.active {
-    color: #ffffff;
+.breadcrumb-item a:hover {
+    color: #ffc107;
 }
 
-.custom-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
-    color: #ffffff;
+.breadcrumb-item.active {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.sector-tag {
+    background: #ffc107;
+    color: #000;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 
