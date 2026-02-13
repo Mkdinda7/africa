@@ -1,54 +1,77 @@
-.agri-breadcrumb {
-    background-color: #164751;
+/* Agriculture Concept Breadcrumb */
+.agri-breadcrumb-header {
+    background-color: #0b1a10;
+    position: relative;
+    padding: 100px 0 80px;
+    overflow: hidden;
+    border-bottom: 3px solid #ffc107;
+   margin-top: 100px;
+}
+
+.agri-breadcrumb-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(11, 26, 16, 0.4), rgba(11, 26, 16, 1)),
+        url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=1200');
     background-size: cover;
     background-position: center;
-    padding: 80px 0;
-    margin-top: 100px;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
 }
 
-/* Breadcrumb links */
-.breadcrumb {
-    margin-bottom: 10px;
+.agri-breadcrumb-content {
+    position: relative;
+    z-index: 2;
 }
 
-.breadcrumb-item a {
-    color: #f39200;
+/* Glassmorphism Breadcrumb Box */
+.breadcrumb-agri-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    margin-bottom: 25px;
+}
+
+.breadcrumb-agri-box .breadcrumb-item+.breadcrumb-item::before {
+    content: " \f105 ";
+    /* Bootstrap Icon Chevron */
+    font-family: "bootstrap-icons";
+    color: #ffc107;
+    padding: 0 10px;
+}
+
+.breadcrumb-agri-box a {
+    color: #a5b4a9;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.breadcrumb-item.active {
-    color: #ffffff;
-    font-size: 14px;
+.breadcrumb-agri-box a:hover {
+    color: #ffc107;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-agri-box .active {
     color: #ffffff;
-}
-
-/* Title */
-.breadcrumb-title {
-    color: #ffffff;
-    font-size: 42px;
     font-weight: 700;
+}
+
+.agri-subtitle-badge {
+    color: #ffc107;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
     margin-bottom: 10px;
-}
-
-/* Text */
-.breadcrumb-text {
-    color: #d0d8e5;
-    max-width: 700px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .agri-breadcrumb {
-        padding: 50px 10px;
-    }
-
-    .breadcrumb-title {
-        font-size: 28px;
-    }
 }
 
 
