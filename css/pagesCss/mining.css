@@ -639,3 +639,161 @@
     color: #9CA3AF;
     pointer-events: none;
 }
+
+
+/* ==================sustainability and ESG section css ================ */
+
+/* ESG Section Custom Styles */
+.esg-section {
+    background-color: #050c1a;
+    /* Deep Navy Background */
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.esg-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.esg-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: #10b981;
+    /* Emerald Green */
+    transform: translateY(-10px);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.icon-env {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.icon-soc {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.icon-gov {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #10b981, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.metrics-bar {
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.1), rgba(5, 12, 26, 1));
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    padding: 30px 60px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .metrics-bar {
+        border-radius: 30px;
+        padding: 30px;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+}
+
+
+
+/* ==================OUR NEWS SECTION ================== */
+
+/* News & Insights Custom Styles */
+.news-section {
+    background-color: #f8f9fa;
+    /* Light grey to contrast with dark ESG section */
+}
+
+.news-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+
+}
+
+.news-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.news-img-wrapper {
+    overflow: hidden;
+    height: 220px;
+}
+
+.news-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.category-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #fff;
+    color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-date {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.read-more-link {
+    color: orange !important;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s;
+}
+
+.read-more-link:hover {
+    gap: 12px;
+}
