@@ -250,3 +250,55 @@
     font-weight: 700;
     font-size: 0.9rem;
 }
+
+
+/* ==================LOGISTIC SECTION =============== */
+
+
+.logistics-section {
+    background-color: #fcfdfd;
+    padding: 100px 0;
+}
+
+.logistics-flow-wrap {
+    position: relative;
+    padding-top: 40px;
+}
+
+.logistics-step-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    padding: 40px 30px;
+    height: 100%;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 2;
+}
+
+.logistics-step-card:hover {
+    border-color: #ffbf00;
+    box-shadow: 0 15px 40px rgba(10, 25, 47, 0.05);
+}
+
+.logistics-icon {
+    width: 60px;
+    height: 60px;
+    background: #0a192f;
+    color: #ffbf00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.logistics-phase {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffbf00;
+    display: block;
+    margin-bottom: 15px;
+}
