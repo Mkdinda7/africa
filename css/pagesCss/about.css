@@ -436,3 +436,57 @@
     font-size: 1.2rem;
     text-decoration: none;
 }
+
+
+/* ================CERTIFICATION CSS ============= */
+
+.compliance-section {
+    background-color: #f8f9fa; 
+    padding: 100px 0;
+}
+
+.certification-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.certification-card:hover {
+    border-color: #0a192f;
+    box-shadow: 0 10px 25px rgba(10, 25, 47, 0.05);
+}
+
+.cert-icon-box {
+    width: 80px;
+    height: 80px;
+    background: rgba(10, 25, 47, 0.03);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #0a192f;
+    font-size: 2rem;
+}
+
+.cert-title {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #0a192f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.cert-desc {
+    font-size: 0.75rem;
+    color: #8892b0;
+    margin-bottom: 0;
+}
