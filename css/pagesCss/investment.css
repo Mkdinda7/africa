@@ -124,3 +124,61 @@
     color: #8892b0;
     margin-bottom: 5px;
 }
+
+
+
+/* ===================COMMODITY TICKER ================= */
+
+
+.ticker-wrap {
+    background: #040911;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 0;
+}
+
+.ticker-scroll {
+    display: inline-block;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ticker-item:last-child { border-right: none; }
+
+.ticker-symbol {
+    font-weight: 800;
+    color: #ff9800; 
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.ticker-price {
+    font-family: 'Monaco', 'Consolas', monospace; 
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.ticker-change {
+    font-size: 0.75rem;
+    margin-left: 8px;
+}
+
+.up { color: #00e676; } 
+.down { color: #ff5252; } 
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.ticker-wrap:hover .ticker-scroll {
+    animation-play-state: paused; 
+}
