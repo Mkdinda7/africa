@@ -1,13 +1,12 @@
 /* ===========breadcrum section petrolium and gas  ============*/
-/* Petroleum & Gas Breadcrumb Styling */
+
 .petro-breadcrumb-header {
     background-color: #040c1a;
-    /* Deep Petroleum Blue */
     position: relative;
     padding: 110px 0 90px;
     overflow: hidden;
     border-bottom: 4px solid #ffbf00;
-    /* Amber Energy Accent */
+    margin-top: 100px;
 }
 
 /* Industrial Visual with Data Overlay */
