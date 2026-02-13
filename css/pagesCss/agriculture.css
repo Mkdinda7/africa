@@ -5,7 +5,7 @@
     padding: 100px 0 80px;
     overflow: hidden;
     border-bottom: 3px solid #ffc107;
-   margin-top: 100px;
+    margin-top: 100px;
 }
 
 .agri-breadcrumb-header::before {
@@ -76,332 +76,225 @@
 
 
 /* ===============OUR AGRICULTURE OVERVIEW SECTION ================ */
-
-.agri-overview {
-    padding: 90px 0;
-    background: #ffffff;
+.agri-dashboard {
+    background-color: #050b07;
+    padding: 100px 0;
+    font-family: 'Inter', sans-serif;
 }
 
-/* Small tag */
-.mini-tag {
-    color: #f39200;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 600;
+.db-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(139, 195, 74, 0.2);
+    border-radius: 4px;
+    padding: 30px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Title */
-.section-title {
-    font-size: 38px;
+.db-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8bc34a, transparent);
+    opacity: 0.5;
+}
+
+.db-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8bc34a;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.db-value {
+    font-family: 'Consolas', monospace;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin: 12px 0;
-    color: white;
-    font-family: "Times New Roman", serif;
+    color: #ffffff;
 }
 
-/* Text */
-.section-text {
-    color: #4a5a70;
-    margin-bottom: 18px;
+.db-unit {
+    font-size: 0.9rem;
+    color: #a5b4a9;
+    margin-left: 5px;
 }
 
-/* List */
-.overview-list {
-    padding-left: 18px;
-    margin-bottom: 22px;
+.status-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #8bc34a;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #8bc34a;
+    margin-right: 10px;
 }
 
-.overview-list li {
-    margin-bottom: 8px;
-    color: #0b2540;
+.sensor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
 }
 
-/* Button */
-.overview-btn {
-    background: #0b2540;
-    color: #fff;
-    padding: 12px 22px;
-    border-radius: 8px;
-}
-
-.overview-btn:hover {
-    background: #0f3458;
-    color: #fff;
-}
-
-/* Stats Card */
-.stat-card {
-    background: #f8f9fc;
-    padding: 22px;
-    border-radius: 12px;
+.sensor-item {
+    background: rgba(139, 195, 74, 0.05);
+    padding: 10px;
+    border-radius: 2px;
     text-align: center;
-    border: 1px solid #e5ebf3;
 }
-
-.stat-card h3 {
-    color: #f39200;
-    font-weight: 700;
-}
-
-.stat-card p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-    .section-title {
-        font-size: 28px;
-    }
-
-    .agri-overview {
-        padding: 60px 10px;
-    }
-}
-
 
 
 /* ==============OUR SUBSECTOR SECTION ============= */
-
-.subsector-section {
-    padding: 90px 0;
-    background: #f8fafc;
+/* Agriculture Tech Pillars */
+.agri-pillars {
+    background-color: #050b07;
+    /* Deep Organic Black */
+    padding: 100px 0;
 }
 
-/* Card */
-.sub-card {
-    background: linear-gradient(145deg, #ffffff, #f6f9ff);
-    padding: 24px;
-    border-radius: 18px;
+.agri-pillar-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(139, 195, 74, 0.1);
+    padding: 40px;
     height: 100%;
-
-    border: 1px solid rgba(0, 255, 170, 0.25);
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.06),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.6);
-
-    transition: all .35s ease;
     position: relative;
-    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 0;
+    /* Sharp industrial corners */
 }
 
-/* Premium top accent */
-.sub-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #00ffaa, #00c3ff);
+.agri-pillar-card:hover {
+    background: rgba(139, 195, 74, 0.05);
+    border-color: #8bc34a;
+    transform: translateY(-10px);
 }
 
-/* Hover */
-.sub-card:hover {
-    transform: translateY(-8px) scale(1.01);
-
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.1),
-        0 0 0 1px rgba(0, 255, 170, 0.4);
-}
-
-/* Icon design */
-.sub-card .icon {
+.pillar-icon-agri {
     width: 60px;
     height: 60px;
-
-    background: linear-gradient(135deg, #e6fff6, #e6f7ff);
-    border-radius: 14px;
-
+    background: rgba(139, 195, 74, 0.15);
+    color: #8bc34a;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 26px;
-
-    margin-bottom: 12px;
-
-    box-shadow: 0 6px 14px rgba(0, 255, 170, 0.15);
-
-    transition: .3s;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.sub-card:hover .icon {
-    background: linear-gradient(135deg, #00ffaa, #00c3ff);
-    color: #0b2540;
-    transform: rotate(-3deg) scale(1.05);
+.pillar-tag {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8bc34a;
+    display: block;
+    margin-bottom: 15px;
 }
-
-/* Text */
-.sub-card h5 {
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: #0b2540;
-}
-
-.sub-card p {
-    font-size: 14px;
-    color: #4a5a70;
-    line-height: 1.6;
-}
-
-/* Glow effect */
-.sub-card:hover::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top, rgba(0, 255, 170, .15), transparent 70%);
-}
-
-
-/* Common */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2px;
-    font-size: 13px;
-}
-
-/* Responsive */
-@media(max-width:768px) {
-    .subsector-section {
-        padding: 60px 10px;
-    }
-}
-
 
 /* ===================Investment Opportunities ================= */
-.investment-section {
-    padding: 90px 0;
-    background: linear-gradient(180deg, #f5f8fc 0%, #ffffff 100%);
+/* Crop Portfolio Premium Styling */
+.crop-portfolio-section {
+    background-color: #ffffff;
+    padding: 100px 0;
 }
 
-/* Card */
-.invest-card {
-    background: linear-gradient(145deg, #ffffff, #f9fbff);
-    padding: 24px;
-    border-radius: 18px;
-    height: 100%;
+.crop-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    /* Keeping the sharp industrial look */
+    overflow: hidden;
+    transition: all 0.5s ease;
+    background: #fff;
+}
 
-    border: 1px solid rgba(11, 37, 64, 0.12);
+.crop-card:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    border-color: #8bc34a;
+}
 
+.crop-img-box {
     position: relative;
-    transition: all .35s ease;
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, .04),
-        inset 0 0 0 1px rgba(255, 255, 255, .7);
-
+    height: 250px;
     overflow: hidden;
 }
 
-/* Top premium accent */
-.invest-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.crop-img-box img {
     width: 100%;
-    height: 4px;
-
-    background: linear-gradient(90deg, #f39200, #ffb84d, #f39200);
-    opacity: .85;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
 }
 
-.invest-card:hover {
-    transform: translateY(-8px) scale(1.01);
-
-    box-shadow:
-        0 22px 40px rgba(0, 0, 0, .08),
-        0 0 0 1px rgba(243, 146, 0, .25);
+.crop-card:hover .crop-img-box img {
+    transform: scale(1.1);
 }
 
-/* Badge */
-.badge {
-    background: linear-gradient(135deg, #fff4e3, #ffe8c6);
-    color: #c46f00;
-
-    padding: 6px 12px;
-    border-radius: 10px;
-
-    font-size: 12px;
-    font-weight: 600;
-
-    display: inline-block;
-    margin-bottom: 10px;
-
-    box-shadow: 0 4px 12px rgba(243, 146, 0, .12);
-}
-
-/* Meta */
-.meta {
-    display: flex;
-    gap: 14px;
-
-    font-size: 13px;
-    margin: 12px 0;
-
-    color: #0b2540;
-    font-weight: 700;
-}
-
-/* Timeline */
-.time {
-    font-size: 13px;
-    color: #4a5a70;
-    opacity: .9;
-}
-
-/* Button */
-.invest-btn {
-    background: linear-gradient(135deg, #0b2540, #123a64);
-    color: #fff;
-
-    padding: 13px 28px;
-    border-radius: 12px;
-
-    text-decoration: none;
-    transition: .3s;
-
-    box-shadow: 0 8px 18px rgba(11, 37, 64, .18);
-}
-
-.invest-btn:hover {
-    background: linear-gradient(135deg, #123a64, #0b2540);
-    color: #fff;
-    transform: translateY(-3px);
-}
-
-/* Title tag */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2.5px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* Soft glow on hover */
-.invest-card:hover::after {
-    content: "";
+.crop-badge {
     position: absolute;
-    inset: 0;
-
-    background:
-        radial-gradient(circle at top right,
-            rgba(243, 146, 0, .12),
-            transparent 70%);
+    top: 20px;
+    right: 20px;
+    background: rgba(11, 26, 16, 0.8);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Responsive */
-@media(max-width:768px) {
-    .investment-section {
-        padding: 60px 10px;
-    }
+.crop-info {
+    padding: 30px;
+}
+
+.crop-category {
+    font-size: 0.7rem;
+    color: #8bc34a;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.crop-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0b1a10;
+    margin-bottom: 15px;
+}
+
+.crop-stats {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.stat-item span {
+    display: block;
+    font-size: 0.65rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-item strong {
+    font-size: 0.9rem;
+    color: #0b1a10;
 }
 
 
-
-/* =================Market Intelligence =================*/
+/* =================CORP PORTFOLIO SECTION =================*/
 
 
 .intel-section {
@@ -502,657 +395,156 @@
 
 
 
-/* ===============modal Request Intelligence Report → ================*/
+/* ===============RECLAM REMUNERATION ================*/
 
-/* Modal Style */
-.modal-content {
-    border-radius: 16px;
-    border: none;
+.reclaim-section {
+    background-color: #f9fafb;
+    padding: 100px 0;
 }
 
-.modal-header {
-    background: #0b2540;
-    color: #fff;
-    border-radius: 16px 16px 0 0;
+.reclaim-visual-box {
+    position: relative;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    padding: 20px;
 }
 
-.modal-title {
-    font-weight: 600;
-}
-
-.form-control,
-.form-select {
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #e6ecf5;
-}
-
-/* Buttons */
-.submit-btn {
-    background: linear-gradient(135deg, #0b2540, #123a64);
-    color: #fff;
-    padding: 10px 22px;
-    border-radius: 10px;
-}
-
-.submit-btn:hover {
-    background: #123a64;
-    color: #fff;
-}
-
-.cancel-btn {
-    background: #f1f4f9;
-    padding: 10px 22px;
-    border-radius: 10px;
-}
-
-
-
-
-/* ===============value chain section =============== */
-
-.value-section {
-    padding: 90px 0;
-    background: linear-gradient(180deg, #ffffff, #f6f9ff);
-}
-
-/* Card */
-.value-card {
-    background: linear-gradient(145deg, #ffffff, #fbfcff);
-    padding: 22px;
-    border-radius: 18px;
-
+.reclaim-card {
+    border-left: 4px solid #198754;
+    background: #ffffff;
+    padding: 30px;
     height: 100%;
-
-    border: 1px solid rgba(11, 37, 64, .12);
-
-    transition: .35s;
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, .04),
-        inset 0 0 0 1px rgba(255, 255, 255, .7);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.value-card:hover {
-    transform: translateY(-8px);
-    box-shadow:
-        0 22px 40px rgba(0, 0, 0, .08),
-        0 0 0 1px rgba(243, 146, 0, .25);
+.reclaim-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon */
-.value-card .icon {
-    width: 58px;
-    height: 58px;
+.process-step {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #198754;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
 
-    background: linear-gradient(135deg, #fff4e3, #ffe8c6);
+.reclaim-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0b1a10;
+    margin-bottom: 15px;
+}
 
+/* ===================Supply Chain CSS ================ */
+
+.supply-chain-section {
+    background-color: #0b1a10;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.sc-flow-container {
+    position: relative;
+}
+
+.sc-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    height: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.sc-card:hover {
+    border-color: #8bc34a;
+    background: rgba(139, 195, 74, 0.05);
+}
+
+.sc-icon-box {
+    width: 50px;
+    height: 50px;
+    background: #8bc34a;
+    color: #0b1a10;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border-radius: 14px;
-    font-size: 26px;
-
-    margin-bottom: 12px;
-
-    box-shadow: 0 6px 14px rgba(243, 146, 0, .12);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-/* List */
-.value-card ul {
-    padding-left: 18px;
-}
-
-.value-card li {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #4a5a70;
-}
-
-/* Button */
-.value-btn {
-    background: linear-gradient(135deg, #0b2540, #123a64);
-    color: #fff;
-
-    padding: 13px 28px;
-    border-radius: 12px;
-
-    text-decoration: none;
-
-    box-shadow: 0 8px 18px rgba(11, 37, 64, .18);
-}
-
-.value-btn:hover {
-    background: #123a64;
-    color: #fff;
-}
-
-/* Common */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2.5px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* Responsive */
-@media(max-width:768px) {
-    .value-section {
-        padding: 60px 10px;
-    }
-}
-
-
-
-/* ==================Agri tech section ================ */
-
-.agritech-section {
-    padding: 100px 0;
-    background: linear-gradient(180deg, #f8fbff, #ffffff);
-}
-
-/* ===== CARD ===== */
-.tech-card {
-    background:
-        linear-gradient(145deg, #ffffff, #fbfcff);
-
-    padding: 26px;
-    border-radius: 20px;
-
-    height: 100%;
-
-    border: 1px solid rgba(11, 37, 64, .10);
-
-    position: relative;
-    overflow: hidden;
-
-    transition: all .35s ease;
-
-    box-shadow:
-        0 12px 28px rgba(0, 0, 0, .04),
-        inset 0 0 0 1px rgba(255, 255, 255, .8);
-}
-
-/* Top accent line */
-.tech-card::before {
-    content: "";
+.sc-step-num {
     position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
-
-    background:
-        linear-gradient(90deg, #f39200, #ffb84d, #f39200);
+    top: -15px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
 }
 
-/* Hover */
-.tech-card:hover {
-    transform: translateY(-10px) scale(1.01);
-
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, .08),
-        0 0 0 1px rgba(243, 146, 0, .25);
-}
-
-/* ===== ICON ===== */
-.tech-icon {
-    width: 66px;
-    height: 66px;
-
-    background:
-        linear-gradient(135deg, #fff5e6, #ffe8c6);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 16px;
-    font-size: 28px;
-
-    margin-bottom: 14px;
-
-    box-shadow:
-        0 8px 18px rgba(243, 146, 0, .15);
-
-    transition: .3s;
-}
-
-.tech-card:hover .tech-icon {
-    transform: rotate(-4deg) scale(1.06);
-
-    background:
-        linear-gradient(135deg, #ffe8c6, #fff5e6);
-}
-
-/* ===== TEXT ===== */
-.tech-card h5 {
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: #0b2540;
-}
-
-.tech-card p {
-    font-size: 14px;
-    color: #4a5a70;
-    line-height: 1.6;
-}
-
-/* ===== TAGS ===== */
-.tech-tags {
-    margin-top: 12px;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.tech-tags span {
-    background: #f1f5ff;
-    color: #0b2540;
-
-    padding: 5px 10px;
-    border-radius: 8px;
-
-    font-size: 12px;
-}
-
-/* ===== BUTTON ===== */
-.tech-btn {
-    background:
-        linear-gradient(135deg, #0b2540, #123a64);
-
-    color: #fff;
-
-    padding: 14px 30px;
-    border-radius: 12px;
-
-    text-decoration: none;
-
-    box-shadow:
-        0 10px 22px rgba(11, 37, 64, .18);
-
-    transition: .3s;
-}
-
-.tech-btn:hover {
-    background: #123a64;
-    color: #fff;
-    transform: translateY(-3px);
-}
-
-/* ===== COMMON ===== */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2.5px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:768px) {
-    .agritech-section {
-        padding: 60px 10px;
-    }
+.sc-label {
+    color: #8bc34a;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
 }
 
 
+/* =====================R & D PARTNERS SECTION CSS ================== */
 
-/* =================case studies ================== */
-
-.case-section {
+/* Agriculture R&D & Partners Styling */
+.agri-rd-section {
+    background-color: #fcfdfc;
     padding: 100px 0;
-    background: linear-gradient(180deg, #ffffff, #f6f9ff);
-}
-
-/* ===== CARD ===== */
-.case-card {
-    background: linear-gradient(145deg, #ffffff, #fbfcff);
-
-    padding: 24px;
-    border-radius: 20px;
-
-    height: 100%;
-
-    border: 1px solid rgba(11, 37, 64, .10);
-
-    transition: .35s;
-
-    box-shadow:
-        0 12px 28px rgba(0, 0, 0, .04),
-        inset 0 0 0 1px rgba(255, 255, 255, .8);
-
     position: relative;
 }
 
-/* Accent */
-.case-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
-
-    background: linear-gradient(90deg, #f39200, #ffb84d);
-}
-
-.case-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, .08),
-        0 0 0 1px rgba(243, 146, 0, .25);
-}
-
-/* Tag */
-.case-tag {
-    background: #fff4e3;
-    color: #c46f00;
-
-    padding: 5px 10px;
-    border-radius: 10px;
-
-    font-size: 12px;
-    font-weight: 600;
-}
-
-/* Impact */
-.impact {
-    display: flex;
-    gap: 12px;
-
-    font-size: 13px;
-    margin: 10px 0;
-
-    color: #0b2540;
-    font-weight: 700;
-}
-
-/* Button */
-.case-btn {
-    color: #f39200;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.case-btn:hover {
-    text-decoration: underline;
-}
-
-/* Main CTA */
-.main-btn {
-    background: linear-gradient(135deg, #0b2540, #123a64);
-
-    color: #fff;
-
-    padding: 14px 30px;
-    border-radius: 12px;
-
-    text-decoration: none;
-
-    box-shadow: 0 10px 22px rgba(11, 37, 64, .18);
-}
-
-.main-btn:hover {
-    background: #123a64;
-    color: #fff;
-}
-
-/* Common */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2.5px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* Responsive */
-@media(max-width:768px) {
-    .case-section {
-        padding: 60px 10px;
-    }
-}
-
-
-
-
-/* ================RISK MAPPING SECTION ============ */
-
-.risk-section {
-    padding: 100px 0;
-
-    background:
-        linear-gradient(rgba(11, 37, 64, .92), rgba(11, 37, 64, .92)),
-        url('images/agri-pattern.png');
-
-    background-size: cover;
-    background-position: center;
-}
-
-
-/* ===== CARD ===== */
-.risk-card {
-    background: linear-gradient(145deg, #ffffff, #fbfcff);
-
-    padding: 24px;
-    border-radius: 20px;
-
+.rd-innovation-card {
+    background: #ffffff;
+    border: 1px solid #e0e7e1;
+    padding: 40px;
     height: 100%;
-
-    border: 1px solid rgba(11, 37, 64, .10);
-
-    transition: .35s;
-
-    box-shadow:
-        0 12px 28px rgba(0, 0, 0, .04),
-        inset 0 0 0 1px rgba(255, 255, 255, .8);
-
-    position: relative;
+    transition: all 0.4s ease;
+    border-top: 4px solid #8bc34a;
+    /* Agriculture Green */
 }
 
-.risk-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, .08),
-        0 0 0 1px rgba(243, 146, 0, .25);
-    border-top: 5px solid orange !important;
+.rd-innovation-card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
 }
 
-/* Icon */
-.risk-icon {
-    width: 64px;
-    height: 64px;
-
-    background: linear-gradient(135deg, #fff4e3, #ffe8c6);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 16px;
-    font-size: 28px;
-
-    margin-bottom: 12px;
-
-    box-shadow: 0 8px 18px rgba(243, 146, 0, .15);
+.rd-icon-lab {
+    font-size: 2.5rem;
+    color: #8bc34a;
+    margin-bottom: 20px;
+    display: block;
 }
 
-/* List */
-.risk-card ul {
-    padding-left: 18px;
+.partner-slider-wrap {
+    margin-top: 80px;
+    border-top: 1px solid #eee;
+    padding-top: 50px;
 }
 
-.risk-card li {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #4a5a70;
+.partner-logo-grayscale {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: 0.3s;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
-/* Score */
-.score {
-    margin-top: 10px;
-    font-size: 13px;
-    font-weight: 700;
-    color: #0b2540;
-}
-
-.score span {
-    color: #f39200;
-}
-
-/* Button */
-.risk-btn {
-    background: linear-gradient(135deg, #0b2540, #123a64);
-
-    color: #fff;
-
-    padding: 14px 30px;
-    border-radius: 12px;
-
-    text-decoration: none;
-
-    box-shadow: 0 10px 22px rgba(11, 37, 64, .18);
-}
-
-.risk-btn:hover {
-    background: #123a64;
-    color: #fff;
-}
-
-/* Common */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2.5px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* Responsive */
-@media(max-width:768px) {
-    .risk-section {
-        padding: 60px 10px;
-    }
-}
-
-
-
-
-/* ==============ressorces section ================ */
-
-.resource-section {
-    padding: 100px 0;
-    background: linear-gradient(180deg, #ffffff, #f6f9ff);
-}
-
-/* ===== CARD ===== */
-.resource-card {
-    background: linear-gradient(145deg, #ffffff, #fbfcff);
-
-    padding: 24px;
-    border-radius: 20px;
-
-    height: 100%;
-
-    border: 1px solid rgba(11, 37, 64, .10);
-
-    transition: .35s;
-
-    box-shadow:
-        0 12px 28px rgba(0, 0, 0, .04),
-        inset 0 0 0 1px rgba(255, 255, 255, .8);
-
-    position: relative;
-}
-
-/* Accent */
-.resource-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
-
-    background: linear-gradient(90deg, #f39200, #ffb84d);
-}
-
-.resource-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, .08),
-        0 0 0 1px rgba(243, 146, 0, .25);
-}
-
-/* Tag */
-.r-tag {
-    background: #fff4e3;
-    color: #c46f00;
-
-    padding: 5px 10px;
-    border-radius: 10px;
-
-    font-size: 12px;
-    font-weight: 600;
-}
-
-/* Meta */
-.r-meta {
-    display: flex;
-    gap: 12px;
-
-    font-size: 13px;
-    margin: 10px 0;
-
-    color: #4a5a70;
-}
-
-/* Button */
-.r-btn {
-    color: #f39200;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.r-btn:hover {
-    text-decoration: underline;
-}
-
-/* Main CTA */
-.main-btn {
-    background: linear-gradient(135deg, #0b2540, #123a64);
-
-    color: #fff;
-
-    padding: 14px 30px;
-    border-radius: 12px;
-
-    text-decoration: none;
-
-    box-shadow: 0 10px 22px rgba(11, 37, 64, .18);
-}
-
-.main-btn:hover {
-    background: #123a64;
-    color: #fff;
-}
-
-/* Common */
-.mini-tag {
-    color: #f39200;
-    letter-spacing: 2.5px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* Responsive */
-@media(max-width:768px) {
-    .resource-section {
-        padding: 60px 10px;
-    }
+.partner-logo-grayscale:hover {
+    filter: grayscale(0%);
+    opacity: 1;
 }

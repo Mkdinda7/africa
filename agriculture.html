@@ -113,1400 +113,437 @@
             </div>
         </section>
 
-        <!--==============OUR AGRICULTURE OVERVIEW SECTION ================-->
-        <section class="agri-overview">
+        <!--==============OUR AGRICULTURE DASHBOARD SECTION ================-->
+        <section class="agri-dashboard text-white">
             <div class="container">
-
-                <div class="row align-items-center">
-
-                    <!-- Left Content -->
+                <div class="row mb-5">
                     <div class="col-lg-6">
-                        <span class="mini-tag">AGRICULTURE OVERVIEW</span>
+                        <h2 class="display-5 fw-bold">Live <span style="color: #8bc34a;">Field Telemetry</span></h2>
+                        <p class="text-secondary">Real-time monitoring of soil health and climate conditions across our
+                            primary plantations.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-lg-end">
+                        <div class="d-flex align-items-center bg-dark px-3 py-2 border border-secondary">
+                            <span class="status-indicator"></span>
+                            <small class="text-uppercase tracking-widest fw-bold" style="font-size: 10px;">Network:
+                                Operational</small>
+                        </div>
+                    </div>
+                </div>
 
-                        <h2 class="section-title">
-                            Unlocking the Potential of West African Agriculture
-                        </h2>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="db-panel">
+                            <span class="db-title">Climate Conditions</span>
+                            <div class="mb-4">
+                                <div class="db-value">28.4<span class="db-unit">°C</span></div>
+                                <small class="text-secondary">Ambient Temperature</small>
+                            </div>
+                            <div class="sensor-grid">
+                                <div class="sensor-item">
+                                    <div class="fw-bold text-white">62%</div>
+                                    <small class="text-secondary" style="font-size: 9px;">Humidity</small>
+                                </div>
+                                <div class="sensor-item">
+                                    <div class="fw-bold text-white">4.2<span style="font-size: 8px;">mm</span></div>
+                                    <small class="text-secondary" style="font-size: 9px;">Precipitation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <p class="section-text">
-                            Agriculture remains the backbone of West Africa’s economy, employing over 60% of the
-                            population and contributing significantly to regional GDP. Strategic investments across the
-                            agricultural value chain can transform productivity, food security, and export
-                            competitiveness.
+                    <div class="col-lg-4">
+                        <div class="db-panel">
+                            <span class="db-title">Soil Composition (NPK)</span>
+                            <div class="mb-4">
+                                <div class="db-value">6.8<span class="db-unit">pH</span></div>
+                                <small class="text-secondary">Soil Acidity Levels</small>
+                            </div>
+                            <div class="sensor-grid">
+                                <div class="sensor-item border-start border-info">
+                                    <div class="fw-bold text-info">High</div>
+                                    <small class="text-secondary" style="font-size: 9px;">Nitrogen (N)</small>
+                                </div>
+                                <div class="sensor-item border-start border-warning">
+                                    <div class="fw-bold text-warning">Optimum</div>
+                                    <small class="text-secondary" style="font-size: 9px;">Potassium (K)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="db-panel">
+                            <span class="db-title">AI Yield Forecast</span>
+                            <div class="mb-4">
+                                <div class="db-value text-success">+12.5<span class="db-unit">%</span></div>
+                                <small class="text-secondary">Projected vs Previous Cycle</small>
+                            </div>
+                            <div class="mt-4">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span>Harvest Readiness</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="progress bg-dark" style="height: 4px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--============aGRI PILLARS SECTION =============-->
+
+        <section class="agri-pillars text-white">
+            <div class="container">
+                <div class="row mb-5 justify-content-center text-center">
+                    <div class="col-lg-7">
+                        <h6 class="text-uppercase tracking-widest fw-bold mb-3"
+                            style="color: #8bc34a; letter-spacing: 5px;">Innovation Core</h6>
+                        <h2 class="display-5 fw-bold">Agro-Tech <span style="color: #8bc34a;">Pillars</span></h2>
+                        <div class="mx-auto mt-3" style="width: 50px; height: 3px; background: #8bc34a;"></div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="agri-pillar-card">
+                            <span class="pillar-tag">Intelligence</span>
+                            <div class="pillar-icon-agri">
+                                <i class="bi bi-cpu"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">AI Discovery</h4>
+                            <p class="text-secondary small">Deep-learning algorithms analyze soil data to predict crop
+                                yields with unmatched precision.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="agri-pillar-card">
+                            <span class="pillar-tag">Automation</span>
+                            <div class="pillar-icon-agri">
+                                <i class="bi bi-robot"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Autonomous</h4>
+                            <p class="text-secondary small">Remote-controlled harvesters and self-driving tractors
+                                operating 24/7 across plantations.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="agri-pillar-card">
+                            <span class="pillar-tag">Connectivity</span>
+                            <div class="pillar-icon-agri">
+                                <i class="bi bi-broadcast"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">IoT Sensors</h4>
+                            <p class="text-secondary small">Real-time mesh networks monitoring soil moisture and plant
+                                health at the root level.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="agri-pillar-card">
+                            <span class="pillar-tag">Sustainability</span>
+                            <div class="pillar-icon-agri">
+                                <i class="bi bi-droplet-half"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Precision Irrigation</h4>
+                            <p class="text-secondary small">AI-controlled water management systems that reduce waste by
+                                40% while increasing growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============CORP PORTFOLIO ==============-->
+
+        <section class="crop-portfolio-section">
+            <div class="container">
+                <div class="row mb-5 align-items-end">
+                    <div class="col-lg-6">
+                        <h6 class="text-uppercase tracking-widest fw-bold mb-2"
+                            style="color: #8bc34a; letter-spacing: 4px;">Global Exports</h6>
+                        <h2 class="display-5 fw-bold" style="color: #0b1a10;">Primary <span style="color: #8bc34a;">Crop
+                                Assets</span></h2>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <p class="text-muted small border-start border-3 border-success ps-3 d-inline-block text-start">
+                            High-yield, sustainable production focused on international quality standards and long-term
+                            food security.
                         </p>
+                    </div>
+                </div>
 
-                        <ul class="overview-list">
-                            <li>Rapidly growing domestic and export demand</li>
-                            <li>Expanding agro-processing opportunities</li>
-                            <li>Digital and climate-smart farming adoption</li>
-                            <li>Strong government and development support</li>
-                        </ul>
-
-                        <a href="#" class="btn overview-btn">
-                            Explore Opportunities →
-                        </a>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="crop-card">
+                            <div class="crop-img-box">
+                                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=800"
+                                    alt="Grains">
+                                <span class="crop-badge">Active Harvest</span>
+                            </div>
+                            <div class="crop-info">
+                                <span class="crop-category">Cereals & Grains</span>
+                                <h4 class="crop-title">Winter Wheat v.4</h4>
+                                <p class="text-muted small">Optimized for high-protein content and drought resistance
+                                    through precision soil management.</p>
+                                <div class="crop-stats">
+                                    <div class="stat-item">
+                                        <span>Yield/Ha</span>
+                                        <strong>7.2 Tons</strong>
+                                    </div>
+                                    <div class="stat-item text-end">
+                                        <span>Export Grade</span>
+                                        <strong>Grade A+</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="col-lg-4">
+                        <div class="crop-card">
+                            <div class="crop-img-box">
+                                <img src="https://images.unsplash.com/photo-1544965850-6f8a66788f9b?auto=format&fit=crop&q=80&w=800"
+                                    alt="Cocoa">
+                                <span class="crop-badge">Export Only</span>
+                            </div>
+                            <div class="crop-info">
+                                <span class="crop-category">Soft Commodities</span>
+                                <h4 class="crop-title">Premium Cocoa</h4>
+                                <p class="text-muted small">Sourced from sustainable agro-forestry blocks with full
+                                    blockchain traceability for European markets.</p>
+                                <div class="crop-stats">
+                                    <div class="stat-item">
+                                        <span>Annual Prod.</span>
+                                        <strong>1,200 MT</strong>
+                                    </div>
+                                    <div class="stat-item text-end">
+                                        <span>Certification</span>
+                                        <strong>FairTrade</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- Right Stats -->
+                    <div class="col-lg-4">
+                        <div class="crop-card">
+                            <div class="crop-img-box">
+                                <img src="https://images.unsplash.com/photo-1594761053847-73599540203a?auto=format&fit=crop&q=80&w=800"
+                                    alt="Soybeans">
+                                <span class="crop-badge">Industrial Use</span>
+                            </div>
+                            <div class="crop-info">
+                                <span class="crop-category">Oilseeds</span>
+                                <h4 class="crop-title">Industrial Soy</h4>
+                                <p class="text-muted small">High-oil content soybeans primarily utilized for bio-fuel
+                                    energy production and industrial processing.</p>
+                                <div class="crop-stats">
+                                    <div class="stat-item">
+                                        <span>Oil Content</span>
+                                        <strong>22%</strong>
+                                    </div>
+                                    <div class="stat-item text-end">
+                                        <span>Sustainability</span>
+                                        <strong>Zero-Defor</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===============reclaim-section================-->
+
+        <section class="reclaim-section">
+            <div class="container">
+                <div class="row mb-5">
                     <div class="col-lg-6">
-                        <div class="row g-4">
+                        <h6 class="text-success text-uppercase tracking-widest fw-bold mb-3"
+                            style="letter-spacing: 5px;">Environmental Stewardship</h6>
+                        <h2 class="display-5 fw-bold" style="color: #0b1a10;">From Pit to <span
+                                class="text-success">Plantation</span></h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="text-muted small mt-lg-4">
+                            Our ecological restoration program ensures that every hectare of land utilized for mineral
+                            extraction is returned to a state of high-yield agricultural productivity.
+                        </p>
+                    </div>
+                </div>
 
-                            <div class="col-md-6">
-                                <div class="stat-card">
-                                    <h3>65%</h3>
-                                    <p>Workforce in Agriculture</p>
-                                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="reclaim-visual-box">
+                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200"
+                                class="img-fluid" alt="Reclaimed Land">
+                            <div class="p-3 bg-dark text-white text-center mt-3">
+                                <small class="text-uppercase tracking-widest fw-bold"
+                                    style="font-size: 10px;">Transformation Status: 100% Reclaimed (Block A-4)</small>
                             </div>
-
-                            <div class="col-md-6">
-                                <div class="stat-card">
-                                    <h3>$48B+</h3>
-                                    <p>Regional Market Size</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="stat-card">
-                                    <h3>12%</h3>
-                                    <p>Annual Growth Rate</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="stat-card">
-                                    <h3>20+</h3>
-                                    <p>High Value Crops</p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="reclaim-card">
+                                <span class="process-step">Phase 01: Stabilization</span>
+                                <h4 class="reclaim-title">Soil Engineering & Grading</h4>
+                                <p class="text-muted small mb-0">Re-contouring the landscape to its natural topography
+                                    and stabilizing slopes to prevent erosion.</p>
+                            </div>
+                            <div class="reclaim-card">
+                                <span class="process-step">Phase 02: Enrichment</span>
+                                <h4 class="reclaim-title">Bio-Fertilization</h4>
+                                <p class="text-muted small mb-0">Applying organic nutrients and proprietary microbial
+                                    agents to restore soil microbiome and pH levels.</p>
+                            </div>
+                            <div class="reclaim-card">
+                                <span class="process-step">Phase 03: Cultivation</span>
+                                <h4 class="reclaim-title">Sustainable Re-Seeding</h4>
+                                <p class="text-muted small mb-0">Planting cover crops followed by primary agricultural
+                                    assets like grains or cocoa to finalize the restoration.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--============OUR SUBSECTOR SECTION =============-->
-
-        <section class="subsector-section">
+        <!-- =================Supply Chain SECTION================ -->
+        <section class="supply-chain-section">
             <div class="container">
-
-                <div class="text-center mb-5">
-                    <span class="mini-tag">KEY SUBSECTORS</span>
-
-                    <h2 class="section-title">
-                        Agriculture Investment Areas
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:700px">
-                        Explore high-impact opportunities across the agricultural value chain—from primary production to
-                        processing, logistics, and export.
-                    </p>
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <h6 class="text-uppercase tracking-widest fw-bold mb-3"
+                            style="color: #8bc34a; letter-spacing: 5px;">Seed to Shelf</h6>
+                        <h2 class="display-5 fw-bold">Integrated <span style="color: #8bc34a;">Supply Chain</span></h2>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <p class="text-secondary small mb-0 border-start border-success ps-4">
+                            Our end-to-end logistics infrastructure ensures that every crop maintains its peak
+                            nutritional value from the moment of harvest until it reaches the global consumer.
+                        </p>
+                    </div>
                 </div>
 
-
-                <div class="row g-4">
-
-                    <!-- 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sub-card">
-                            <div class="icon"><i class="fa-solid fa-plant-wilt"></i></div>
-
-                            <h5>Crop Farming</h5>
-
-                            <p>
-                                Commercial cultivation of staple and cash crops including rice, maize, cocoa, cashew,
-                                and horticulture for domestic and export markets.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sub-card">
-                            <div class="icon"><i class="fa-solid fa-cow"></i></div>
-
-                            <h5>Livestock</h5>
-
-                            <p>
-                                Dairy, poultry, and meat production with integrated feed solutions and veterinary
-                                services to meet rising protein demand.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sub-card">
-                            <div class="icon"><i class="fa-solid fa-fish"></i></div>
-
-                            <h5>Aquaculture</h5>
-
-                            <p>
-                                Fish farming and processing leveraging inland water resources and modern breeding
-                                technologies.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sub-card">
-                            <div class="icon">🏭</div>
-
-                            <h5>Agro-Processing</h5>
-
-                            <p>
-                                Value addition through food processing, packaging, and transformation of raw produce
-                                into export-ready products.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sub-card">
-                            <div class="icon">🚜</div>
-
-                            <h5>Mechanization</h5>
-
-                            <p>
-                                Equipment leasing, irrigation systems, and precision farming technologies to boost
-                                productivity.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 6 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sub-card">
-                            <div class="icon"><i class="bi bi-truck"></i></div>
-
-                            <h5>Storage & Logistics</h5>
-
-                            <p>
-                                Cold chain, warehousing, and distribution networks reducing post-harvest losses.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--=============Investment Opportunities ==============-->
-
-        <section class="investment-section">
-            <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="mini-tag">INVESTMENT OPPORTUNITIES</span>
-
-                    <h2 class="section-title">
-                        Where Capital Meets Agricultural Growth
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:720px">
-                        Structured opportunities across production, processing, and distribution designed for
-                        institutional and strategic investors.
-                    </p>
-                </div>
-
-
-                <div class="row g-4">
-
-                    <!-- 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="invest-card">
-
-                            <div class="badge">High Demand</div>
-
-                            <h5>Commercial Rice Production</h5>
-
-                            <p>
-                                Large-scale irrigated rice farms with integrated milling and off-take agreements.
-                            </p>
-
-                            <div class="meta">
-                                <span>Ticket: $1–5M</span>
-                                <span>ROI: 18–24%</span>
-                            </div>
-
-                            <div class="time">Timeline: 24–36 months</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="invest-card">
-
-                            <div class="badge">Export Focus</div>
-
-                            <h5>Cashew Processing</h5>
-
-                            <p>
-                                Value addition through kernel processing for European and Asian markets.
-                            </p>
-
-                            <div class="meta">
-                                <span>Ticket: $2–8M</span>
-                                <span>ROI: 20–26%</span>
-                            </div>
-
-                            <div class="time">Timeline: 18–30 months</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="invest-card">
-
-                            <div class="badge">Infrastructure</div>
-
-                            <h5>Cold Chain Network</h5>
-
-                            <p>
-                                Storage and refrigerated logistics to reduce post-harvest losses.
-                            </p>
-
-                            <div class="meta">
-                                <span>Ticket: $1–3M</span>
-                                <span>ROI: 15–20%</span>
-                            </div>
-
-                            <div class="time">Timeline: 12–24 months</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="invest-card">
-
-                            <div class="badge">Tech Enabled</div>
-
-                            <h5>Greenhouse Horticulture</h5>
-
-                            <p>
-                                Year-round vegetable and flower production using precision systems.
-                            </p>
-
-                            <div class="meta">
-                                <span>Ticket: $500k–2M</span>
-                                <span>ROI: 22–28%</span>
-                            </div>
-
-                            <div class="time">Timeline: 12–18 months</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="invest-card">
-
-                            <div class="badge">Protein Sector</div>
-
-                            <h5>Poultry Integration</h5>
-
-                            <p>
-                                Feed mill + broiler + processing with urban distribution channels.
-                            </p>
-
-                            <div class="meta">
-                                <span>Ticket: $1–4M</span>
-                                <span>ROI: 17–23%</span>
-                            </div>
-
-                            <div class="time">Timeline: 18–30 months</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 6 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="invest-card">
-
-                            <div class="badge">Aquaculture</div>
-
-                            <h5>Fish Farming Clusters</h5>
-
-                            <p>
-                                Cage and pond systems with hatchery and feed partnerships.
-                            </p>
-
-                            <div class="meta">
-                                <span>Ticket: $800k–3M</span>
-                                <span>ROI: 19–25%</span>
-                            </div>
-
-                            <div class="time">Timeline: 14–26 months</div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- CTA -->
-                <div class="text-center mt-5">
-                    <a href="#" class="invest-btn">
-                        Discuss Investment →
-                    </a>
-                </div>
-
-
-            </div>
-        </section>
-
-
-        <!--===============Market Intelligence ================-->
-
-        <section class="intel-section">
-            <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="mini-tag">MARKET INTELLIGENCE</span>
-
-                    <h2 class="section-title">
-                        Data-Driven Agricultural Insights
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:760px">
-                        Our intelligence platform combines field data, satellite analytics, and trade flows to guide
-                        investment and operational decisions across West Africa.
-                    </p>
-                </div>
-
-
-                <div class="row g-4">
-
-                    <!-- 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="intel-card">
-
-                            <div class="icon">📈</div>
-
-                            <h5>Price & Demand Trends</h5>
-
-                            <p>
-                                Real-time commodity pricing, seasonal demand forecasting, and cross-border trade
-                                analytics.
-                            </p>
-
-                            <div class="pill">Updated Weekly</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="intel-card">
-
-                            <div class="icon">🛰️</div>
-
-                            <h5>Climate & Satellite Data</h5>
-
-                            <p>
-                                Rainfall patterns, vegetation index, and yield prediction using remote sensing tools.
-                            </p>
-
-                            <div class="pill">Geo Analytics</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="intel-card">
-
-                            <div class="icon">🚢</div>
-
-                            <h5>Trade Flow Mapping</h5>
-
-                            <p>
-                                Import-export corridors, logistics bottlenecks, and regional market access studies.
-                            </p>
-
-                            <div class="pill">Cross-Border</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="intel-card">
-
-                            <div class="icon">📜</div>
-
-                            <h5>Policy Tracking</h5>
-
-                            <p>
-                                Monitoring agricultural incentives, tariffs, and regulatory changes.
-                            </p>
-
-                            <div class="pill">Regulatory</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="intel-card">
-
-                            <div class="icon">🧪</div>
-
-                            <h5>Soil & Input Analysis</h5>
-
-                            <p>
-                                Fertilizer suitability, soil health mapping, and productivity benchmarks.
-                            </p>
-
-                            <div class="pill">Agro-Science</div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 6 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="intel-card">
-
-                            <div class="icon">🧭</div>
-
-                            <h5>Risk Intelligence</h5>
-
-                            <p>
-                                Political, climate, and market risk scoring for investment planning.
-                            </p>
-
-                            <div class="pill">Risk Score</div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- CTA -->
-                <div class="text-center mt-5">
-                    <a href="#" class="intel-btn" data-bs-toggle="modal" data-bs-target="#reportModal">
-                        Request Intelligence Report →
-                    </a>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- ===== Intelligence Report Modal ===== -->
-        <div class="modal fade" id="reportModal" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-
-                    <!-- Header -->
-                    <div class="modal-header">
-                        <h5 class="modal-title">Request Market Intelligence Report</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="modal-body">
-
-                        <form>
-
-                            <div class="row">
-
-                                <!-- Name -->
-                                <div class="col-md-6 mb-3">
-                                    <label>Full Name *</label>
-                                    <input type="text" class="form-control" placeholder="Your name" required>
-                                </div>
-
-                                <!-- Email -->
-                                <div class="col-md-6 mb-3">
-                                    <label>Email *</label>
-                                    <input type="email" class="form-control" placeholder="email@example.com" required>
-                                </div>
-
-                                <!-- Organization -->
-                                <div class="col-md-6 mb-3">
-                                    <label>Organization</label>
-                                    <input type="text" class="form-control" placeholder="Company name">
-                                </div>
-
-                                <!-- Country -->
-                                <div class="col-md-6 mb-3">
-                                    <label>Country</label>
-                                    <input type="text" class="form-control" placeholder="Your country">
-                                </div>
-
-                                <!-- Report Type -->
-                                <div class="col-12 mb-3">
-                                    <label>Type of Report *</label>
-
-                                    <select class="form-select" required>
-                                        <option value="">Select report type</option>
-                                        <option>Price & Demand Trends</option>
-                                        <option>Climate & Satellite Analytics</option>
-                                        <option>Trade Flow Mapping</option>
-                                        <option>Policy & Regulation</option>
-                                        <option>Soil & Input Analysis</option>
-                                        <option>Risk Intelligence</option>
-                                        <option>Custom Research</option>
-                                    </select>
-                                </div>
-
-                                <!-- Message -->
-                                <div class="col-12 mb-3">
-                                    <label>Your Requirements</label>
-
-                                    <textarea class="form-control" rows="4"
-                                        placeholder="Tell us what kind of intelligence you need..."></textarea>
-                                </div>
-
-                            </div>
-
-                        </form>
-
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="modal-footer">
-                        <button class="btn cancel-btn" data-bs-dismiss="modal">
-                            Cancel
-                        </button>
-
-                        <a href="./thankyou.html" class="btn submit-btn">
-                            Submit Request
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!--============ value chain ================-->
-        <section class="value-section">
-            <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="mini-tag">VALUE CHAIN</span>
-
-                    <h2 class="section-title">
-                        From Farm to Market
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:760px">
-                        Integrated agricultural value chains connecting producers, processors, and markets to unlock
-                        efficiency and investment returns.
-                    </p>
-                </div>
-
-
-                <div class="row g-4 justify-content-center">
-
-                    <!-- 1 -->
+                <div class="row g-4 sc-flow-container">
                     <div class="col-lg-3 col-md-6">
-                        <div class="value-card">
-                            <div class="icon">🌾</div>
-
-                            <h5>Input & Production</h5>
-
-                            <ul>
-                                <li>Seed & fertilizer</li>
-                                <li>Farm mechanization</li>
-                                <li>Irrigation systems</li>
-                                <li>Extension services</li>
-                            </ul>
-
+                        <div class="sc-card">
+                            <span class="sc-step-num">01</span>
+                            <span class="sc-label">Harvesting</span>
+                            <div class="sc-icon-box"><i class="bi bi-truck-flatbed"></i></div>
+                            <h5 class="fw-bold mb-3">Precision Collection</h5>
+                            <p class="text-secondary small">Autonomous harvesters collect crops at the peak of maturity,
+                                reducing post-harvest losses by 15%.</p>
                         </div>
                     </div>
 
-
-                    <!-- 2 -->
                     <div class="col-lg-3 col-md-6">
-                        <div class="value-card">
-                            <div class="icon">🏭</div>
-
-                            <h5>Aggregation</h5>
-
-                            <ul>
-                                <li>Collection centers</li>
-                                <li>Quality grading</li>
-                                <li>Primary storage</li>
-                                <li>Farmer networks</li>
-                            </ul>
-
+                        <div class="sc-card">
+                            <span class="sc-step-num">02</span>
+                            <span class="sc-label">Processing</span>
+                            <div class="sc-icon-box"><i class="bi bi-gear-wide-connected"></i></div>
+                            <h5 class="fw-bold mb-3">Smart Sorting</h5>
+                            <p class="text-secondary small">AI-powered optical sorters categorize produce by size,
+                                color, and quality grade for specific market tiers.</p>
                         </div>
                     </div>
 
-
-                    <!-- 3 -->
                     <div class="col-lg-3 col-md-6">
-                        <div class="value-card">
-                            <div class="icon">⚙️</div>
-
-                            <h5>Processing</h5>
-
-                            <ul>
-                                <li>Milling & packaging</li>
-                                <li>Value addition</li>
-                                <li>Food safety</li>
-                                <li>Certification</li>
-                            </ul>
-
+                        <div class="sc-card">
+                            <span class="sc-step-num">03</span>
+                            <span class="sc-label">Storage</span>
+                            <div class="sc-icon-box"><i class="bi bi-snow"></i></div>
+                            <h5 class="fw-bold mb-3">Cold-Chain Hubs</h5>
+                            <p class="text-secondary small">IoT-monitored climate-controlled facilities preserve
+                                freshness and extend shelf life for long-distance export.</p>
                         </div>
                     </div>
 
-
-                    <!-- 4 -->
                     <div class="col-lg-3 col-md-6">
-                        <div class="value-card">
-                            <div class="icon">🚚</div>
-
-                            <h5>Distribution</h5>
-
-                            <ul>
-                                <li>Cold chain</li>
-                                <li>Export logistics</li>
-                                <li>Wholesale markets</li>
-                                <li>Retail networks</li>
-                            </ul>
-
+                        <div class="sc-card">
+                            <span class="sc-step-num">04</span>
+                            <span class="sc-label">Logistics</span>
+                            <div class="sc-icon-box"><i class="bi bi-globe-americas"></i></div>
+                            <h5 class="fw-bold mb-3">Global Export</h5>
+                            <p class="text-secondary small">Strategic partnerships with major ports and freight carriers
+                                ensure rapid delivery to our 24 international markets.</p>
                         </div>
                     </div>
-
                 </div>
-
-
-                <!-- CTA -->
-                <div class="text-center mt-5">
-                    <a href="#" class="value-btn">
-                        Explore Value Chain Projects →
-                    </a>
-                </div>
-
             </div>
         </section>
 
-        <!-- ==================Agri Tech Section ============= -->
+        <!-- =================R & D PARTNERS =================== -->
 
-        <section class="agritech-section">
+        <section class="agri-rd-section">
             <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="mini-tag">AGRI-TECH</span>
-
-                    <h2 class="section-title">
-                        Technology Transforming Agriculture
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:760px">
-                        Digital tools and data platforms improving yields, reducing risk, and connecting farmers to
-                        markets across West Africa.
-                    </p>
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <h6 class="text-success text-uppercase tracking-widest fw-bold mb-3"
+                            style="letter-spacing: 5px;">Future Growth</h6>
+                        <h2 class="display-5 fw-bold" style="color: #0b1a10;">Research & <span
+                                style="color: #8bc34a;">Development</span></h2>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <p class="text-muted small border-start border-3 border-success ps-4">
+                            Our agricultural research division focuses on enhancing crop resilience and nutritional
+                            density through proprietary bio-genetics and soil science.
+                        </p>
+                    </div>
                 </div>
-
 
                 <div class="row g-4">
-
-                    <!-- Card 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tech-card">
-
-                            <div class="tech-icon">🛰️</div>
-
-                            <h5>Satellite Monitoring</h5>
-
-                            <p>
-                                Vegetation index, rainfall tracking, and early yield estimation for large-scale farms
-                                and investors.
-                            </p>
-
-                            <div class="tech-tags">
-                                <span>NDVI</span>
-                                <span>Weather</span>
-                                <span>Yield</span>
-                            </div>
-
+                    <div class="col-lg-4">
+                        <div class="rd-innovation-card">
+                            <i class="bi bi-droplet-fill rd-icon-lab"></i>
+                            <h4 class="fw-bold mb-3">Drought Resilience</h4>
+                            <p class="text-muted small">Developing seed variants that require 30% less water while
+                                maintaining peak metabolic health in arid climates.</p>
                         </div>
                     </div>
 
-
-                    <!-- Card 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tech-card">
-
-                            <div class="tech-icon">🤖</div>
-
-                            <h5>Precision Farming</h5>
-
-                            <p>
-                                IoT sensors and smart irrigation optimizing fertilizer, water, and input usage.
-                            </p>
-
-                            <div class="tech-tags">
-                                <span>IoT</span>
-                                <span>Sensors</span>
-                                <span>Drip</span>
-                            </div>
-
+                    <div class="col-lg-4">
+                        <div class="rd-innovation-card">
+                            <i class="bi bi-bug-fill rd-icon-lab"></i>
+                            <h4 class="fw-bold mb-3">Bio-Pesticides</h4>
+                            <p class="text-muted small">Researching organic, microbial-based solutions to eliminate
+                                pests without the use of harmful synthetic chemicals.</p>
                         </div>
                     </div>
 
-
-                    <!-- Card 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tech-card">
-
-                            <div class="tech-icon">📱</div>
-
-                            <h5>Digital Market Access</h5>
-
-                            <p>
-                                Mobile platforms linking farmers with buyers, finance, and extension services.
-                            </p>
-
-                            <div class="tech-tags">
-                                <span>Trade</span>
-                                <span>Finance</span>
-                                <span>Trace</span>
-                            </div>
-
+                    <div class="col-lg-4">
+                        <div class="rd-innovation-card">
+                            <i class="bi bi-diagram-3-fill rd-icon-lab"></i>
+                            <h4 class="fw-bold mb-3">Nutrient Mapping</h4>
+                            <p class="text-muted small">Utilizing AI to map subterranean nutrient flows, allowing for
+                                micro-dosing of organic fertilizers.</p>
                         </div>
                     </div>
-
-
-                    <!-- Card 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tech-card">
-
-                            <div class="tech-icon">📊</div>
-
-                            <h5>Data Intelligence</h5>
-
-                            <p>
-                                AI-based demand forecasting and commodity price prediction models.
-                            </p>
-
-                            <div class="tech-tags">
-                                <span>AI</span>
-                                <span>Risk</span>
-                                <span>Forecast</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Card 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tech-card">
-
-                            <div class="tech-icon">🚁</div>
-
-                            <h5>Drone Services</h5>
-
-                            <p>
-                                Mapping, crop spraying, and field inspection at reduced operational cost.
-                            </p>
-
-                            <div class="tech-tags">
-                                <span>Mapping</span>
-                                <span>Spray</span>
-                                <span>Survey</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Card 6 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tech-card">
-
-                            <div class="tech-icon">🔐</div>
-
-                            <h5>Traceability</h5>
-
-                            <p>
-                                Blockchain and QR systems ensuring export compliance and food safety.
-                            </p>
-
-                            <div class="tech-tags">
-                                <span>QR</span>
-                                <span>Chain</span>
-                                <span>Export</span>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
 
-
-                <!-- CTA -->
-                <div class="text-center mt-5">
-                    <a href="#" class="tech-btn">
-                        Explore Agri-Tech Solutions →
-                    </a>
+                <div class="partner-slider-wrap text-center">
+                    <small class="text-uppercase tracking-widest text-muted mb-5 d-block">Institutional Partners &
+                        Global Offtakers</small>
+                    <div class="d-flex flex-wrap justify-content-around align-items-center gap-4">
+                        <span class="partner-logo-grayscale h4 mb-0">AGRO-GLOBAL</span>
+                        <span class="partner-logo-grayscale h4 mb-0">BIO-TECH LABS</span>
+                        <span class="partner-logo-grayscale h4 mb-0">NATURA-FOODS</span>
+                        <span class="partner-logo-grayscale h4 mb-0">GOVT-AGRI</span>
+                        <span class="partner-logo-grayscale h4 mb-0">UN-FOODSEC</span>
+                    </div>
                 </div>
-
             </div>
         </section>
-
-        <!-- ==================case Studies ================== -->
-
-        <section class="case-section">
-            <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="mini-tag">CASE STUDIES</span>
-
-                    <h2 class="section-title">
-                        Impact Across the Value Chain
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:760px">
-                        Real examples of how strategic investment and technology transformed agricultural outcomes in
-                        West Africa.
-                    </p>
-                </div>
-
-
-                <div class="row g-4">
-
-                    <!-- Case 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="case-card">
-
-                            <span class="case-tag">Ghana</span>
-
-                            <h5>Rice Milling Integration</h5>
-
-                            <p>
-                                Modern milling facility linked with 3,200 farmers increased local sourcing and reduced
-                                imports by 18%.
-                            </p>
-
-                            <div class="impact">
-                                <span>ROI: 22%</span>
-                                <span>Jobs: 140+</span>
-                            </div>
-
-                            <a href="#" class="case-btn">Read Case →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Case 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="case-card">
-
-                            <span class="case-tag">Benin</span>
-
-                            <h5>Cashew Processing Hub</h5>
-
-                            <p>
-                                Export-grade processing plant enabling value addition and direct EU market access.
-                            </p>
-
-                            <div class="impact">
-                                <span>ROI: 24%</span>
-                                <span>Volume: 18k MT</span>
-                            </div>
-
-                            <a href="#" class="case-btn">Read Case →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Case 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="case-card">
-
-                            <span class="case-tag">Nigeria</span>
-
-                            <h5>Cold Chain Network</h5>
-
-                            <p>
-                                Solar-powered storage reduced post-harvest losses from 32% to 9% in two seasons.
-                            </p>
-
-                            <div class="impact">
-                                <span>Loss ↓ 23%</span>
-                                <span>Farmers: 6k</span>
-                            </div>
-
-                            <a href="#" class="case-btn">Read Case →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Case 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="case-card">
-
-                            <span class="case-tag">Regional</span>
-
-                            <h5>Digital Market Platform</h5>
-
-                            <p>
-                                Mobile marketplace connecting producers with institutional buyers and finance.
-                            </p>
-
-                            <div class="impact">
-                                <span>Trades: $12M</span>
-                                <span>Users: 14k</span>
-                            </div>
-
-                            <a href="#" class="case-btn">Read Case →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Case 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="case-card">
-
-                            <span class="case-tag">Côte d’Ivoire</span>
-
-                            <h5>Cocoa Traceability</h5>
-
-                            <p>
-                                Blockchain tracking ensured compliance with EU sustainability standards.
-                            </p>
-
-                            <div class="impact">
-                                <span>Premium +16%</span>
-                                <span>Farms: 2.1k</span>
-                            </div>
-
-                            <a href="#" class="case-btn">Read Case →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Case 6 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="case-card">
-
-                            <span class="case-tag">Senegal</span>
-
-                            <h5>Greenhouse Cluster</h5>
-
-                            <p>
-                                High-value horticulture project supplying hotels and export markets year-round.
-                            </p>
-
-                            <div class="impact">
-                                <span>Yield x3</span>
-                                <span>ROI: 27%</span>
-                            </div>
-
-                            <a href="#" class="case-btn">Read Case →</a>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- CTA -->
-                <div class="text-center mt-5">
-                    <a href="#" class="main-btn">
-                        View All Case Studies →
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ============risk mapping section ============= -->
-
-        <section class="risk-section">
-            <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="mini-tag">RISK MAPPING</span>
-
-                    <h2 class="section-title">
-                        Identifying & Mitigating Agricultural Risk
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:760px">
-                        Structured risk assessment across climate, market, policy, and operations to protect investments
-                        and ensure resilience.
-                    </p>
-                </div>
-
-
-                <div class="row g-4">
-
-                    <!-- 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="risk-card">
-
-                            <div class="risk-icon">🌦️</div>
-
-                            <h5>Climate Risk</h5>
-
-                            <p>
-                                Rainfall variability, drought exposure, and extreme weather impact on yields.
-                            </p>
-
-                            <ul>
-                                <li>Satellite monitoring</li>
-                                <li>Irrigation planning</li>
-                                <li>Crop insurance</li>
-                            </ul>
-
-                            <div class="score">
-                                Risk Level: <span>High</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="risk-card">
-
-                            <div class="risk-icon">📉</div>
-
-                            <h5>Market Risk</h5>
-
-                            <p>
-                                Price volatility, demand shifts, and cross-border trade disruptions.
-                            </p>
-
-                            <ul>
-                                <li>Off-take contracts</li>
-                                <li>Hedging strategy</li>
-                                <li>Buyer diversification</li>
-                            </ul>
-
-                            <div class="score">
-                                Risk Level: <span>Medium</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="risk-card">
-
-                            <div class="risk-icon">🏛️</div>
-
-                            <h5>Policy Risk</h5>
-
-                            <p>
-                                Tariffs, export bans, subsidy changes, and regulatory compliance.
-                            </p>
-
-                            <ul>
-                                <li>Policy tracking</li>
-                                <li>Legal advisory</li>
-                                <li>Certification</li>
-                            </ul>
-
-                            <div class="score">
-                                Risk Level: <span>Medium</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="risk-card">
-
-                            <div class="risk-icon">⚙️</div>
-
-                            <h5>Operational Risk</h5>
-
-                            <p>
-                                Input supply, machinery failure, and farm management gaps.
-                            </p>
-
-                            <ul>
-                                <li>Preventive maintenance</li>
-                                <li>Training programs</li>
-                                <li>Quality systems</li>
-                            </ul>
-
-                            <div class="score">
-                                Risk Level: <span>Low</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="risk-card">
-
-                            <div class="risk-icon">🚚</div>
-
-                            <h5>Logistics Risk</h5>
-
-                            <p>
-                                Transport delays, storage losses, and cold chain breaks.
-                            </p>
-
-                            <ul>
-                                <li>Route planning</li>
-                                <li>Cold storage</li>
-                                <li>Tracking systems</li>
-                            </ul>
-
-                            <div class="score">
-                                Risk Level: <span>High</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 6 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="risk-card">
-
-                            <div class="risk-icon">💱</div>
-
-                            <h5>Financial Risk</h5>
-
-                            <p>
-                                Currency fluctuation, interest rates, and working capital gaps.
-                            </p>
-
-                            <ul>
-                                <li>FX planning</li>
-                                <li>Blended finance</li>
-                                <li>Insurance</li>
-                            </ul>
-
-                            <div class="score">
-                                Risk Level: <span>Medium</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- CTA -->
-                <div class="text-center mt-5">
-                    <a href="#" class="risk-btn">
-                        Request Risk Assessment →
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ==================ressource ================ -->
-
-        <section class="resource-section">
-            <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="mini-tag">RESOURCES</span>
-
-                    <h2 class="section-title">
-                        Knowledge & Insights
-                    </h2>
-
-                    <p class="section-text mx-auto" style="max-width:760px">
-                        Access reports, policy briefs, and practical guides supporting informed decisions across
-                        Africa’s agricultural sector.
-                    </p>
-                </div>
-
-
-                <div class="row g-4">
-
-                    <!-- 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="resource-card">
-
-                            <span class="r-tag">Report</span>
-
-                            <h5>Agriculture Outlook 2025</h5>
-
-                            <p>
-                                Regional demand trends, price forecasts, and investment opportunities.
-                            </p>
-
-                            <div class="r-meta">
-                                <span>PDF • 38 pages</span>
-                                <span>Free</span>
-                            </div>
-
-                            <a href="#" class="r-btn">Download →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="resource-card">
-
-                            <span class="r-tag">Guide</span>
-
-                            <h5>Cold Chain Handbook</h5>
-
-                            <p>
-                                Design and management of temperature-controlled logistics.
-                            </p>
-
-                            <div class="r-meta">
-                                <span>PDF • 24 pages</span>
-                                <span>Free</span>
-                            </div>
-
-                            <a href="#" class="r-btn">Download →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="resource-card">
-
-                            <span class="r-tag">Policy Brief</span>
-
-                            <h5>Trade & Tariff Update</h5>
-
-                            <p>
-                                Latest ECOWAS policies affecting agro exports.
-                            </p>
-
-                            <div class="r-meta">
-                                <span>PDF • 12 pages</span>
-                                <span>Free</span>
-                            </div>
-
-                            <a href="#" class="r-btn">View →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="resource-card">
-
-                            <span class="r-tag">Toolkit</span>
-
-                            <h5>Farm Risk Template</h5>
-
-                            <p>
-                                Excel model for assessing climate and market risk.
-                            </p>
-
-                            <div class="r-meta">
-                                <span>XLS • Template</span>
-                                <span>Free</span>
-                            </div>
-
-                            <a href="#" class="r-btn">Download →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="resource-card">
-
-                            <span class="r-tag">Casebook</span>
-
-                            <h5>Agri-Tech Use Cases</h5>
-
-                            <p>
-                                Real deployments of digital tools across value chains.
-                            </p>
-
-                            <div class="r-meta">
-                                <span>PDF • 30 pages</span>
-                                <span>Premium</span>
-                            </div>
-
-                            <a href="#" class="r-btn">Request →</a>
-
-                        </div>
-                    </div>
-
-
-                    <!-- 6 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="resource-card">
-
-                            <span class="r-tag">Data</span>
-
-                            <h5>Price Dashboard</h5>
-
-                            <p>
-                                Monthly commodity prices across major markets.
-                            </p>
-
-                            <div class="r-meta">
-                                <span>Web Tool</span>
-                                <span>Free</span>
-                            </div>
-
-                            <a href="#" class="r-btn">Access →</a>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- CTA -->
-                <div class="text-center mt-5">
-                    <a href="#" class="main-btn">
-                        View All Resources →
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
 
     </main>
 
