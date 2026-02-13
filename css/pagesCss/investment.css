@@ -52,3 +52,75 @@
     margin-bottom: 15px;
     border-radius: 2px;
 }
+
+
+
+/* ==============ESG SECTION ================ */
+
+/* Premium ESG Section Styling */
+.esg-container {
+    background: #060c18;
+    /* Slightly darker than your navy for depth */
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.esg-card-premium {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0px;
+    /* Sharp industrial corners to match your "Mining" style */
+    padding: 40px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.esg-card-premium:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #ff9800;
+    /* Matching your orange accent */
+    transform: translateY(-5px);
+}
+
+/* Glowing Accent Line */
+.esg-card-premium::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #ff9800;
+    transition: width 0.5s ease;
+}
+
+.esg-card-premium:hover::after {
+    width: 100%;
+}
+
+.esg-icon-circle {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(255, 152, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #ff9800 !important;
+    transition: 0.5s;
+}
+
+.esg-card-premium:hover .esg-icon-circle {
+    background: #ff9800;
+    color: #000 !important;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8892b0;
+    margin-bottom: 5px;
+}
