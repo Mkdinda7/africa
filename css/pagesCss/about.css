@@ -12,9 +12,9 @@
 
 
 .company-header {
-    background-color: #0a192f;
+    background-color: #143970;
     margin-top: 100px;
-    position: relative;
+    position: relative; 
     padding: 50px 0 100px;
     overflow: hidden;
     border-bottom: 4px solid #f8f9fa;
@@ -216,7 +216,7 @@
 /* =================GLOBAL MAP SECTION CSS ============= */
 
 .map-section {
-    background-color: #040a16; 
+    background-color: #122f68; 
     padding: 100px 0;
     overflow: hidden;
 }
@@ -472,7 +472,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    color: #0a192f;
+    color: #0a192f !important;
     font-size: 2rem;
 }
 
