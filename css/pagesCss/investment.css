@@ -5,6 +5,7 @@
     padding: 125px 0 95px;
     overflow: hidden;
     border-bottom: 3px solid #ffbf00;
+    margin-top: 80px;
 }
 
 .investment-header::before {
