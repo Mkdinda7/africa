@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make with Africa</title>
+
+    <!-- link to favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- link to font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- ===== CDN COUNTER ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/counterup2/2.0.2/index.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- link custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pagesCss/donetNow.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg premium-nav">
+        <div class="container">
+
+            <!-- ===== LOGO ===== -->
+            <a class="navbar-brand logo-area" href="#">
+                <img src="./assets/images/logo.png" class="img-fluid" alt="logo-img">
+            </a>
+
+            <!-- toggler -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- ===== MENU ===== -->
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li><a class="nav-link " href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a class="nav-link" href="./about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li><a class="nav-link" href="./agriculture.html"><i class="fa-solid fa-seedling"></i>
+                            Agriculture</a>
+                    </li>
+                    <li><a class="nav-link active" href="./petroliumGas.html"><i class="fa-solid fa-gas-pump"></i>
+                            Petrolium &
+                            Gas</a></li>
+                    <li><a class="nav-link" href="./mining.html"><i class="fa-solid fa-person-digging"></i>
+                            Mining</a>
+                    </li>
+                    <li><a class="nav-link" href="./investment.html"><i class="fa-solid fa-hand-holding-dollar"></i>
+                            Investment</a></li>
+                    <li><a class="nav-link" href="./technology.html"><i class="fa-solid fa-laptop"></i> Technology</a>
+                    </li>
+                </ul>
+
+                <!-- right button -->
+                <div class="nav-btn ">
+                    <a href="./donetNow.html" class="btn-start bg-warning text-dark">
+                        Donet
+                    </a>
+                    <a href="./contact.html" class="btn-start">
+                        Get Started
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="donation-hero">
+            <div class="container">
+                <h6 class="text-uppercase tracking-widest fw-bold mb-3" style="color: #ffbf00; letter-spacing: 5px;">
+                    Natural Asset Stewardship</h6>
+                <h1 class="display-3 fw-bold">Plant the Future of A frica</h1>
+                <p class="lead opacity-75">Integrate nature with progress. Every contribution supports land reclamation
+                    and agricultural sustainability.</p>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="donation-card">
+                            <h3 class="fw-bold mb-4 text-dark">Select Donation Amount</h3>
+
+                            <div class="row g-2 mb-4">
+                                <div class="col-4"><button class="amount-btn active" data-amt="25">$25</button></div>
+                                <div class="col-4"><button class="amount-btn" data-amt="50">$50</button></div>
+                                <div class="col-4"><button class="amount-btn" data-amt="100">$100</button></div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small text-uppercase">Custom Amount (USD)</label>
+                                <input type="number" class="form-control form-control-lg rounded-0" id="customAmount"
+                                    placeholder="Enter amount">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small text-uppercase">Impact Sector</label>
+                                <select class="form-select form-control-lg rounded-0">
+                                    <option selected>Reforestation & Land Reclamation</option>
+                                    <option>Agricultural Growth Systems</option>
+                                    <option>Community Infrastructure</option>
+                                </select>
+                            </div>
+
+                            <button class="donate-submit-btn">Complete Donation</button>
+
+                            <div class="text-center mt-4">
+                                <small class="text-muted"><i class="bi bi-shield-lock me-2"></i>Secure Transaction
+                                    powered by SINADAI Digital Intelligence</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-5 mt-lg-0">
+                        <div class="p-4 bg-white border">
+                            <h5 class="fw-bold border-bottom pb-3 mb-3">Your Strategic Impact</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-4">
+                                    <span class="impact-badge">Environment</span>
+                                    <p class="small mt-2 mb-0"><strong>Land Restoration:</strong> Every $100 contributes
+                                        to 1 hectare of reclaimed mining land returned to nature.</p>
+                                </li>
+                                <li class="mb-4">
+                                    <span class="impact-badge">Community</span>
+                                    <p class="small mt-2 mb-0"><strong>Agro-Transition:</strong> Supporting long-term
+                                        livelihoods for farmers in emerging resource economies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- =================== FOOTER SECTION =================== -->
+
+    <footer class="footer-pro">
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- ===== BRAND ===== -->
+                <div class="col-lg-4">
+
+                    <div class="brand-box">
+
+                        <img src="./assets/images/logo.png" alt="footer-logo">
+
+                        <p>
+                            West Africa’s premier investment intelligence platform
+                            connecting investors with vetted opportunities across
+                            15+ countries.
+                        </p>
+
+                        <div class="social">
+                            <a>𝕏</a>
+                            <a>in</a>
+                            <a>f</a>
+                            <a>ig</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ===== LINKS ===== -->
+                <div class="col-lg-2 col-md-4">
+
+                    <h5>Explore</h5>
+
+                    <ul class="f-links">
+                        <li>Home</li>
+                        <li>Agriculture</li>
+                        <li>Mining</li>
+                        <li>Oil & Gas</li>
+                        <li>Success Stories</li>
+                    </ul>
+
+                </div>
+
+
+
+                <!-- ===== TOOLS ===== -->
+                <div class="col-lg-3 col-md-4">
+
+                    <h5>Tools</h5>
+
+                    <ul class="f-links">
+                        <li>ROI Calculator</li>
+                        <li>Market Analysis</li>
+                        <li>Investment Tracker</li>
+                        <li>Due Diligence</li>
+                        <li>Export Docs</li>
+                    </ul>
+
+                </div>
+
+
+
+                <!-- ===== CONTACT CARD ===== -->
+                <div class="col-lg-3 col-md-4">
+
+                    <div class="contact-card">
+
+                        <h5>Contact</h5>
+
+                        <p><i class="fa-solid fa-location-dot"></i> Accra • Lagos • Dakar</p>
+
+                        <p><a href="tel:+233241234567"><i class="fa-solid fa-phone"></i> +233 24 123 4567</a>
+                        </p>
+
+                        <p><a href="mailto:invest@makeafrica.com"><i class="fa-solid fa-envelope"></i>
+                                invest@makeafrica.com</a></p>
+
+                        <p><i class="fa-solid fa-clock"></i> 24/7 Support</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ===== BOTTOM ===== -->
+            <div class="bottom mt-4">
+
+                <div>
+                    © 2024 Make Wealth Africa. All rights reserved.
+                </div>
+
+                <div class="mini">
+                    Pan-West Africa coverage • Professional platform
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <!-- bootstrap cdn js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const amountBtns = document.querySelectorAll('.amount-btn');
+            const customInput = document.getElementById('customAmount');
+
+            amountBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Remove active class from all
+                    amountBtns.forEach(b => b.classList.remove('active'));
+                    // Add to clicked
+                    this.classList.add('active');
+                    // Clear custom input if a preset is picked
+                    customInput.value = '';
+                });
+            });
+
+            customInput.addEventListener('input', function () {
+                // Remove active class from presets if typing custom
+                amountBtns.forEach(b => b.classList.remove('active'));
+            });
+        });
+    </script>
+</body>
+
+</html>
