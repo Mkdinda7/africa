@@ -1,626 +1,385 @@
-/* Premium Breadcrumb Header */
-.page-header {
-    background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)),
-        url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=1600');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0 60px;
-    margin-top: 100px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.breadcrumb-item+.breadcrumb-item::before {
-    content: " \f105 ";
-    font-family: "bootstrap-icons";
-    color: #ff9800;
-}
-
-.breadcrumb-item a {
-    color: #aaa;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.breadcrumb-item a:hover {
-    color: #ff9800;
-}
-
-.breadcrumb-item.active {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.header-title {
-    letter-spacing: 1px;
-    font-weight: 700;
-}
-
-
-/* ========================MINING HERO SECTION ============== */
-
-
-.mining-hero {
-    background: linear-gradient(rgba(6, 18, 38, 0.88), rgba(6, 18, 38, 0.88)),
-        url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7');
-    background-size: cover;
-    background-position: center;
-    padding: 120px 0;
-    color: white;
-}
-
-.mining-hero-title {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.mining-hero-subtitle {
-    font-size: 18px;
-    margin-top: 15px;
-    opacity: 0.9;
-    max-width: 500px;
-}
-
-.mining-btn-primary {
-    background: #ff9800;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: 600;
-    margin-right: 15px;
-    transition: .3s;
-}
-
-.mining-btn-primary:hover {
-    background: #ffb74d;
-}
-
-.mining-btn-outline {
-    border: 1px solid white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    color: white;
-    background: transparent;
-    transition: .3s;
-}
-
-.mining-btn-outline:hover {
-    background: white;
-    color: #061226;
-}
-
-.hero-image-box {
-    border-radius: 20px;
+/*================= Premium Breadcrumb Header ==================*/
+.mining-header {
+    background-color: #050b16;
+    position: relative;
+    padding: 80px 0 100px;
+    padding-bottom: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid #d4af37;
+    margin-top: 100px !important;
 }
 
-@media(max-width: 768px) {
-    .mining-hero-title {
-        font-size: 30px;
-    }
+.mining-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(5, 11, 22, 0.4), rgba(5, 11, 22, 1)),
+        url('https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+
+.mining-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.breadcrumb-mining-box {
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 10px 25px;
+    display: inline-flex;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+
+.breadcrumb-mining-box .breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: #d4af37;
+    padding: 0 15px;
+    opacity: 0.6;
+}
+
+.breadcrumb-mining-box a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.breadcrumb-mining-box .active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.mining-label {
+    color: #d4af37;
+    font-weight: 800;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/* ========================MINING PALUSE SECTION ============== */
+
+.mineral-pulse-section {
+    background-color: #020812;
+    padding: 70px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.pulse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.pulse-card-mining {
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 2px solid #d4af37;
+    padding: 25px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pulse-card-mining:hover {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.ticker-name {
+    font-size: 0.75rem;
+    color: #8da2b5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.ticker-val {
+    font-family: 'Consolas', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    margin: 8px 0;
+}
+
+.ticker-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.pulse-meta {
+    font-size: 0.65rem;
+    color: #5a6a85;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 
 /* ================MINING OVERVIEW SECTION================ */
 
-.mining-overview {
-    padding: 90px 0;
-    background: #f5f7fa;
-}
-
-.mining-overview-tag {
-    color: #ff9800;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.mining-overview-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.mining-overview-desc {
-    color: #6c757d;
-    max-width: 700px;
-    margin: 0 auto 50px;
-}
-
-.mining-stat-card {
-    background: white;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    transition: .3s;
-    height: 100%;
-}
-
-.mining-stat-card:hover {
-    transform: translateY(-10px);
-}
-
-.mining-stat-number {
-    font-size: 38px;
-    font-weight: 700;
-    color: #0d2b5c;
-}
-
-.mining-stat-text {
-    margin-top: 10px;
-    font-weight: 500;
-    color: #333;
-}
-
-@media(max-width:768px) {
-    .mining-overview-title {
-        font-size: 28px;
-    }
-}
-
-
-
-/* ================== MINING KEY SECTION ================= */
-
-.key-minerals {
-    padding: 90px 0;
-    background: #0d2b5c;
-    color: white;
-}
-
-.key-tag {
-    color: #ff9800;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.key-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 50px;
+.mineral-portfolio {
+    background-color: #ffffff;
+    padding: 110px 0;
 }
 
 .mineral-card {
-    background: rgba(255, 255, 255, 0.06);
-    padding: 30px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: .3s;
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
 }
 
-.mineral-card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.1);
+.mineral-img-container {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
-.mineral-icon {
-    font-size: 35px;
+.mineral-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.6s ease;
+}
+
+.mineral-card:hover .mineral-img-container img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.mineral-body {
+    padding: 35px;
+}
+
+.asset-category {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.asset-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a192f;
     margin-bottom: 15px;
-    color: #ff9800;
 }
 
-.mineral-name {
-    font-size: 20px;
-    font-weight: 600;
+.asset-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f2f5;
 }
 
-.mineral-desc {
-    font-size: 14px;
-    opacity: 0.9;
-    margin-top: 10px;
+.stat-box small {
+    display: block;
+    color: #8892b0;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-@media(max-width:768px) {
-    .key-title {
-        font-size: 28px;
-    }
+.stat-box span {
+    font-weight: 700;
+    color: #0a192f;
+    font-size: 0.9rem;
 }
 
 
-/* ====================MINING VALUE CHAING SECTION ================== */
-
-
-/* --- Mining Value Chain Styles --- */
-.value-chain-section {
-    padding: 100px 0;
-    background-color: #F9FAFB;
-    /* Clean Light Background */
+/* ================== RISK MAPPING SECTION ================= */
+/* SINADAI Mining Risk Mapping Styling */
+.mining-risk-map {
+    background-color: #040c1a;
+    /* Deep Petroleum Navy */
+    padding: 110px 0;
     position: relative;
     overflow: hidden;
 }
 
-.section-desc {
-    max-width: 600px;
-    margin: 0 auto 60px;
-    color: var(--text-dark);
-    opacity: 0.8;
+.map-visualization-area {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 40px;
+    position: relative;
+}
+
+/* Data Layering Effect */
+.risk-layer-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-left: 3px solid #d4af37;
+    /* Geological Gold */
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.risk-layer-card:hover {
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateX(10px);
+}
+
+.risk-index-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8da2b5;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.risk-level-tag {
+    font-family: 'Consolas', monospace;
+    font-size: 0.75rem;
+    color: #ffbf00;
+    background: rgba(255, 191, 0, 0.1);
+    padding: 2px 8px;
+    float: right;
+}
+
+
+
+/* ====================MINING VALUE CHAING SECTION ================== */
+
+.value-chain-section {
+    background-color: #ffffff;
+    padding: 100px 0;
 }
 
 .chain-container {
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding-top: 20px;
+    margin-top: 50px;
 }
 
-/* The Connecting Gold Line */
-.chain-line {
+.chain-container::after {
+    content: '';
     position: absolute;
-    top: 50px;
-    /* Aligns with the center of the icons */
-    left: 50px;
-    right: 50px;
-    height: 4px;
-    background: #E5E7EB;
-    /* Light Grey base line */
+    top: 30px;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: #eef0f2;
     z-index: 1;
 }
 
-/* Optional: Animated Gradient Line */
-.chain-line::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0%;
-    background: var(--accent-gold);
-    transition: width 1.5s ease-in-out;
-}
-
-.value-chain-section:hover .chain-line::after {
-    width: 100%;
-    /* Animates line on hover */
-}
-
-/* Individual Step Styling */
-.chain-step {
+.chain-node {
     position: relative;
     z-index: 2;
-    /* Sits on top of the line */
+    text-align: center;
     width: 18%;
-    /* Fits 5 items */
-    text-align: center;
-    transition: transform 0.3s ease;
 }
 
-.chain-step:hover {
-    transform: translateY(-10px);
-}
-
-.step-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 25px;
-    background: orange;
-    border: 3px solid var(--accent-gold);
+.node-icon {
+    width: 60px;
+    height: 60px;
+    background: #0a192f;
+    color: #d4af37;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    color: var(--primary-blue);
-    position: relative;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px;
+    font-size: 1.4rem;
+    border: 4px solid #ffffff;
     transition: all 0.3s ease;
 }
 
-.step-icon:hover {
-    border: 1px solid orange;
+.chain-node:hover .node-icon {
+    background: #d4af37;
+    color: #ffffff;
+    transform: scale(1.1);
 }
 
-/* Step Number Bubble */
-.step-number {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: var(--primary-blue);
-    color: var(--accent-gold);
-    font-size: 0.8rem;
-    font-weight: 700;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--white);
-}
-
-.chain-step:hover .step-icon {
-    background: var(--accent-gold);
-    color: var(--white);
-    border-color: var(--primary-blue);
-}
-
-.step-content h3 {
-    font-size: 1.1rem;
-    color: var(--primary-blue);
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-.highlight-text {
+.node-title {
     font-size: 0.85rem;
-    color: var(--accent-gold);
-    font-weight: 700;
+    font-weight: 800;
+    color: #0a192f;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin-bottom: 10px;
-}
-
-.step-content p:last-child {
-    font-size: 0.9rem;
-    color: #4B5563;
-    line-height: 1.5;
-}
-
-/* --- Responsive Adjustments (Mobile) --- */
-@media (max-width: 992px) {
-    .chain-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .chain-step {
-        width: 100%;
-        display: flex;
-        text-align: left;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .chain-line {
-        /* Change line to vertical on mobile */
-        width: 4px;
-        height: calc(100% - 100px);
-        left: 40px;
-        /* Aligns with icon center */
-        top: 0;
-        bottom: 0;
-        right: auto;
-    }
-
-    .chain-line::after {
-        width: 100%;
-        height: 0%;
-        transition: height 1.5s ease;
-    }
-
-    .value-chain-section:hover .chain-line::after {
-        height: 100%;
-    }
-
-    .step-icon {
-        margin: 0;
-        /* Reset auto margin */
-        flex-shrink: 0;
-        /* Prevents shrinking */
-    }
-}
-
-
-
-
-
-/* --- Investment Opportunities Section --- */
-.investment-section {
-    background-color: #ffffff;
-}
-
-/* Filter Button Styling */
-.filter-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 40px;
-}
-
-.filter-btn {
-    padding: 12px 28px;
-    border: 1px solid #E5E7EB;
-    /* Light grey border */
-    background: #FFFFFF;
-    border-radius: 50px;
-    /* Fully rounded pill shape */
-    font-weight: 600;
-    color: #4B5563;
-    cursor: pointer;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-    border-color: #0A192F;
-    color: #0A192F;
-}
-
-/* Active State (The clicked button) */
-.filter-btn.active {
-    background: #0A192F;
-    /* Deep Navy Background */
-    color: #FFFFFF;
-    /* White Text */
-    border-color: #0A192F;
-    box-shadow: 0 4px 15px rgba(10, 25, 47, 0.3);
-}
-
-/* Animation for smooth filtering */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Grid Layout */
-.opportunities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-/* Card Styling */
-.opp-card {
-    background: var(--white);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    border: 1px solid #0055ff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.opp-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent-gold);
-    /* Subtle gold border on hover */
-}
-
-/* Card Image Area */
-.card-image {
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.opp-card:hover .card-image img {
-    transform: scale(1.05);
-    /* Zoom effect */
-}
-
-.status-badge {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.61) !important;
-    top: 15px;
-    right: 15px;
-    padding: 5px 12px !important;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    backdrop-filter: blur(5px);
-}
-
-.status-badge.open {
-    background: var(--accent-gold);
-    color: var(--primary-blue);
-}
-
-.status-badge.closed {
-    background: #4B5563;
-    color: #fff;
-}
-
-/* Card Content */
-.card-body {
-    padding: 25px;
-}
-
-.card-meta {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.85rem;
-    color: #6B7280;
-    margin-bottom: 12px;
-}
-
-.card-meta i {
-    margin-right: 5px;
-    color: var(--accent-gold);
-}
-
-.card-body h3 {
-    font-size: 1.25rem;
-    color: var(--primary-blue);
-    margin-bottom: 10px;
-}
-
-.card-body p {
-    font-size: 0.95rem;
-    color: #4B5563;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-/* Key Stats Grid inside Card */
-.card-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background: #F9FAFB;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.stat-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.stat-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    color: #9CA3AF;
-    letter-spacing: 0.5px;
-    margin-bottom: 4px;
-}
-
-.stat-value {
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--primary-blue);
-}
-
-.text-gold {
-    color: var(--accent-gold) !important;
-}
-
-/* Action Button */
-.btn-card {
     display: block;
+}
+
+.node-desc {
+    font-size: 0.75rem;
+    color: #8892b0;
+    line-height: 1.5;
+}
+
+
+
+.reclamation-section {
+    background-color: #f8fafc;
+    padding: 100px 0;
+}
+
+.reclamation-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 40px;
+    height: 100%;
+    transition: all 0.4s ease;
+}
+
+.reclamation-card:hover {
+    border-color: #10b981;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.05);
+}
+
+.eco-icon {
+    font-size: 2.5rem;
+    color: #10b981;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.reclamation-progress-bar {
+    height: 6px;
+    background: #e2e8f0;
+    margin: 25px 0;
+    position: relative;
+}
+
+.progress-fill {
+    position: absolute;
+    height: 100%;
+    background: #10b981;
     width: 100%;
-    padding: 12px 0;
-    background-color: orange !important;
-    text-align: center;
-    border-radius: 6px;
-    color: black !important;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s;
 }
 
-.btn-card:hover {
-    background: var(--primary-blue);
-    color: var(--white);
+.esg-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #ffffff;
+    background: #0a192f;
+    padding: 4px 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-
-.btn-card.disabled {
-    border-color: #E5E7EB;
-    color: #9CA3AF;
-    pointer-events: none;
-}
-
 
 /* ==================sustainability and ESG section css ================ */
 
