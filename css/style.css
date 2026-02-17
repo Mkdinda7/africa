@@ -1014,53 +1014,111 @@ body {
     }
 }
 
-/* ==================OUR LIVE MARKETS SECTION ============== */
+
+/* ================= SINADAI Live Market Pulse ================ */
 
 .market-section {
-    background: linear-gradient(135deg, #2b6cff, #5c8fff);
-    padding: 40px 20px;
-    border-radius: 16px;
+    background: #050b16; 
+    padding: 30px 0;
+    border-radius: 0;
     color: white;
+    border-top: 1px solid rgba(255, 177, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 177, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.market-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255,255,255,0.02) 1px, rgba(255,255,255,0.02) 2px);
+    pointer-events: none;
 }
 
 .market-title {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffb100; 
+    display: flex;
+    align-items: center;
+}
+
+.market-title::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ffb100;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 0 10px #ffb100;
 }
 
 .market-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: 12px;
-    padding: 20px;
-    transition: .3s;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0;
+    padding: 20px 25px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
 }
 
 .market-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    background: rgba(255, 177, 0, 0.05);
+    border-color: rgba(255, 177, 0, 0.3);
 }
 
 .asset-name {
-    font-size: 14px;
-    opacity: .9;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8da2b5;
+    margin-bottom: 10px;
 }
 
 .price {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1px;
 }
 
 .change {
-    font-size: 13px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
+
 .up {
-    color: #a8ffb0;
+    color: #00ff88; 
 }
 
 .down {
-    color: #ffb0b0;
+    color: #ff3366; 
+}
+
+
+.up::before { content: '▲'; font-size: 8px; }
+.down::before { content: '▼'; font-size: 8px; }
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px) {
+    .market-card { margin-bottom: 15px; }
+    .price { font-size: 1.3rem; }
 }
 
 /* =======================country news ================= */
