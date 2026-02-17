@@ -198,7 +198,7 @@
 }
 
 /* ===================Investment Opportunities ================= */
-/* Crop Portfolio Premium Styling */
+
 .crop-portfolio-section {
     background-color: #ffffff;
     padding: 100px 0;
@@ -207,7 +207,6 @@
 .crop-card {
     border: 1px solid #e0e0e0;
     border-radius: 0;
-    /* Keeping the sharp industrial look */
     overflow: hidden;
     transition: all 0.5s ease;
     background: #fff;
@@ -500,7 +499,7 @@
 
 /* =====================R & D PARTNERS SECTION CSS ================== */
 
-/* Agriculture R&D & Partners Styling */
+
 .agri-rd-section {
     background-color: #fcfdfc;
     padding: 100px 0;
@@ -514,7 +513,6 @@
     height: 100%;
     transition: all 0.4s ease;
     border-top: 4px solid #8bc34a;
-    /* Agriculture Green */
 }
 
 .rd-innovation-card:hover {
