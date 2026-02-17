@@ -27,10 +27,10 @@ body {
 
 .nav-btn select {
     background: linear-gradient(135deg, #ff8c00, #ff6a00);
-    color: #fff;
+    color: black;
     padding: 8px 14px;
     border: none;
-    border-radius: 25px;
+    border-radius: 6px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -41,11 +41,11 @@ body {
 
 .nav-btn select:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 101, 160, 0.753);
 }
 
 .nav-btn select:focus {
-    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.3);
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.74);
 }
 
 
