@@ -151,10 +151,9 @@
 
 
 /* ==============OUR SUBSECTOR SECTION ============= */
-/* Agriculture Tech Pillars */
+
 .agri-pillars {
     background-color: #173622;
-    /* Deep Organic Black */
     padding: 100px 0;
 }
 
@@ -166,7 +165,7 @@
     position: relative;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     border-radius: 0;
-    /* Sharp industrial corners */
+
 }
 
 .agri-pillar-card:hover {
