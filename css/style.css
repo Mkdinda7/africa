@@ -1325,105 +1325,123 @@ body {
 
 
 
-
-
-/* =============our success story ============ */
+/* ================= SINADAI Success Stories ============ */
 
 .investor-voices-section {
-    background: #f8faf9;
-    padding: 40px 0;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.investor-voices-section .container {
-    max-width: 1250px;
-    margin: auto;
+    background: #f8fafc;
+    padding: 100px 0;
+    font-family: 'Inter', sans-serif;
 }
 
 /* HEADER */
 .investor-voices-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-end;
+    margin-bottom: 40px;
 }
 
 .investor-voices-header h2 {
-    color: #0f2a25;
+    color: #0a192f;
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
 }
 
 .investor-voices-header p {
-    color: #7a8c89;
+    color: #5a6a85;
+    font-size: 1.1rem;
+    max-width: 500px;
 }
 
 /* NAV */
 .investor-voices-nav {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .investor-voices-nav button {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #e0e6e4;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #e2e8f0;
     background: white;
-    border-radius: 8px;
+    border-radius: 0;
     cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.investor-voices-nav button:hover {
+    background: #0a192f;
+    color: white;
+    border-color: #0a192f;
 }
 
 /* CARD */
 .investor-voices-card {
-    background: #07182c;
-    border-radius: 16px;
+    background: #0a192f;
+    border-radius: 0;
     color: white;
-    padding: 22px;
-    border: 1px solid #e6ecea;
-    transition: .3s;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
 }
 
 .investor-voices-card:hover {
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(10, 25, 47, 0.15);
+    border-color: rgba(212, 175, 55, 0.3);
+    /* Gold glow on hover */
 }
 
 /* QUOTE */
 .voices-quote {
-    width: 34px;
-    height: 34px;
-    background: #fff4d6;
-    color: #ffb400;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(212, 175, 55, 0.1);
+    color: #d4af37;
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 /* TEXT */
 .voices-text {
-    color: #4a5c59;
-    line-height: 1.6;
-    min-height: 110px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    min-height: 100px;
+    font-style: italic;
+    font-size: 0.95rem;
 }
 
 /* TAGS */
 .voices-tags {
     display: flex;
     gap: 8px;
-    margin: 12px 0;
+    margin: 20px 0;
     flex-wrap: wrap;
 }
 
 .voices-tags span {
-    border: 1px solid #e1e7e5;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 0;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .voices-green {
-    background: #e8f8ef;
-    color: #0fa958;
-    border: none;
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: #10b981 !important;
+    border: none !important;
 }
 
 /* PROFILE */
@@ -1431,40 +1449,49 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+    margin-top: 10px;
 }
 
 .voices-left {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
 }
 
 .voices-left img {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    object-fit: cover;
+}
+
+.voices-left h6 {
+    margin-bottom: 2px;
+    font-weight: 800;
+    font-size: 0.9rem;
 }
 
 .voices-stars {
-    color: #ffb400;
+    color: #d4af37;
+    font-size: 0.8rem;
 }
 
 /* SWIPER */
 .investorVoicesSwiper {
-    padding: 10px;
+    padding: 20px 10px 50px;
 }
 
 /* RESPONSIVE */
 @media(max-width:992px) {
     .investor-voices-header {
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
+        gap: 20px;
     }
 }
-
-
-
-
 
 
 
