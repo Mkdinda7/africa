@@ -24,6 +24,31 @@ body {
     gap: 10px !important;
 }
 
+
+.nav-btn select {
+    background: linear-gradient(135deg, #ff8c00, #ff6a00);
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+.nav-btn select:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn select:focus {
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.3);
+}
+
+
 /* ==================make a btn =============== */
 .btn-start {
     background: #0b2c4d;
