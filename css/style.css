@@ -96,7 +96,7 @@ body {
 /* ======= NAVBAR CONTAINER ======= */
 .premium-nav {
     /* background: linear-gradient(120deg, #0083b5, #ff7b00); */
-    background-color: #0e1624;
+    background-color: #0a434c;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     padding: 15px 0;
     box-shadow:
@@ -732,7 +732,7 @@ body {
 .service-pro {
     padding: 120px 0;
     background-attachment: fixed !important;
-    background: linear-gradient(rgba(3, 10, 28, 0.85), rgba(3, 10, 28, 0.9)), 
+    background: linear-gradient(rgb(0 162 199 / 85%), rgba(3, 10, 28, 0.9)), 
                 url(./../assets/images/agricultureImage.png);
     background-size: cover;
 }
@@ -1447,7 +1447,7 @@ body {
 
 
 .footer-pro {
-    background: #0e1624;
+    background: #0a434c;
     padding: 90px 0 30px;
     color: #a8b2c3;
 }
