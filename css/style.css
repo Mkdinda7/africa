@@ -732,8 +732,8 @@ body {
 .service-pro {
     padding: 120px 0;
     background-attachment: fixed !important;
-    background: linear-gradient(rgb(0 162 199 / 85%), rgba(3, 10, 28, 0.9)), 
-                url(./../assets/images/agricultureImage.png);
+    background: linear-gradient(rgb(0 162 199 / 85%), rgba(3, 10, 28, 0.9)),
+        url(./../assets/images/agricultureImage.png);
     background-size: cover;
 }
 
@@ -742,7 +742,7 @@ body {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0; 
+    border-radius: 0;
 
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
     padding: 60px 40px;
@@ -750,7 +750,7 @@ body {
 
 /* ===== TITLE ===== */
 .tag {
-    color: #d4af37; 
+    color: #d4af37;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -759,7 +759,7 @@ body {
 
 .title {
     font-weight: 800;
-    color: #ffffff; 
+    color: #ffffff;
     font-size: 2.5rem;
     letter-spacing: -1px;
 }
@@ -776,7 +776,7 @@ body {
 .p-card {
     background: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 0; 
+    border-radius: 0;
     padding: 45px 35px;
     height: 100%;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -786,7 +786,7 @@ body {
 
 
 .p-card.focus {
-    border-top: 4px solid #d4af37; 
+    border-top: 4px solid #d4af37;
     background: #ffffff;
 }
 
@@ -798,7 +798,8 @@ body {
     box-shadow: 0 30px 60px rgba(10, 25, 47, 0.2);
 }
 
-.p-card:hover h5, .p-card:hover p {
+.p-card:hover h5,
+.p-card:hover p {
     color: #ffffff;
 }
 
@@ -808,13 +809,13 @@ body {
     height: 60px;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 0; 
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     margin-bottom: 25px;
-    color: #d4af37; 
+    color: #d4af37;
     transition: 0.3s;
 }
 
@@ -862,107 +863,154 @@ body {
 
 /* ===== MOBILE ===== */
 @media(max-width:768px) {
-    .service-pro { padding: 80px 0; }
-    .wrap-card { padding: 40px 20px; }
-    .title { font-size: 1.8rem; }
+    .service-pro {
+        padding: 80px 0;
+    }
+
+    .wrap-card {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
 }
 
-/* ===================== industry service =============== */
 
-/* ===== SECTION ===== */
+
+/* ================= SINADAI Industry Sectors ================ */
+
 .sector-pro {
     padding: 120px 0;
-
-    background:
-        linear-gradient(140deg,
-            #081c33,
-            #0a2540,
-            #07182c);
+    background: linear-gradient(140deg, #050b16, #0a192f, #050b16);
 }
 
 /* ===== TITLE ===== */
 .mini {
-    color: #ff9800;
-    letter-spacing: 3px;
-    font-size: 13px;
-    font-weight: 600;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 11px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .title {
     color: white;
     font-weight: 800;
+    font-size: 2.8rem;
+    letter-spacing: -1px;
 }
 
 .sub {
     max-width: 700px;
-    margin: auto;
-    color: #9fb3c8;
+    margin: 20px auto 50px;
+    color: #8da2b5;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-/* ===== CARD ===== */
+/* ===== SECTOR CARD ===== */
 .sector-card {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 1px solid rgba(255, 255, 255, .1);
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0;
 
-    padding: 26px;
+    padding: 45px 35px;
     height: 100%;
-
-    transition: .3s;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     position: relative;
     overflow: hidden;
 }
 
 .sector-card:hover {
-    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
-
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
 }
-
 
 /* ===== ICON ===== */
 .icon {
-    width: 56px;
-    height: 56px;
-
-    background:
-        linear-gradient(135deg,
-            rgba(255, 152, 0, .2),
-            rgba(255, 152, 0, .05));
-
-    border-radius: 14px;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.02));
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #d4af37;
+    transition: 0.3s;
+}
 
-    color: #ff9800;
+.sector-card:hover .icon {
+    background: #d4af37;
+    color: #0a192f;
+    transform: rotateY(180deg);
 }
 
 /* ===== TEXT ===== */
 .sector-card h4 {
     color: white;
-    font-weight: 700;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
 }
 
 .sector-card p {
-    color: #9fb3c8;
-    font-size: 15px;
+    color: #8da2b5;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
 }
 
 /* ===== LINK ===== */
 .view {
-    color: #ff9800;
-    font-weight: 600;
+    color: #d4af37;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.view::after {
+    content: ' →';
+    transition: transform 0.3s ease;
+}
+
+.sector-card:hover .view {
+    color: white;
+}
+
+.sector-card:hover .view::after {
+    transform: translateX(8px);
 }
 
 /* ===== MOBILE ===== */
 @media(max-width:768px) {
     .sector-pro {
         padding: 80px 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .sector-card {
+        padding: 35px 25px;
     }
 }
 
