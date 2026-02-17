@@ -727,115 +727,145 @@ body {
 
 
 
-/* ===============OUR SERVICE ================ */
+/* ================= SINADAI Strategic Advisory ================ */
 
 .service-pro {
-    padding: 110px 0;
+    padding: 120px 0;
     background-attachment: fixed !important;
-    background: linear-gradient(#0000008f, #00000080), url(./../assets/images/agricultureImage.png);
+    background: linear-gradient(rgba(3, 10, 28, 0.85), rgba(3, 10, 28, 0.9)), 
+                url(./../assets/images/agricultureImage.png);
+    background-size: cover;
 }
 
 /* ===== FLOAT WRAP CARD ===== */
 .wrap-card {
-    background: rgba(0, 0, 0, 0.521);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0; 
 
-    border-radius: 26px;
-
-    box-shadow:
-        0 30px 60px rgba(0, 0, 0, .06),
-        0 10px 20px rgba(0, 0, 0, .04);
-
-    padding: 40px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+    padding: 60px 40px;
 }
 
 /* ===== TITLE ===== */
 .tag {
-    color: #ff9800;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 600;
+    color: #d4af37; 
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 800;
 }
 
 .title {
     font-weight: 800;
-    color: #0a1830;
+    color: #ffffff; 
+    font-size: 2.5rem;
+    letter-spacing: -1px;
 }
 
 .sub {
     max-width: 680px;
-    margin: auto;
-    color: #67748e;
+    margin: 20px auto 40px;
+    color: #8da2b5;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* ===== INNER CARD ===== */
 .p-card {
-    background: #fbfdff;
-
-    border: 1px solid #e8eff9;
-    border-radius: 18px;
-
-    padding: 35px;
-
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0; 
+    padding: 45px 35px;
     height: 100%;
-
-    transition: .3s;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
 }
 
-/* highlight card */
+
 .p-card.focus {
-    border-color: #ff9800;
-    background: #fffaf2;
+    border-top: 4px solid #d4af37; 
+    background: #ffffff;
 }
 
-/* hover */
 .p-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-10px);
     cursor: pointer;
-    box-shadow:
-        0 20px 40px rgba(255, 255, 255, 0.473);
+    background: #0a192f;
+    border-color: #0a192f;
+    box-shadow: 0 30px 60px rgba(10, 25, 47, 0.2);
+}
+
+.p-card:hover h5, .p-card:hover p {
+    color: #ffffff;
 }
 
 /* ===== ICON ===== */
 .icon {
-    width: 50px;
-    height: 50px;
-
-    background: #fff2e0;
-    border-radius: 12px;
-
+    width: 60px;
+    height: 60px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #d4af37; 
+    transition: 0.3s;
+}
 
-    font-size: 22px;
-    margin-bottom: 10px;
+.p-card:hover .icon {
+    background: #d4af37;
+    color: #ffffff;
+    border-color: #d4af37;
 }
 
 /* ===== TEXT ===== */
 .p-card h5 {
-    font-weight: 700;
-    color: #0a1830;
+    font-weight: 800;
+    color: #0a192f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
 
 .p-card p {
-    font-size: 14px;
-    color: #67748e;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #5a6a85;
+    flex-grow: 1;
 }
 
 /* ===== LINK ===== */
 .link {
-    color: #ff9800;
-    font-weight: 600;
+    color: #d4af37;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.p-card:hover .link {
+    color: #ffffff;
+    border-bottom-color: #d4af37;
 }
 
 /* ===== MOBILE ===== */
 @media(max-width:768px) {
-    .wrap-card {
-        padding: 24px;
-    }
+    .service-pro { padding: 80px 0; }
+    .wrap-card { padding: 40px 20px; }
+    .title { font-size: 1.8rem; }
 }
-
-
 
 /* ===================== industry service =============== */
 
