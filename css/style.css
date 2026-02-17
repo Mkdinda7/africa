@@ -1018,8 +1018,8 @@ body {
 /* ================= SINADAI Live Market Pulse ================ */
 
 .market-section {
-    background: #0a434c; 
-    padding: 30px ;
+    background: #0a434c;
+    padding: 30px;
     border-radius: 0;
     color: white;
     border-top: 1px solid rgba(255, 177, 0, 0.2);
@@ -1035,7 +1035,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255,255,255,0.02) 1px, rgba(255,255,255,0.02) 2px);
+    background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255, 255, 255, 0.02) 1px, rgba(255, 255, 255, 0.02) 2px);
     pointer-events: none;
 }
 
@@ -1044,7 +1044,7 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #ffb100; 
+    color: #ffb100;
     display: flex;
     align-items: center;
 }
@@ -1104,22 +1104,133 @@ body {
 
 
 .up {
-    color: #00ff88; 
+    color: #00ff88;
 }
 
 .down {
-    color: #ff3366; 
+    color: #ff3366;
 }
 
 
-.up::before { content: '▲'; font-size: 8px; }
-.down::before { content: '▼'; font-size: 8px; }
+.up::before {
+    content: '▲';
+    font-size: 8px;
+}
+
+.down::before {
+    content: '▼';
+    font-size: 8px;
+}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px) {
-    .market-card { margin-bottom: 15px; }
-    .price { font-size: 1.3rem; }
+    .market-card {
+        margin-bottom: 15px;
+    }
+
+    .price {
+        font-size: 1.3rem;
+    }
 }
+
+/* ================= SINADAI Strategic Investment Cards ==========  */
+.invest-card {
+    background: #ffffff;
+    border-radius: 0;
+    border: 1px solid #eef2f6;
+    border-top: 4px solid #0a192f;
+    height: 100%;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(10, 25, 47, 0.05);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.invest-card:hover {
+    transform: translateY(-10px);
+    border-top-color: #d4af37;
+    box-shadow: 0 30px 60px rgba(10, 25, 47, 0.12);
+}
+
+/* PRICE BADGE */
+.price {
+    background: #0a192f;
+    color: #d4af37;
+    padding: 8px 16px;
+    border-radius: 0;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* STEP BLOCK */
+.step-block {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.step-title {
+    color: #0a192f;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.step-block p {
+    font-size: 14px;
+    color: #5a6a85;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+/* REVIEW BOX */
+.review-box {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 0;
+    margin-top: 25px;
+    border-left: 3px solid #d4af37;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    color: #0a192f;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+/* PROFIT */
+.profit {
+    color: #059669;
+    font-weight: 800;
+    font-family: 'Consolas', monospace;
+}
+
+.profit::before {
+    content: '+ ';
+}
+
+/* FOOTER */
+.footer {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #94a3b8;
+    margin-top: 20px;
+    display: block;
+}
+
 
 /* =======================country news ================= */
 
@@ -1210,73 +1321,6 @@ body {
 }
 
 
-/* ===================OUR INVESTMENT SECTION ==========  */
-.invest-card {
-    background: #fff;
-    border-radius: 16px;
-    border: 1px solid #e6ecea;
-    border-top: 4px solid #0f1ea9;
-    height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
-}
-
-/* PRICE BADGE */
-.price {
-    background: #f1faf5;
-    color: #0fa958;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* STEP BLOCK */
-.step-block {
-    margin-top: 10px;
-    padding-bottom: 8px;
-    border-bottom: 1px dashed #e5e9e7;
-}
-
-.step-title {
-    color: #0fa958;
-    font-weight: 600;
-}
-
-.step-block p {
-    font-size: 14px;
-    color: #4a5c59;
-}
-
-/* REVIEW BOX */
-.review-box {
-    background: #f1faf5;
-    padding: 10px;
-    border-radius: 12px;
-    margin-top: 12px;
-}
-
-.avatar {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-}
-
-.name {
-    color: #0fa958;
-}
-
-/* PROFIT */
-.profit {
-    color: #0fa958;
-    font-weight: 600;
-}
-
-/* FOOTER */
-.footer {
-    font-size: 12px;
-    color: #999;
-}
 
 
 
