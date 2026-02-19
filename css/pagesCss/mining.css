@@ -206,12 +206,15 @@
     font-size: 0.9rem;
 }
 
+.intell-feed {
+    overflow-wrap: anywhere;
+}
+
 
 /* ================== RISK MAPPING SECTION ================= */
-/* SINADAI Mining Risk Mapping Styling */
+
 .mining-risk-map {
     background-color: #040c1a;
-    /* Deep Petroleum Navy */
     padding: 110px 0;
     position: relative;
     overflow: hidden;
@@ -224,12 +227,11 @@
     position: relative;
 }
 
-/* Data Layering Effect */
+
 .risk-layer-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-left: 3px solid #d4af37;
-    /* Geological Gold */
     padding: 25px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
